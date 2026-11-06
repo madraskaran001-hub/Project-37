@@ -1,0 +1,32 @@
+[
+  {
+    "name": "CDSCO",
+    "category": "New Drugs",
+    "url": "https://cdsco.gov.in/"
+  },
+  {
+    "name": "Ministry of Health and Family Welfare",
+    "category": "Indian Health",
+    "url": "https://mohfw.gov.in/"
+  },
+  {
+    "name": "World Health Organization",
+    "category": "WHO Updates",
+    "url": "https://www.who.int/news"
+  },
+  {
+    "name": "National Medical Commission",
+    "category": "Medical Education",
+    "url": "https://www.nmc.org.in/"
+  },
+  {
+    "name": "National Board of Examinations",
+    "category": "Medical Education",
+    "url": "https://natboard.edu.in/"
+  },
+  {
+    "name": "AIIMS Examinations",
+    "category": "INICET",
+    "url": "https://aiimsexams.ac.in/"
+  }
+]
