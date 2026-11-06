@@ -1,207 +1,232 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>project37 | Medical Intelligence</title>
-
+<title>PROJECT37 | Medical Intelligence</title>
 <style>
 * { box-sizing: border-box; }
-
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: #f3f6fa;
   color: #17243a;
 }
-
 header {
   background: #123b5d;
   color: white;
   padding: 25px 20px;
 }
-
-.container {
+.container, main {
   max-width: 1100px;
   margin: auto;
 }
-
-.brand {
-  font-size: 30px;
-  font-weight: bold;
-}
-
-.subtitle {
-  color: #d5e5f2;
-  margin-top: 7px;
-}
-
-main {
-  max-width: 1100px;
-  margin: 25px auto;
-  padding: 0 18px;
-}
-
-.welcome {
+.brand { font-size: 30px; font-weight: bold; }
+.subtitle { color: #d5e5f2; margin-top: 7px; }
+main { padding: 22px 16px; }
+.welcome, .update {
   background: white;
-  padding: 24px;
+  padding: 22px;
   border-radius: 14px;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
-
-h2 { margin-top: 0; }
-
 .search {
   width: 100%;
   padding: 14px;
-  border: 1px solid #d6deea;
+  border: 1px solid #ccd6e2;
   border-radius: 9px;
   font-size: 16px;
-  margin: 12px 0 20px;
+  margin: 10px 0 18px;
 }
-
 .categories {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
-  margin-bottom: 28px;
+  gap: 10px;
+  margin-bottom: 25px;
 }
-
 .category {
   background: white;
-  padding: 18px;
-  border-radius: 12px;
-  border: 1px solid #e4eaf1;
+  border: 1px solid #dce3eb;
+  border-radius: 11px;
+  padding: 15px;
+  text-align: left;
+  cursor: pointer;
+  color: #17243a;
 }
-
-.category h3 {
-  margin: 0 0 8px;
-  font-size: 16px;
+.category.active {
+  border: 2px solid #176b9b;
+  background: #eaf4fa;
 }
-
-.category p {
-  margin: 0;
-  color: #68758a;
-  font-size: 13px;
+.category strong { display: block; margin-bottom: 7px; }
+.category small { color: #68758a; line-height: 1.4; }
+.update { border: 1px solid #e1e7ee; }
+.tag {
+  color: #087b68;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
-
-.updates {
+.meta { color: #68758a; font-size: 13px; }
+.relevance {
+  display: inline-block;
+  background: #fff2d9;
+  color: #805400;
+  padding: 6px 9px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.empty {
   background: white;
-  padding: 24px;
-  border-radius: 14px;
+  padding: 25px;
+  border-radius: 12px;
   text-align: center;
   color: #68758a;
 }
-
 footer {
   text-align: center;
-  padding: 30px;
+  padding: 28px;
   color: #68758a;
   font-size: 13px;
 }
-
 @media (min-width: 700px) {
-  .categories {
-    grid-template-columns: repeat(4, 1fr);
-  }
+  .categories { grid-template-columns: repeat(4, 1fr); }
 }
 </style>
 </head>
-
 <body>
 
 <header>
   <div class="container">
     <div class="brand">project37</div>
-    <div class="subtitle">
-      Medical Intelligence | Smarter Exam Preparation
-    </div>
+    <div class="subtitle">Medical Intelligence | Smarter Exam Preparation</div>
   </div>
 </header>
 
 <main>
+<section class="welcome">
+  <h2>Your medical intelligence dashboard</h2>
+  <p>Important medical developments, public health updates and exam-relevant information — in one place.</p>
+</section>
 
-  <section class="welcome">
-    <h2>Your medical intelligence dashboard</h2>
-    <p>
-      Important medical developments, public health updates
-      and exam-relevant information — in one place.
-    </p>
-  </section>
+<h2>Explore Categories</h2>
+<div class="categories" id="categories">
+  <button class="category active" data-category="All">
+    <strong>🌐 All Updates</strong><small>Everything in one place</small>
+  </button>
+  <button class="category" data-category="New Drugs">
+    <strong>💊 New Drugs</strong><small>Approvals and trials</small>
+  </button>
+  <button class="category" data-category="Indian Health">
+    <strong>🇮🇳 Indian Health</strong><small>Schemes and policies</small>
+  </button>
+  <button class="category" data-category="WHO Updates">
+    <strong>🌍 WHO Updates</strong><small>Guidelines and programmes</small>
+  </button>
+  <button class="category" data-category="INICET">
+    <strong>🎓 INICET Corner</strong><small>Exam-relevant developments</small>
+  </button>
+  <button class="category" data-category="Outbreak Watch">
+    <strong>🦠 Outbreak Watch</strong><small>Emerging infections</small>
+  </button>
+  <button class="category" data-category="Research">
+    <strong>🔬 Research</strong><small>Landmark studies</small>
+  </button>
+  <button class="category" data-category="Clinical Guidelines">
+    <strong>📋 Clinical Guidelines</strong><small>Clinical practice updates</small>
+  </button>
+  <button class="category" data-category="Medical Education">
+    <strong>📢 Medical Education</strong><small>NMC, NBEMS and AIIMS</small>
+  </button>
+</div>
 
-  <h2>Explore Categories</h2>
+<h2>Latest Medical Updates</h2>
+<input id="search" class="search" type="search"
+  placeholder="Search by topic or category...">
 
-  <section class="categories">
-
-    <div class="category">
-      <h3>💊 New Drugs</h3>
-      <p>Drug approvals, trials and regulatory updates</p>
-    </div>
-
-    <div class="category">
-      <h3>🇮🇳 Indian Health</h3>
-      <p>Government schemes and health policies</p>
-    </div>
-
-    <div class="category">
-      <h3>🌍 WHO Updates</h3>
-      <p>Guidelines, programmes and classifications</p>
-    </div>
-
-    <div class="category">
-      <h3>🎓 INICET Corner</h3>
-      <p>Exam notifications and high-yield developments</p>
-    </div>
-
-    <div class="category">
-      <h3>🦠 Outbreak Watch</h3>
-      <p>Emerging infections and disease surveillance</p>
-    </div>
-
-    <div class="category">
-      <h3>🔬 Research</h3>
-      <p>Landmark studies and medical advances</p>
-    </div>
-
-    <div class="category">
-      <h3>📋 Clinical Guidelines</h3>
-      <p>Important changes in clinical practice</p>
-    </div>
-
-    <div class="category">
-      <h3>📢 Medical Education</h3>
-      <p>NMC, NBEMS and AIIMS notifications</p>
-    </div>
-
-  </section>
-
-  <h2>Latest Medical Updates</h2>
-
-  <input
-    class="search"
-    type="search"
-    placeholder="Search medical updates..."
-    disabled
-  >
-
-  <section class="updates">
-    <h3>Updates coming soon</h3>
-    <p>
-      Verified updates with original sources,
-      publication dates and INICET relevance
-      will appear here.
-    </p>
-    <p>Our medical update feed is the next development step.</p>
-  </section>
-
+<div id="results"></div>
+<footer>
+  project37 | Medical Intelligence Platform<br><br>
+  Educational purposes only. Verify clinical information with official sources.
+</footer>
 </main>
 
-<footer>
-  project37 | Medical Intelligence Platform
-  <br><br>
-  Educational purposes only. Always verify clinical
-  information using official sources.
-</footer>
+<script>
+const updates = [
+  {
+    category: "New Drugs",
+    title: "Drug approval update placeholder",
+    summary: "A space for verified drug approvals, indications and regulatory information.",
+    date: "Awaiting verified source",
+    relevance: "To be assessed"
+  },
+  {
+    category: "Indian Health",
+    title: "Indian public health scheme placeholder",
+    summary: "A space for new national health schemes, eligibility and implementation details.",
+    date: "Awaiting verified source",
+    relevance: "To be assessed"
+  },
+  {
+    category: "WHO Updates",
+    title: "WHO guideline update placeholder",
+    summary: "A space for new WHO guidelines, programmes and classifications.",
+    date: "Awaiting verified source",
+    relevance: "To be assessed"
+  },
+  {
+    category: "INICET",
+    title: "INICET exam update placeholder",
+    summary: "A space for exam notifications and important medical developments.",
+    date: "Awaiting verified source",
+    relevance: "To be assessed"
+  }
+];
 
+let selectedCategory = "All";
+
+function renderUpdates() {
+  const search = document.getElementById("search").value.toLowerCase();
+  const filtered = updates.filter(item => {
+    const matchesCategory = selectedCategory === "All" ||
+      item.category === selectedCategory;
+    const matchesSearch = (item.title + " " + item.summary + " " +
+      item.category).toLowerCase().includes(search);
+    return matchesCategory && matchesSearch;
+  });
+
+  const results = document.getElementById("results");
+
+  if (filtered.length === 0) {
+    results.innerHTML = '<div class="empty">No matching updates found.</div>';
+    return;
+  }
+
+  results.innerHTML = filtered.map(item => `
+    <article class="update">
+      <div class="tag">${item.category}</div>
+      <h3>${item.title}</h3>
+      <p>${item.summary}</p>
+      <p class="meta">${item.date}</p>
+      <span class="relevance">${item.relevance}</span>
+    </article>
+  `).join("");
+}
+
+document.querySelectorAll(".category").forEach(button => {
+  button.addEventListener("click", () => {
+    selectedCategory = button.dataset.category;
+    document.querySelectorAll(".category").forEach(item =>
+      item.classList.remove("active")
+    );
+    button.classList.add("active");
+    renderUpdates();
+  });
+});
+
+document.getElementById("search").addEventListener("input", renderUpdates);
+renderUpdates();
+</script>
 </body>
 </html>
