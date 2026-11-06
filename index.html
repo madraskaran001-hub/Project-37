@@ -1,64 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PROJECT37 | Medical Intelligence</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f4f7fb;
-      color: #172033;
-    }
-    header {
-      background: #123b5d;
-      color: white;
-      padding: 24px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 32px;
-    }
-    main {
-      max-width: 900px;
-      margin: 30px auto;
-      padding: 16px;
-    }
-    .welcome, .update {
-      background: white;
-      padding: 20px;
-      margin-bottom: 16px;
-      border-radius: 12px;
-      box-shadow: 0 2px 8px #00000010;
-    }
-    .tag {
-      color: #087b68;
-      font-weight: bold;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>project37 | Medical Intelligence</title>
+
+<style>
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f6fa;
+  color: #17243a;
+}
+
+header {
+  background: #123b5d;
+  color: white;
+  padding: 25px 20px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.brand {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.subtitle {
+  color: #d5e5f2;
+  margin-top: 7px;
+}
+
+main {
+  max-width: 1100px;
+  margin: 25px auto;
+  padding: 0 18px;
+}
+
+.welcome {
+  background: white;
+  padding: 24px;
+  border-radius: 14px;
+  margin-bottom: 24px;
+}
+
+h2 { margin-top: 0; }
+
+.search {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #d6deea;
+  border-radius: 9px;
+  font-size: 16px;
+  margin: 12px 0 20px;
+}
+
+.categories {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.category {
+  background: white;
+  padding: 18px;
+  border-radius: 12px;
+  border: 1px solid #e4eaf1;
+}
+
+.category h3 {
+  margin: 0 0 8px;
+  font-size: 16px;
+}
+
+.category p {
+  margin: 0;
+  color: #68758a;
+  font-size: 13px;
+}
+
+.updates {
+  background: white;
+  padding: 24px;
+  border-radius: 14px;
+  text-align: center;
+  color: #68758a;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #68758a;
+  font-size: 13px;
+}
+
+@media (min-width: 700px) {
+  .categories {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+</style>
 </head>
+
 <body>
-  <header>
-    <h1>MedPulse</h1>
-    <p>Medical Updates. Smarter Revision.</p>
-  </header>
 
-  <main>
-    <section class="welcome">
-      <h2>Your medical intelligence dashboard</h2>
-      <p>Track important medical developments and prepare for INICET.</p>
-    </section>
+<header>
+  <div class="container">
+    <div class="brand">project37</div>
+    <div class="subtitle">
+      Medical Intelligence | Smarter Exam Preparation
+    </div>
+  </div>
+</header>
 
-    <h2>Latest Updates</h2>
+<main>
 
-    <section class="update">
-      <p class="tag">PUBLIC HEALTH</p>
-      <h3>Your first update will appear here</h3>
-      <p>Verified medical updates, important developments and exam-relevant information will be collected here.</p>
-      <p><small>Source and publication date will be displayed with each update.</small></p>
-    </section>
-  </main>
+  <section class="welcome">
+    <h2>Your medical intelligence dashboard</h2>
+    <p>
+      Important medical developments, public health updates
+      and exam-relevant information — in one place.
+    </p>
+  </section>
+
+  <h2>Explore Categories</h2>
+
+  <section class="categories">
+
+    <div class="category">
+      <h3>💊 New Drugs</h3>
+      <p>Drug approvals, trials and regulatory updates</p>
+    </div>
+
+    <div class="category">
+      <h3>🇮🇳 Indian Health</h3>
+      <p>Government schemes and health policies</p>
+    </div>
+
+    <div class="category">
+      <h3>🌍 WHO Updates</h3>
+      <p>Guidelines, programmes and classifications</p>
+    </div>
+
+    <div class="category">
+      <h3>🎓 INICET Corner</h3>
+      <p>Exam notifications and high-yield developments</p>
+    </div>
+
+    <div class="category">
+      <h3>🦠 Outbreak Watch</h3>
+      <p>Emerging infections and disease surveillance</p>
+    </div>
+
+    <div class="category">
+      <h3>🔬 Research</h3>
+      <p>Landmark studies and medical advances</p>
+    </div>
+
+    <div class="category">
+      <h3>📋 Clinical Guidelines</h3>
+      <p>Important changes in clinical practice</p>
+    </div>
+
+    <div class="category">
+      <h3>📢 Medical Education</h3>
+      <p>NMC, NBEMS and AIIMS notifications</p>
+    </div>
+
+  </section>
+
+  <h2>Latest Medical Updates</h2>
+
+  <input
+    class="search"
+    type="search"
+    placeholder="Search medical updates..."
+    disabled
+  >
+
+  <section class="updates">
+    <h3>Updates coming soon</h3>
+    <p>
+      Verified updates with original sources,
+      publication dates and INICET relevance
+      will appear here.
+    </p>
+    <p>Our medical update feed is the next development step.</p>
+  </section>
+
+</main>
+
+<footer>
+  project37 | Medical Intelligence Platform
+  <br><br>
+  Educational purposes only. Always verify clinical
+  information using official sources.
+</footer>
+
 </body>
 </html>
