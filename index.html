@@ -152,35 +152,44 @@ footer {
 </footer>
 </main>
 
+
 <script>
 const updates = [
   {
     category: "New Drugs",
-    title: "Drug approval update placeholder",
-    summary: "A space for verified drug approvals, indications and regulatory information.",
-    date: "Awaiting verified source",
-    relevance: "To be assessed"
+    title: "Drug approval updates",
+    summary: "Verified approvals, new indications, clinical trials and regulatory decisions.",
+    date: "Awaiting verified update",
+    relevance: "Pending assessment",
+    sourceName: "Official drug regulator",
+    sourceUrl: ""
   },
   {
     category: "Indian Health",
-    title: "Indian public health scheme placeholder",
-    summary: "A space for new national health schemes, eligibility and implementation details.",
-    date: "Awaiting verified source",
-    relevance: "To be assessed"
+    title: "Indian public health schemes",
+    summary: "New national health schemes, eligibility criteria and implementation details.",
+    date: "Awaiting verified update",
+    relevance: "Pending assessment",
+    sourceName: "Ministry of Health and Family Welfare",
+    sourceUrl: ""
   },
   {
     category: "WHO Updates",
-    title: "WHO guideline update placeholder",
-    summary: "A space for new WHO guidelines, programmes and classifications.",
-    date: "Awaiting verified source",
-    relevance: "To be assessed"
+    title: "WHO guidelines and programmes",
+    summary: "New WHO guidelines, classifications, programmes and global health developments.",
+    date: "Awaiting verified update",
+    relevance: "Pending assessment",
+    sourceName: "World Health Organization",
+    sourceUrl: ""
   },
   {
     category: "INICET",
-    title: "INICET exam update placeholder",
-    summary: "A space for exam notifications and important medical developments.",
-    date: "Awaiting verified source",
-    relevance: "To be assessed"
+    title: "Medical education and exam updates",
+    summary: "Verified notifications from AIIMS, NBEMS and NMC.",
+    date: "Awaiting verified update",
+    relevance: "Pending assessment",
+    sourceName: "Official examination authorities",
+    sourceUrl: ""
   }
 ];
 
@@ -188,18 +197,24 @@ let selectedCategory = "All";
 
 function renderUpdates() {
   const search = document.getElementById("search").value.toLowerCase();
+
   const filtered = updates.filter(item => {
-    const matchesCategory = selectedCategory === "All" ||
+    const matchesCategory =
+      selectedCategory === "All" ||
       item.category === selectedCategory;
-    const matchesSearch = (item.title + " " + item.summary + " " +
-      item.category).toLowerCase().includes(search);
+
+    const matchesSearch =
+      (item.title + " " + item.summary + " " + item.category)
+      .toLowerCase().includes(search);
+
     return matchesCategory && matchesSearch;
   });
 
   const results = document.getElementById("results");
 
   if (filtered.length === 0) {
-    results.innerHTML = '<div class="empty">No matching updates found.</div>';
+    results.innerHTML =
+      '<div class="empty">No matching updates found.</div>';
     return;
   }
 
@@ -208,7 +223,14 @@ function renderUpdates() {
       <div class="tag">${item.category}</div>
       <h3>${item.title}</h3>
       <p>${item.summary}</p>
-      <p class="meta">${item.date}</p>
+      <p class="meta">Publication: ${item.date}</p>
+      <p class="meta">Source: ${item.sourceName}</p>
+      ${
+        item.sourceUrl
+          ? `<p><a href="${item.sourceUrl}" target="_blank"
+              rel="noopener noreferrer">Read official source ↗</a></p>`
+          : ""
+      }
       <span class="relevance">${item.relevance}</span>
     </article>
   `).join("");
@@ -217,16 +239,21 @@ function renderUpdates() {
 document.querySelectorAll(".category").forEach(button => {
   button.addEventListener("click", () => {
     selectedCategory = button.dataset.category;
+
     document.querySelectorAll(".category").forEach(item =>
       item.classList.remove("active")
     );
+
     button.classList.add("active");
     renderUpdates();
   });
 });
 
-document.getElementById("search").addEventListener("input", renderUpdates);
+document.getElementById("search")
+  .addEventListener("input", renderUpdates);
+
 renderUpdates();
 </script>
+
 </body>
 </html>
