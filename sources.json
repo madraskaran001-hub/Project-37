@@ -12,13 +12,13 @@
     "url": "https://mohfw.gov.in/",
     "method": "html"
   },
-  {
-    "name": "World Health Organization",
-    "category": "WHO Updates",
-    "url": "https://www.who.int/news",
-    "feed_url": "https://www.who.int/rss-feeds/news-english.xml",
-    "method": "rss"
-  },
+{
+  "name": "WHO African Region",
+  "category": "WHO Updates",
+  "url": "https://www.afro.who.int/news",
+  "feed_url": "https://www.afro.who.int/rss/featured-news.xml",
+  "method": "rss"
+}
   {
     "name": "National Medical Commission",
     "category": "Medical Education",
