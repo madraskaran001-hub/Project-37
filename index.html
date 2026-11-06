@@ -154,46 +154,43 @@ footer {
 
 
 <script>
-const updates = [
-  {
-    category: "New Drugs",
-    title: "Drug approval updates",
-    summary: "Verified approvals, new indications, clinical trials and regulatory decisions.",
-    date: "Awaiting verified update",
-    relevance: "Pending assessment",
-    sourceName: "Official drug regulator",
-    sourceUrl: ""
-  },
-  {
-    category: "Indian Health",
-    title: "Indian public health schemes",
-    summary: "New national health schemes, eligibility criteria and implementation details.",
-    date: "Awaiting verified update",
-    relevance: "Pending assessment",
-    sourceName: "Ministry of Health and Family Welfare",
-    sourceUrl: ""
-  },
-  {
-    category: "WHO Updates",
-    title: "WHO guidelines and programmes",
-    summary: "New WHO guidelines, classifications, programmes and global health developments.",
-    date: "Awaiting verified update",
-    relevance: "Pending assessment",
-    sourceName: "World Health Organization",
-    sourceUrl: ""
-  },
-  {
-    category: "INICET",
-    title: "Medical education and exam updates",
-    summary: "Verified notifications from AIIMS, NBEMS and NMC.",
-    date: "Awaiting verified update",
-    relevance: "Pending assessment",
-    sourceName: "Official examination authorities",
-    sourceUrl: ""
-  }
-];
-
+let updates = [];
 let selectedCategory = "All";
+
+function escapeHTML(value) {
+  return String(value ?? "").replace(/[&<>"']/g, char => ({
+    "&": "&amp;",
+    "<": "&lt;",
+    ">": "&gt;",
+    '"': "&quot;",
+    "'": "&#39;"
+  })[char]);
+}
+
+async function loadUpdates() {
+  const results = document.getElementById("results");
+
+  results.innerHTML = '<div class="empty">Loading medical updates...</div>';
+
+  try {
+    const response = await fetch("./updates.json?v=" + Date.now());
+
+    if (!response.ok) {
+      throw new Error("Could not load updates");
+    }
+
+    updates = await response.json();
+
+    if (!Array.isArray(updates)) {
+      throw new Error("Invalid updates database");
+    }
+
+    renderUpdates();
+  } catch (error) {
+    results.innerHTML =
+      '<div class="empty">Unable to load updates. Please try again later.</div>';
+  }
+}
 
 function renderUpdates() {
   const search = document.getElementById("search").value.toLowerCase();
@@ -203,9 +200,11 @@ function renderUpdates() {
       selectedCategory === "All" ||
       item.category === selectedCategory;
 
-    const matchesSearch =
-      (item.title + " " + item.summary + " " + item.category)
-      .toLowerCase().includes(search);
+    const matchesSearch = (
+      (item.title || "") + " " +
+      (item.summary || "") + " " +
+      (item.category || "")
+    ).toLowerCase().includes(search);
 
     return matchesCategory && matchesSearch;
   });
@@ -214,26 +213,28 @@ function renderUpdates() {
 
   if (filtered.length === 0) {
     results.innerHTML =
-      '<div class="empty">No matching updates found.</div>';
+      '<div class="empty">No updates available yet. Check back soon.</div>';
     return;
   }
 
-  results.innerHTML = filtered.map(item => `
-    <article class="update">
-      <div class="tag">${item.category}</div>
-      <h3>${item.title}</h3>
-      <p>${item.summary}</p>
-      <p class="meta">Publication: ${item.date}</p>
-      <p class="meta">Source: ${item.sourceName}</p>
-      ${
-        item.sourceUrl
-          ? `<p><a href="${item.sourceUrl}" target="_blank"
-              rel="noopener noreferrer">Read official source ↗</a></p>`
-          : ""
-      }
-      <span class="relevance">${item.relevance}</span>
-    </article>
-  `).join("");
+  results.innerHTML = filtered.map(item => {
+    const link = typeof item.url === "string" &&
+      /^https:\/\//i.test(item.url)
+      ? `<p><a href="${escapeHTML(item.url)}" target="_blank" rel="noopener noreferrer">Read official source ↗</a></p>`
+      : "";
+
+    return `
+      <article class="update">
+        <div class="tag">${escapeHTML(item.category)}</div>
+        <h3>${escapeHTML(item.title)}</h3>
+        <p>${escapeHTML(item.summary)}</p>
+        <p class="meta">Publication: ${escapeHTML(item.date || "Not specified")}</p>
+        <p class="meta">Source: ${escapeHTML(item.source || "Not specified")}</p>
+        <span class="relevance">${escapeHTML(item.relevance || "Pending assessment")}</span>
+        ${link}
+      </article>
+    `;
+  }).join("");
 }
 
 document.querySelectorAll(".category").forEach(button => {
@@ -249,10 +250,9 @@ document.querySelectorAll(".category").forEach(button => {
   });
 });
 
-document.getElementById("search")
-  .addEventListener("input", renderUpdates);
+document.getElementById("search").addEventListener("input", renderUpdates);
 
-renderUpdates();
+loadUpdates();
 </script>
 
 </body>
