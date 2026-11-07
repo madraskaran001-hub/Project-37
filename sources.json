@@ -2,7 +2,7 @@
   {
     "name": "CDSCO - Approved New Drugs",
     "category": "New Drugs",
-    "url": "https://cdsco.mohfw.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/",
+    "url": "https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/index.html",
     "method": "html_table"
   },
   {
