@@ -1,10 +1,9 @@
-
 [
   {
-    "name": "CDSCO",
+    "name": "CDSCO - Approved New Drugs",
     "category": "New Drugs",
-    "url": "https://cdsco.mohfw.gov.in/opencms/opencms/en/Home/",
-    "method": "html"
+    "url": "https://cdsco.mohfw.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/",
+    "method": "html_table"
   },
   {
     "name": "Ministry of Health and Family Welfare",
@@ -22,8 +21,8 @@
   {
     "name": "National Medical Commission",
     "category": "Medical Education",
-    "url": "https://nmc.org.in/whats-new",
-    "method": "html"
+    "url": "https://nmc.org.in/whats-new?type=news",
+    "method": "html_table"
   },
   {
     "name": "National Board of Examinations",
