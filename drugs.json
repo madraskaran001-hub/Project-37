@@ -1,0 +1,25 @@
+
+[
+  {
+    "name": "Resmetirom",
+    "brand": "Rezdiffra",
+    "approval_date": "2024-03-14",
+    "regulator": "FDA",
+    "use": "Noncirrhotic MASH with F2-F3 fibrosis",
+    "moa": "Selective thyroid hormone receptor-beta agonist",
+    "major_adverse_effects": "Hepatotoxicity; gallbladder-related events",
+    "exam_pearl": "First FDA-approved treatment for MASH",
+    "source": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-treatment-patients-liver-scarring-due-fatty-liver-disease"
+  },
+  {
+    "name": "Lecanemab",
+    "brand": "Leqembi",
+    "approval_date": "2023-07-06",
+    "regulator": "FDA",
+    "use": "Early Alzheimer's disease",
+    "moa": "Monoclonal antibody targeting aggregated amyloid-beta",
+    "major_adverse_effects": "Amyloid-related imaging abnormalities (ARIA), including brain edema and hemorrhage",
+    "exam_pearl": "Anti-amyloid disease-modifying therapy",
+    "source": "https://www.fda.gov/news-events/press-announcements/fda-grants-traditional-approval-leqembi-lecanemab-irmb-treatment-alzheimers-disease"
+  }
+]
