@@ -270,20 +270,76 @@ document.querySelectorAll(".category").forEach(button => {
 
 document.getElementById("search").addEventListener("input", renderUpdates);
 
+loadUpdates();
 
-<section class="welcome">
-  <h2>💊 Drug Library</h2>
-  <p>Quick revision: indications, mechanisms and major adverse effects.</p>
+let drugs = [];
 
-  <input
-    id="drugSearch"
-    class="search"
-    type="search"
-    placeholder="Search drugs, indications or mechanisms..."
-  >
+async function loadDrugs() {
+  const container = document.getElementById("drugResults");
+  container.textContent = "Loading drugs...";
 
-  <div id="drugResults"></div>
-</section>
+  try {
+    const response = await fetch("./drugs.json?v=" + Date.now());
+
+    if (!response.ok) {
+      throw new Error("Unable to fetch drugs.json");
+    }
+
+    drugs = await response.json();
+
+    if (!Array.isArray(drugs)) {
+      throw new Error("Invalid drug database");
+    }
+
+    renderDrugs();
+  } catch (error) {
+    container.textContent = "Unable to load drug database.";
+    console.error(error);
+  }
+}
+
+function renderDrugs() {
+  const search = document.getElementById("drugSearch")
+    .value.toLowerCase().trim();
+
+  const filtered = drugs.filter(drug =>
+    [drug.name, drug.brand, drug.use, drug.moa]
+      .join(" ")
+      .toLowerCase()
+      .includes(search)
+  );
+
+  const container = document.getElementById("drugResults");
+
+  if (filtered.length === 0) {
+    container.textContent = "No matching drugs found.";
+    return;
+  }
+
+  container.innerHTML = filtered.map(drug => `
+    <article class="update">
+      <h3>${escapeHTML(drug.name)}</h3>
+      <p class="meta">
+        ${escapeHTML(drug.brand || "")} |
+        ${escapeHTML(drug.regulator || "")} |
+        ${escapeHTML(drug.approval_date || "")}
+      </p>
+      <p><strong>Use:</strong> ${escapeHTML(drug.use)}</p>
+      <p><strong>MOA:</strong> ${escapeHTML(drug.moa)}</p>
+      <p><strong>Major adverse effects:</strong>
+        ${escapeHTML(drug.major_adverse_effects)}</p>
+      <p class="meta">${escapeHTML(drug.exam_pearl || "")}</p>
+    </article>
+  `).join("");
+}
+
+document.getElementById("drugSearch")
+  .addEventListener("input", renderDrugs);
+
+loadDrugs();
+</script>
 
 </body>
 </html>
+
+
