@@ -1,11 +1,14 @@
 
-name: Test FDA Drug Library
+name: Import FDA Drug Approvals
 
 on:
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
-  test:
+  import:
     runs-on: ubuntu-latest
 
     steps:
@@ -17,5 +20,19 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Validate drug database
+      - name: Fetch FDA approvals
         run: python scripts/fetch_fda_drugs.py
+
+      - name: Save FDA database
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add fda_approvals.json
+
+          if ! git diff --cached --quiet; then
+            git commit -m "Update FDA approval database"
+            git push
+          else
+            echo "No database changes"
+          fi
