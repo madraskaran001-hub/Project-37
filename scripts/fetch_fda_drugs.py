@@ -1,96 +1,110 @@
 
-
-
 import json
-from pathlib import Path
+import time
 from datetime import date, timedelta
+from pathlib import Path
+from urllib.parse import urlencode
+from urllib.request import Request, urlopen
 
 ROOT = Path(__file__).resolve().parent.parent
-DRUGS_FILE = ROOT / "drugs.json"
+OUTPUT = ROOT / "fda_approvals.json"
+
+API = "https://api.fda.gov/drug/drugsfda.json"
 
 
-def backup_database():
-    backup_file = ROOT / "drugs_backup.json"
+def fetch_page(skip, limit=100):
+    params = urlencode({
+        "limit": limit,
+        "skip": skip
+    })
 
-    if DRUGS_FILE.exists():
-        backup_file.write_bytes(DRUGS_FILE.read_bytes())
-        print("Drug database backup created.")
+    request = Request(
+        API + "?" + params,
+        headers={"User-Agent": "Project37/1.0"}
+    )
 
-
-def validate_drug(drug):
-    if not isinstance(drug, dict):
-        print("Invalid drug record")
-        return False
-
-    required = [
-        "name",
-        "approval_date",
-        "regulator",
-        "use",
-        "moa",
-        "major_adverse_effects"
-    ]
-
-    missing = [
-        field for field in required
-        if not drug.get(field)
-    ]
-
-    if missing:
-        print(
-            "Incomplete record:",
-            drug.get("name", "Unknown")
-        )
-        print("Missing:", ", ".join(missing))
-        return False
-
-    try:
-        date.fromisoformat(drug["approval_date"])
-    except (ValueError, TypeError):
-        print("Invalid approval date:", drug["name"])
-        return False
-
-    return True
+    with urlopen(request, timeout=30) as response:
+        return json.load(response)
 
 
 def main():
-    backup_database()
-
-    drugs = json.loads(
-        DRUGS_FILE.read_text(encoding="utf-8")
-    )
-
-    if not isinstance(drugs, list):
-        raise ValueError("drugs.json must contain a list")
-
     today = date.today()
     cutoff = today - timedelta(days=730)
 
-    recent = []
-    historical = []
-    invalid = 0
+    records = []
+    seen = set()
 
-    for drug in drugs:
-        if not validate_drug(drug):
-            invalid += 1
-            continue
+    # Initial batch for testing connectivity and format.
+    data = fetch_page(0)
 
-        approval = date.fromisoformat(
-            drug["approval_date"]
+    for item in data.get("results", []):
+        application = item.get(
+            "application_number", ""
         )
 
-        if cutoff <= approval <= today:
-            recent.append(drug)
-        else:
-            historical.append(drug)
+        products = item.get("products", [])
 
-    print("PROJECT37 | Drug Library")
-    print("------------------------")
-    print("Total records:", len(drugs))
-    print("Recent drugs:", len(recent))
-    print("Historical drugs:", len(historical))
-    print("Invalid records:", invalid)
-    print("Database validation complete.")
+        for submission in item.get("submissions", []):
+            raw_date = submission.get(
+                "submission_status_date", ""
+            )
+
+            if len(raw_date) != 8 or not raw_date.isdigit():
+                continue
+
+            try:
+                approval_date = date(
+                    int(raw_date[:4]),
+                    int(raw_date[4:6]),
+                    int(raw_date[6:])
+                )
+            except ValueError:
+                continue
+
+            if not cutoff <= approval_date <= today:
+                continue
+
+            if submission.get("submission_status") != "AP":
+                continue
+
+            if submission.get("submission_type") != "ORIG":
+                continue
+
+            for product in products:
+                name = product.get("drug_name", "")
+                key = (application, name, raw_date)
+
+                if not name or key in seen:
+                    continue
+
+                seen.add(key)
+
+                records.append({
+                    "name": name,
+                    "application_number": application,
+                    "approval_date": approval_date.isoformat(),
+                    "regulator": "FDA",
+                    "approval_type": "Original application",
+                    "source": (
+                        "https://www.accessdata.fda.gov/"
+                        "scripts/cder/daf/"
+                    )
+                })
+
+    records.sort(
+        key=lambda x: x["approval_date"],
+        reverse=True
+    )
+
+    OUTPUT.write_text(
+        json.dumps(records, indent=2),
+        encoding="utf-8"
+    )
+
+    print("PROJECT37 | FDA Import Test")
+    print("Records collected:", len(records))
+    print("Saved:", OUTPUT.name)
+    print("Import test complete.")
 
 
 if __name__ == "__main__":
