@@ -1,11 +1,20 @@
 
 
+
 import json
 from pathlib import Path
 from datetime import date, timedelta
 
 ROOT = Path(__file__).resolve().parent.parent
 DRUGS_FILE = ROOT / "drugs.json"
+
+
+def backup_database():
+    backup_file = ROOT / "drugs_backup.json"
+
+    if DRUGS_FILE.exists():
+        backup_file.write_bytes(DRUGS_FILE.read_bytes())
+        print("Drug database backup created.")
 
 
 def validate_drug(drug):
@@ -38,16 +47,15 @@ def validate_drug(drug):
     try:
         date.fromisoformat(drug["approval_date"])
     except (ValueError, TypeError):
-        print(
-            "Invalid approval date:",
-            drug["name"]
-        )
+        print("Invalid approval date:", drug["name"])
         return False
 
     return True
 
 
 def main():
+    backup_database()
+
     drugs = json.loads(
         DRUGS_FILE.read_text(encoding="utf-8")
     )
