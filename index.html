@@ -145,6 +145,20 @@ footer {
   </button>
 </div>
 
+<section class="welcome">
+  <h2>💊 Drug Library</h2>
+  <p>Quick revision: indications, mechanisms and major adverse effects.</p>
+
+  <input
+    id="drugSearch"
+    class="search"
+    type="search"
+    placeholder="Search drugs, indications or mechanisms..."
+  >
+
+  <div id="drugResults"></div>
+</section>
+
 <h2>Latest Medical Updates</h2>
 <input id="search" class="search" type="search"
   placeholder="Search by topic or category...">
@@ -256,8 +270,20 @@ document.querySelectorAll(".category").forEach(button => {
 
 document.getElementById("search").addEventListener("input", renderUpdates);
 
-loadUpdates();
-</script>
+
+<section class="welcome">
+  <h2>💊 Drug Library</h2>
+  <p>Quick revision: indications, mechanisms and major adverse effects.</p>
+
+  <input
+    id="drugSearch"
+    class="search"
+    type="search"
+    placeholder="Search drugs, indications or mechanisms..."
+  >
+
+  <div id="drugResults"></div>
+</section>
 
 </body>
 </html>
