@@ -1,7 +1,7 @@
 
 import json
 from pathlib import Path
-from datetime import date
+from datetime import timedelta
 
 ROOT = Path(__file__).resolve().parent.parent
 DRUGS_FILE = ROOT / "drugs.json"
@@ -14,8 +14,8 @@ def main():
     if not isinstance(drugs, list):
         raise ValueError("drugs.json must contain a list")
 
-    cutoff = date(2024, 11, 9)
     today = date.today()
+    cutoff = today - timedelta(days=730)
 
     recent = []
     historical = []
