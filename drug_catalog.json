@@ -1,0 +1,55 @@
+
+[
+  {
+    "name": "Resmetirom",
+    "brand": "Rezdiffra",
+    "category": ["first-in-class", "recent-approval"],
+    "specialty": "Gastroenterology",
+    "approval_status": "FDA approved",
+    "approval_date": "2024-03-14",
+    "use": "Noncirrhotic MASH with F2-F3 fibrosis",
+    "moa": "Selective thyroid hormone receptor-beta agonist",
+    "major_adverse_effects": "Hepatotoxicity and gallbladder-related adverse events",
+    "exam_pearl": "First FDA-approved treatment for MASH",
+    "source": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-treatment-patients-liver-scarring-due-fatty-liver-disease"
+  },
+  {
+    "name": "Lecanemab",
+    "brand": "Leqembi",
+    "category": ["high-yield", "novel-therapy"],
+    "specialty": "Neurology",
+    "approval_status": "FDA approved",
+    "approval_date": "2023-07-06",
+    "use": "Early Alzheimer's disease in eligible patients",
+    "moa": "Monoclonal antibody targeting aggregated amyloid-beta",
+    "major_adverse_effects": "Amyloid-related imaging abnormalities including edema and hemorrhage",
+    "exam_pearl": "Anti-amyloid disease-modifying therapy; monitor for ARIA",
+    "source": "https://www.fda.gov/news-events/press-announcements/fda-grants-traditional-approval-leqembi-lecanemab-irmb-treatment-alzheimers-disease"
+  },
+  {
+    "name": "Inclisiran",
+    "brand": "Leqvio",
+    "category": ["first-in-class", "high-yield"],
+    "specialty": "Cardiology",
+    "approval_status": "FDA approved",
+    "approval_date": "2021-12-22",
+    "use": "LDL cholesterol reduction in indicated patients",
+    "moa": "Small interfering RNA targeting hepatic PCSK9 production",
+    "major_adverse_effects": "Injection-site reactions",
+    "exam_pearl": "PCSK9 synthesis inhibition using siRNA",
+    "source": "https://www.accessdata.fda.gov/scripts/cder/daf/"
+  },
+  {
+    "name": "Eculizumab",
+    "brand": "Soliris",
+    "category": ["first-in-class", "high-yield"],
+    "specialty": "Hematology",
+    "approval_status": "FDA approved",
+    "approval_date": "2007-03-16",
+    "use": "PNH, atypical HUS and selected other complement-mediated disorders",
+    "moa": "Monoclonal antibody inhibiting complement C5",
+    "major_adverse_effects": "Serious meningococcal infections",
+    "exam_pearl": "Terminal complement blockade increases meningococcal infection risk",
+    "source": "https://www.accessdata.fda.gov/scripts/cder/daf/"
+  }
+]
