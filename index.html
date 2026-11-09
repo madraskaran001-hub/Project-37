@@ -462,6 +462,123 @@ async function loadDrugCatalog() {
 
 loadDrugCatalog();
 
+async function loadDrugTopics() {
+  const oldSection = document.getElementById("drugTopicsSection");
+  if (oldSection) oldSection.remove();
+
+  const section = document.createElement("section");
+  section.id = "drugTopicsSection";
+  section.className = "welcome";
+
+  section.innerHTML = `
+    <h2>📚 High-Yield Pharmacology Topics</h2>
+    <p>Novel mechanisms, biologics and exam-focused drugs.</p>
+
+    <input
+      id="topicSearch"
+      class="search"
+      type="search"
+      placeholder="Search drugs or mechanisms..."
+    >
+
+    <select id="topicSpecialty" class="search">
+      <option value="">All specialties</option>
+    </select>
+
+    <div id="topicCount"></div>
+    <div id="topicResults"></div>
+  `;
+
+  document.body.appendChild(section);
+
+  const results = document.getElementById("topicResults");
+  const search = document.getElementById("topicSearch");
+  const specialty = document.getElementById("topicSpecialty");
+  const count = document.getElementById("topicCount");
+
+  const escapeText = value =>
+    String(value ?? "").replace(/[&<>"']/g, char => ({
+      "&": "&amp;",
+      "<": "&lt;",
+      ">": "&gt;",
+      '"': "&quot;",
+      "'": "&#39;"
+    })[char]);
+
+  try {
+    const response = await fetch(
+      "./drug_topics.json?v=" + Date.now()
+    );
+
+    if (!response.ok) {
+      throw new Error("Unable to load drug topics");
+    }
+
+    const topics = await response.json();
+
+    if (!Array.isArray(topics)) {
+      throw new Error("Invalid topics database");
+    }
+
+    const specialties = [...new Set(
+      topics.map(item => item.specialty).filter(Boolean)
+    )].sort();
+
+    specialties.forEach(name => {
+      const option = document.createElement("option");
+      option.value = name;
+      option.textContent = name;
+      specialty.appendChild(option);
+    });
+
+    function renderTopics() {
+      const term = search.value.toLowerCase().trim();
+      const selected = specialty.value;
+
+      const filtered = topics.filter(item => {
+        const searchable = [
+          item.name,
+          item.specialty,
+          item.topic,
+          item.category
+        ].join(" ").toLowerCase();
+
+        return searchable.includes(term) &&
+          (!selected || item.specialty === selected);
+      });
+
+      count.textContent =
+        `Showing ${filtered.length} of ${topics.length} topics`;
+
+      results.innerHTML = filtered.length
+        ? filtered.map(item => `
+          <article class="update">
+            <h3>${escapeText(item.name)}</h3>
+            <p class="meta">
+              ${escapeText(item.specialty)} |
+              ${escapeText(item.category)}
+            </p>
+            <p><strong>Key mechanism:</strong>
+              ${escapeText(item.topic)}
+            </p>
+          </article>
+        `).join("")
+        : "<p>No matching topics found.</p>";
+    }
+
+    search.addEventListener("input", renderTopics);
+    specialty.addEventListener("change", renderTopics);
+
+    renderTopics();
+
+  } catch (error) {
+    results.textContent = "Unable to load drug topics.";
+    console.error(error);
+  }
+}
+
+loadDrugTopics();
+
 </script>
 
 </body>
