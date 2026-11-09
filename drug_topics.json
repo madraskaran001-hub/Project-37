@@ -1,0 +1,123 @@
+
+[
+  {
+    "name": "Tirzepatide",
+    "specialty": "Endocrinology",
+    "topic": "Dual GIP and GLP-1 receptor agonism",
+    "category": "Novel mechanism"
+  },
+  {
+    "name": "Semaglutide",
+    "specialty": "Endocrinology",
+    "topic": "GLP-1 receptor agonism",
+    "category": "High-yield"
+  },
+  {
+    "name": "Inclisiran",
+    "specialty": "Cardiology",
+    "topic": "siRNA-mediated PCSK9 suppression",
+    "category": "Novel mechanism"
+  },
+  {
+    "name": "Bempedoic acid",
+    "specialty": "Cardiology",
+    "topic": "ATP citrate lyase inhibition",
+    "category": "Novel mechanism"
+  },
+  {
+    "name": "Vericiguat",
+    "specialty": "Cardiology",
+    "topic": "Soluble guanylate cyclase stimulation",
+    "category": "Novel mechanism"
+  },
+  {
+    "name": "Mavacamten",
+    "specialty": "Cardiology",
+    "topic": "Cardiac myosin inhibition",
+    "category": "Novel mechanism"
+  },
+  {
+    "name": "Anifrolumab",
+    "specialty": "Rheumatology",
+    "topic": "Type I interferon receptor blockade",
+    "category": "Biologic"
+  },
+  {
+    "name": "Belimumab",
+    "specialty": "Rheumatology",
+    "topic": "BAFF inhibition",
+    "category": "Biologic"
+  },
+  {
+    "name": "Eculizumab",
+    "specialty": "Hematology",
+    "topic": "Complement C5 inhibition",
+    "category": "Biologic"
+  },
+  {
+    "name": "Caplacizumab",
+    "specialty": "Hematology",
+    "topic": "von Willebrand factor A1-domain targeting",
+    "category": "Biologic"
+  },
+  {
+    "name": "Emicizumab",
+    "specialty": "Hematology",
+    "topic": "Bispecific antibody mimicking factor VIII cofactor activity",
+    "category": "Biologic"
+  },
+  {
+    "name": "Lecanemab",
+    "specialty": "Neurology",
+    "topic": "Amyloid-beta targeting",
+    "category": "Biologic"
+  },
+  {
+    "name": "Efgartigimod",
+    "specialty": "Neurology",
+    "topic": "Neonatal Fc receptor blockade",
+    "category": "Novel mechanism"
+  },
+  {
+    "name": "Satralizumab",
+    "specialty": "Neurology",
+    "topic": "IL-6 receptor inhibition",
+    "category": "Biologic"
+  },
+  {
+    "name": "Dupilumab",
+    "specialty": "Immunology",
+    "topic": "IL-4 receptor alpha blockade",
+    "category": "Biologic"
+  },
+  {
+    "name": "Tezepelumab",
+    "specialty": "Pulmonology",
+    "topic": "TSLP inhibition",
+    "category": "Biologic"
+  },
+  {
+    "name": "Ivacaftor",
+    "specialty": "Pulmonology",
+    "topic": "CFTR potentiation",
+    "category": "High-yield"
+  },
+  {
+    "name": "Resmetirom",
+    "specialty": "Gastroenterology",
+    "topic": "Selective thyroid hormone receptor-beta agonism",
+    "category": "First-in-class"
+  },
+  {
+    "name": "Vonoprazan",
+    "specialty": "Gastroenterology",
+    "topic": "Potassium-competitive acid blockade",
+    "category": "Novel mechanism"
+  },
+  {
+    "name": "Nirsevimab",
+    "specialty": "Pediatrics",
+    "topic": "Long-acting monoclonal antibody targeting RSV",
+    "category": "Biologic"
+  }
+]
