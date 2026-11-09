@@ -81,6 +81,15 @@ def main():
 
         results = data.get("results", [])
 
+        if page == 0 and results:
+            print("SAMPLE FDA SUBMISSIONS:")
+            print(
+                json.dumps(
+                    results[0].get("submissions", [])[:5],
+                    indent=2
+                )
+            )
+
         if not results:
             break
 
