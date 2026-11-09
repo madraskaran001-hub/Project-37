@@ -11,6 +11,7 @@ ROOT = Path(__file__).resolve().parent.parent
 OUTPUT = ROOT / "fda_approvals.json"
 
 API = "https://api.fda.gov/drug/drugsfda.json"
+
 PAGE_SIZE = 100
 MAX_PAGES = 10
 
@@ -22,8 +23,10 @@ def fetch_page(search, skip):
         "skip": skip
     })
 
+    url = API + "?" + params
+
     request = Request(
-        API + "?" + params,
+        url,
         headers={
             "User-Agent": "Project37/1.0",
             "Accept": "application/json"
@@ -32,13 +35,25 @@ def fetch_page(search, skip):
 
     for attempt in range(3):
         try:
-            with urlopen(request, timeout=40) as response:
+            with urlopen(request, timeout=45) as response:
                 return json.load(response)
-        except (HTTPError, URLError, TimeoutError) as error:
-            print("Request failed:", error)
-            if attempt == 2:
+
+        except HTTPError as error:
+            print("FDA HTTP error:", error.code)
+
+            if error.code == 404:
+                return {"results": []}
+
+            if error.code not in (429, 500, 502, 503, 504):
                 raise
-            time.sleep(3 * (attempt + 1))
+
+        except (URLError, TimeoutError) as error:
+            print("Connection error:", error)
+
+        if attempt < 2:
+            time.sleep(5 * (attempt + 1))
+
+    raise RuntimeError("FDA API unavailable after retries")
 
 
 def main():
@@ -49,46 +64,38 @@ def main():
     end = today.strftime("%Y%m%d")
 
     search = (
-        f"submissions.submission_status_date:"
-        f"[{start}+TO+{end}]"
+        "submissions.submission_status_date:"
+        f"[{start} TO {end}]"
     )
 
     records = {}
-    total_checked = 0
+    checked = 0
 
     for page in range(MAX_PAGES):
-        skip = page * PAGE_SIZE
-
         print("Fetching page:", page + 1)
 
-        data = fetch_page(search, skip)
+        data = fetch_page(
+            search,
+            page * PAGE_SIZE
+        )
+
         results = data.get("results", [])
 
         if not results:
             break
 
-        total_checked += len(results)
+        checked += len(results)
 
         for item in results:
             application = item.get(
                 "application_number", ""
             )
 
-            submissions = item.get(
-                "submissions", []
-            )
-
-            original_dates = []
-
-            for submission in submissions:
-                if submission.get(
-                    "submission_type"
-                ) != "ORIG":
+            for submission in item.get("submissions", []):
+                if submission.get("submission_type") != "ORIG":
                     continue
 
-                if submission.get(
-                    "submission_status"
-                ) != "AP":
+                if submission.get("submission_status") != "AP":
                     continue
 
                 raw = submission.get(
@@ -107,67 +114,62 @@ def main():
                 except ValueError:
                     continue
 
-                if cutoff <= approved <= today:
-                    original_dates.append(approved)
-
-            if not original_dates:
-                continue
-
-            approved = min(original_dates)
-
-            for product in item.get("products", []):
-                name = product.get(
-                    "drug_name", ""
-                ).strip()
-
-                if not name:
+                if not cutoff <= approved <= today:
                     continue
 
-                key = (application, name)
+                for product in item.get("products", []):
+                    name = product.get(
+                        "drug_name", ""
+                    ).strip()
 
-                records[key] = {
-                    "name": name,
-                    "application_number": application,
-                    "approval_date": approved.isoformat(),
-                    "regulator": "FDA",
-                    "approval_type": "Original application",
-                    "source": (
-                        "https://www.accessdata.fda.gov/"
-                        "scripts/cder/daf/"
-                    )
-                }
+                    if not name:
+                        continue
+
+                    key = (application, name, raw)
+
+                    records[key] = {
+                        "name": name,
+                        "application_number": application,
+                        "approval_date": approved.isoformat(),
+                        "regulator": "FDA",
+                        "approval_type": "Original application",
+                        "source": (
+                            "https://www.accessdata.fda.gov/"
+                            "scripts/cder/daf/"
+                        )
+                    }
 
         if len(results) < PAGE_SIZE:
             break
 
         time.sleep(1)
 
-    output_records = sorted(
+    output = sorted(
         records.values(),
-        key=lambda x: x["approval_date"],
+        key=lambda drug: drug["approval_date"],
         reverse=True
     )
 
-    print("FDA applications checked:", total_checked)
-    print("Approval records found:", len(output_records))
+    print("Applications checked:", checked)
+    print("Approval records found:", len(output))
 
-    if not output_records:
+    if not output:
         raise RuntimeError(
-            "No FDA approval records found. "
-            "Existing database was not overwritten."
+            "No matching approvals found. "
+            "Existing database preserved."
         )
 
     temporary = OUTPUT.with_suffix(".tmp")
 
     temporary.write_text(
-        json.dumps(output_records, indent=2),
+        json.dumps(output, indent=2),
         encoding="utf-8"
     )
 
     temporary.replace(OUTPUT)
 
     print("Saved:", OUTPUT.name)
-    print("FDA import completed.")
+    print("FDA import completed successfully.")
 
 
 if __name__ == "__main__":
