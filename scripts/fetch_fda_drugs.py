@@ -12,6 +12,7 @@ ROOT = Path(__file__).resolve().parent.parent
 OUTPUT = ROOT / "fda_approvals.json"
 
 API = "https://api.fda.gov/drug/drugsfda.json"
+
 PAGE_SIZE = 100
 MAX_PAGES = 10
 
@@ -51,7 +52,7 @@ def fetch_page(search, skip):
         if attempt < 2:
             time.sleep(3 * (attempt + 1))
 
-    raise RuntimeError("FDA API unavailable")
+    raise RuntimeError("FDA API unavailable after retries")
 
 
 def month_ranges(start, end):
@@ -96,10 +97,10 @@ def main():
 
         search = (
             "submissions.submission_type:ORIG"
-            "+AND+"
+            " AND "
             "submissions.submission_status:AP"
-            "+AND+"
-            f"submissions.submission_status_date:[{start}+TO+{end}]"
+            " AND "
+            f"submissions.submission_status_date:[{start} TO {end}]"
         )
 
         for page in range(MAX_PAGES):
@@ -210,5 +211,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
 
 
