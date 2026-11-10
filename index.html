@@ -7,9 +7,7 @@
 <title>PROJECT37 | Medical Intelligence</title>
 
 <style>
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
 body {
   margin: 0;
@@ -39,9 +37,7 @@ header {
   margin-top: 7px;
 }
 
-main {
-  padding: 22px 16px;
-}
+main { padding: 22px 16px; }
 
 .welcome, .update {
   background: white;
@@ -60,6 +56,14 @@ main {
   background: white;
   color: #17243a;
 }
+
+.filters {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.filters .search { margin: 0 0 12px; }
 
 .categories {
   display: grid;
@@ -93,9 +97,7 @@ main {
   line-height: 1.4;
 }
 
-.update {
-  border: 1px solid #e1e7ee;
-}
+.update { border: 1px solid #e1e7ee; }
 
 .tag {
   color: #087b68;
@@ -127,6 +129,16 @@ main {
   color: #68758a;
 }
 
+.drug-card h3 { margin-top: 0; }
+
+.drug-card p { line-height: 1.55; }
+
+.drug-count {
+  color: #176b9b;
+  font-weight: bold;
+  margin: 12px 0 20px;
+}
+
 footer {
   text-align: center;
   padding: 28px;
@@ -137,6 +149,10 @@ footer {
 @media (min-width: 700px) {
   .categories {
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  .filters {
+    grid-template-columns: 1fr 1fr;
   }
 }
 </style>
@@ -163,7 +179,35 @@ footer {
   </p>
 </section>
 
-<h2>Explore Categories</h2>
+<section class="welcome" id="drugLibrary">
+  <h2>💊 Master Drug Library</h2>
+  <p>
+    First-in-class drugs, novel therapies and high-yield
+    pharmacology for NEET PG and INI-CET.
+  </p>
+
+  <input
+    id="drugSearch"
+    class="search"
+    type="search"
+    placeholder="Search drugs, clinical uses, mechanisms..."
+  >
+
+  <div class="filters">
+    <select id="specialtyFilter" class="search">
+      <option value="">All specialties</option>
+    </select>
+
+    <select id="categoryFilter" class="search">
+      <option value="">All categories</option>
+    </select>
+  </div>
+
+  <p id="drugCount" class="drug-count"></p>
+  <div id="drugResults"></div>
+</section>
+
+<h2>Explore Medical Updates</h2>
 
 <div class="categories" id="categories">
   <button class="category active" data-category="All">
@@ -217,67 +261,6 @@ footer {
   </button>
 </div>
 
-<section class="welcome">
-  <h2>💊 Drug Library</h2>
-  <p>
-    Quick revision: indications, mechanisms and major adverse effects.
-  </p>
-
-  <input
-    id="drugSearch"
-    class="search"
-    type="search"
-    placeholder="Search drugs, indications or mechanisms..."
-  >
-
-  <div id="drugResults"></div>
-</section>
-
-<section class="welcome">
-  <h2>🧬 High-Yield Drug Catalog</h2>
-  <p>
-    First-in-class drugs, novel therapies and exam essentials.
-  </p>
-
-  <input
-    id="catalogSearch"
-    class="search"
-    type="search"
-    placeholder="Search drug, specialty or mechanism..."
-  >
-
-  <select id="catalogFilter" class="search">
-    <option value="">All categories</option>
-    <option value="first-in-class">First-in-class</option>
-    <option value="recent-approval">Recent approvals</option>
-    <option value="high-yield">High-yield</option>
-    <option value="novel-therapy">Novel therapies</option>
-  </select>
-
-  <div id="catalogResults"></div>
-</section>
-
-<section class="welcome">
-  <h2>📚 High-Yield Pharmacology Topics</h2>
-  <p>
-    Clinical uses, mechanisms, adverse effects and exam pearls.
-  </p>
-
-  <input
-    id="topicSearch"
-    class="search"
-    type="search"
-    placeholder="Search drugs, uses or mechanisms..."
-  >
-
-  <select id="topicSpecialty" class="search">
-    <option value="">All specialties</option>
-  </select>
-
-  <p id="topicCount" class="meta"></p>
-  <div id="topicResults"></div>
-</section>
-
 <h2>Latest Medical Updates</h2>
 
 <input
@@ -302,7 +285,7 @@ footer {
 <script>
 let updates = [];
 let selectedCategory = "All";
-let drugs = [];
+let masterDrugs = [];
 
 function escapeHTML(value) {
   return String(value ?? "").replace(/[&<>"']/g, char => ({
@@ -325,8 +308,173 @@ function safeURL(value) {
   }
 }
 
+function getCategories(drug) {
+  if (Array.isArray(drug.category)) {
+    return drug.category.filter(Boolean);
+  }
+
+  return drug.category ? [drug.category] : [];
+}
+
+function populateFilter(select, values) {
+  [...new Set(values.filter(Boolean))]
+    .sort((a, b) => a.localeCompare(b))
+    .forEach(value => {
+      const option = document.createElement("option");
+      option.value = value;
+      option.textContent = value.replace(/-/g, " ");
+      select.appendChild(option);
+    });
+}
+
+async function loadMasterDrugs() {
+  const results = document.getElementById("drugResults");
+  const count = document.getElementById("drugCount");
+
+  results.innerHTML =
+    '<div class="empty">Loading master drug library...</div>';
+
+  try {
+    const response = await fetch(
+      "./master_drugs.json?v=" + Date.now()
+    );
+
+    if (!response.ok) {
+      throw new Error("Unable to load master_drugs.json");
+    }
+
+    masterDrugs = await response.json();
+
+    if (!Array.isArray(masterDrugs)) {
+      throw new Error("Invalid master drug database");
+    }
+
+    masterDrugs = masterDrugs.filter(
+      drug => drug && typeof drug === "object" && drug.name
+    );
+
+    populateFilter(
+      document.getElementById("specialtyFilter"),
+      masterDrugs.map(drug => drug.specialty)
+    );
+
+    populateFilter(
+      document.getElementById("categoryFilter"),
+      masterDrugs.flatMap(getCategories)
+    );
+
+    renderMasterDrugs();
+  } catch (error) {
+    count.textContent = "";
+    results.innerHTML =
+      '<div class="empty">Unable to load master drug library.</div>';
+    console.error(error);
+  }
+}
+
+function renderMasterDrugs() {
+  const term = document.getElementById("drugSearch")
+    .value.toLowerCase().trim();
+
+  const specialty =
+    document.getElementById("specialtyFilter").value;
+
+  const category =
+    document.getElementById("categoryFilter").value;
+
+  const filtered = masterDrugs.filter(drug => {
+    const searchable = [
+      drug.name,
+      drug.brand,
+      drug.specialty,
+      drug.use,
+      drug.moa,
+      drug.adverse_effects,
+      drug.exam_pearl,
+      ...getCategories(drug)
+    ].join(" ").toLowerCase();
+
+    const matchesSearch = searchable.includes(term);
+    const matchesSpecialty =
+      !specialty || drug.specialty === specialty;
+    const matchesCategory =
+      !category || getCategories(drug).includes(category);
+
+    return matchesSearch &&
+      matchesSpecialty &&
+      matchesCategory;
+  });
+
+  document.getElementById("drugCount").textContent =
+    `Showing ${filtered.length} of ${masterDrugs.length} drugs`;
+
+  const results = document.getElementById("drugResults");
+
+  if (!filtered.length) {
+    results.innerHTML =
+      '<div class="empty">No matching drugs found.</div>';
+    return;
+  }
+
+  results.innerHTML = filtered.map(drug => {
+    const categories = getCategories(drug)
+      .map(value => value.replace(/-/g, " "))
+      .join(" · ");
+
+    const url = safeURL(drug.source);
+
+    return `
+      <article class="update drug-card">
+        <div class="tag">
+          ${escapeHTML(categories || "High-yield")}
+        </div>
+
+        <h3>${escapeHTML(drug.name)}</h3>
+
+        <p class="meta">
+          ${escapeHTML(drug.brand || "")}
+          ${drug.specialty ? " | " + escapeHTML(drug.specialty) : ""}
+        </p>
+
+        <p><strong>Clinical use:</strong>
+          ${escapeHTML(drug.use || "Not available")}
+        </p>
+
+        <p><strong>Mechanism of action:</strong>
+          ${escapeHTML(drug.moa || "Not available")}
+        </p>
+
+        <p><strong>Major adverse effects:</strong>
+          ${escapeHTML(drug.adverse_effects || "Not available")}
+        </p>
+
+        <p><strong>Exam pearl:</strong>
+          ${escapeHTML(drug.exam_pearl || "Not available")}
+        </p>
+
+        ${drug.approval_status ? `
+          <p class="meta">
+            Status: ${escapeHTML(drug.approval_status)}
+          </p>
+        ` : ""}
+
+        ${url ? `
+          <p>
+            <a href="${escapeHTML(url)}"
+               target="_blank"
+               rel="noopener noreferrer">
+              View source ↗
+            </a>
+          </p>
+        ` : ""}
+      </article>
+    `;
+  }).join("");
+}
+
 async function loadUpdates() {
   const results = document.getElementById("results");
+
   results.innerHTML =
     '<div class="empty">Loading medical updates...</div>';
 
@@ -391,18 +539,26 @@ function renderUpdates() {
 
     return `
       <article class="update">
-        <div class="tag">${escapeHTML(item.category)}</div>
+        <div class="tag">
+          ${escapeHTML(item.category)}
+        </div>
+
         <h3>${escapeHTML(item.title)}</h3>
+
         <p>${escapeHTML(item.summary)}</p>
+
         <p class="meta">
           Publication: ${escapeHTML(item.date || "Not specified")}
         </p>
+
         <p class="meta">
           Source: ${escapeHTML(item.source || "Not specified")}
         </p>
+
         <span class="relevance">
           ${escapeHTML(item.relevance || "Pending assessment")}
         </span>
+
         ${link}
       </article>
     `;
@@ -425,275 +581,18 @@ document.querySelectorAll(".category").forEach(button => {
 document.getElementById("search")
   .addEventListener("input", renderUpdates);
 
-async function loadDrugs() {
-  const container = document.getElementById("drugResults");
-  container.textContent = "Loading drugs...";
-
-  try {
-    const response = await fetch(
-      "./drugs.json?v=" + Date.now()
-    );
-
-    if (!response.ok) {
-      throw new Error("Unable to load drugs.json");
-    }
-
-    drugs = await response.json();
-
-    if (!Array.isArray(drugs)) {
-      throw new Error("Invalid drug database");
-    }
-
-    renderDrugs();
-  } catch (error) {
-    container.textContent = "Unable to load drug database.";
-    console.error(error);
-  }
-}
-
-function renderDrugs() {
-  const search = document.getElementById("drugSearch")
-    .value.toLowerCase().trim();
-
-  const filtered = drugs.filter(drug =>
-    [
-      drug.name,
-      drug.brand,
-      drug.use,
-      drug.moa,
-      drug.exam_pearl
-    ].join(" ").toLowerCase().includes(search)
-  );
-
-  const container = document.getElementById("drugResults");
-
-  if (!filtered.length) {
-    container.textContent = "No matching drugs found.";
-    return;
-  }
-
-  container.innerHTML = filtered.map(drug => `
-    <article class="update">
-      <h3>${escapeHTML(drug.name)}</h3>
-      <p class="meta">
-        ${escapeHTML(drug.brand || "")} |
-        ${escapeHTML(drug.regulator || "")} |
-        ${escapeHTML(drug.approval_date || "")}
-      </p>
-      <p><strong>Use:</strong>
-        ${escapeHTML(drug.use || "Not available")}
-      </p>
-      <p><strong>MOA:</strong>
-        ${escapeHTML(drug.moa || "Not available")}
-      </p>
-      <p><strong>Major adverse effects:</strong>
-        ${escapeHTML(drug.major_adverse_effects || "Not available")}
-      </p>
-      <p><strong>Exam pearl:</strong>
-        ${escapeHTML(drug.exam_pearl || "Not available")}
-      </p>
-    </article>
-  `).join("");
-}
-
 document.getElementById("drugSearch")
-  .addEventListener("input", renderDrugs);
+  .addEventListener("input", renderMasterDrugs);
 
-async function loadDrugCatalog() {
-  const results = document.getElementById("catalogResults");
-  const search = document.getElementById("catalogSearch");
-  const filter = document.getElementById("catalogFilter");
+document.getElementById("specialtyFilter")
+  .addEventListener("change", renderMasterDrugs);
 
-  results.textContent = "Loading drug catalog...";
+document.getElementById("categoryFilter")
+  .addEventListener("change", renderMasterDrugs);
 
-  try {
-    const response = await fetch(
-      "./drug_catalog.json?v=" + Date.now()
-    );
-
-    if (!response.ok) {
-      throw new Error("Unable to load drug catalog");
-    }
-
-    const catalog = await response.json();
-
-    if (!Array.isArray(catalog)) {
-      throw new Error("Invalid drug catalog");
-    }
-
-    function renderCatalog() {
-      const term = search.value.toLowerCase().trim();
-      const category = filter.value;
-
-      const filtered = catalog.filter(drug => {
-        const categories = Array.isArray(drug.category)
-          ? drug.category
-          : [];
-
-        const searchable = [
-          drug.name,
-          drug.brand,
-          drug.specialty,
-          drug.use,
-          drug.moa,
-          drug.exam_pearl
-        ].join(" ").toLowerCase();
-
-        return searchable.includes(term) &&
-          (!category || categories.includes(category));
-      });
-
-      results.innerHTML = filtered.length
-        ? filtered.map(drug => {
-          const url = safeURL(drug.source);
-
-          return `
-            <article class="update">
-              <h3>${escapeHTML(drug.name)}</h3>
-              <p class="meta">
-                ${escapeHTML(drug.brand || "")} |
-                ${escapeHTML(drug.specialty || "")}
-              </p>
-              <p><strong>Use:</strong>
-                ${escapeHTML(drug.use || "Not available")}
-              </p>
-              <p><strong>MOA:</strong>
-                ${escapeHTML(drug.moa || "Not available")}
-              </p>
-              <p><strong>Major adverse effects:</strong>
-                ${escapeHTML(drug.major_adverse_effects || "Not available")}
-              </p>
-              <p><strong>Exam pearl:</strong>
-                ${escapeHTML(drug.exam_pearl || "Not available")}
-              </p>
-              <p class="meta">
-                ${escapeHTML(drug.approval_status || "")}
-              </p>
-              ${url ? `
-                <a href="${escapeHTML(url)}"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                  Official source
-                </a>
-              ` : ""}
-            </article>
-          `;
-        }).join("")
-        : '<div class="empty">No matching drugs found.</div>';
-    }
-
-    search.addEventListener("input", renderCatalog);
-    filter.addEventListener("change", renderCatalog);
-
-    renderCatalog();
-  } catch (error) {
-    results.textContent = "Unable to load drug catalog.";
-    console.error(error);
-  }
-}
-
-async function loadDrugTopics() {
-  const results = document.getElementById("topicResults");
-  const search = document.getElementById("topicSearch");
-  const specialty = document.getElementById("topicSpecialty");
-  const count = document.getElementById("topicCount");
-
-  results.textContent = "Loading pharmacology topics...";
-
-  try {
-    const response = await fetch(
-      "./drug_topics.json?v=" + Date.now()
-    );
-
-    if (!response.ok) {
-      throw new Error("Unable to load drug topics");
-    }
-
-    const topics = await response.json();
-
-    if (!Array.isArray(topics)) {
-      throw new Error("Invalid topics database");
-    }
-
-    const specialties = [...new Set(
-      topics.map(item => item.specialty).filter(Boolean)
-    )].sort();
-
-    specialties.forEach(name => {
-      const option = document.createElement("option");
-      option.value = name;
-      option.textContent = name;
-      specialty.appendChild(option);
-    });
-
-    function renderTopics() {
-      const term = search.value.toLowerCase().trim();
-      const selected = specialty.value;
-
-      const filtered = topics.filter(item => {
-        const searchable = [
-          item.name,
-          item.specialty,
-          item.topic,
-          item.use,
-          item.adverse_effects,
-          item.exam_pearl,
-          item.category
-        ].join(" ").toLowerCase();
-
-        return searchable.includes(term) &&
-          (!selected || item.specialty === selected);
-      });
-
-      count.textContent =
-        `Showing ${filtered.length} of ${topics.length} drugs`;
-
-      results.innerHTML = filtered.length
-        ? filtered.map(item => `
-          <article class="update">
-            <h3>${escapeHTML(item.name)}</h3>
-
-            <p class="meta">
-              ${escapeHTML(item.specialty || "")} |
-              ${escapeHTML(item.category || "")}
-            </p>
-
-            <p><strong>Clinical use:</strong>
-              ${escapeHTML(item.use || "Not available")}
-            </p>
-
-            <p><strong>Mechanism of action:</strong>
-              ${escapeHTML(item.topic || "Not available")}
-            </p>
-
-            <p><strong>Major adverse effects:</strong>
-              ${escapeHTML(item.adverse_effects || "Not available")}
-            </p>
-
-            <p><strong>Exam pearl:</strong>
-              ${escapeHTML(item.exam_pearl || "Not available")}
-            </p>
-          </article>
-        `).join("")
-        : '<div class="empty">No matching drugs found.</div>';
-    }
-
-    search.addEventListener("input", renderTopics);
-    specialty.addEventListener("change", renderTopics);
-
-    renderTopics();
-  } catch (error) {
-    results.textContent = "Unable to load drug topics.";
-    console.error(error);
-  }
-}
-
+loadMasterDrugs();
 loadUpdates();
-loadDrugs();
-loadDrugCatalog();
-loadDrugTopics();
 </script>
 
 </body>
 </html>
-
