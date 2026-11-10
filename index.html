@@ -5,32 +5,51 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>PROJECT37 | Medical Intelligence</title>
+
 <style>
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: #f3f6fa;
   color: #17243a;
 }
+
 header {
   background: #123b5d;
   color: white;
   padding: 25px 20px;
 }
+
 .container, main {
   max-width: 1100px;
   margin: auto;
 }
-.brand { font-size: 30px; font-weight: bold; }
-.subtitle { color: #d5e5f2; margin-top: 7px; }
-main { padding: 22px 16px; }
+
+.brand {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.subtitle {
+  color: #d5e5f2;
+  margin-top: 7px;
+}
+
+main {
+  padding: 22px 16px;
+}
+
 .welcome, .update {
   background: white;
   padding: 22px;
   border-radius: 14px;
   margin-bottom: 20px;
 }
+
 .search {
   width: 100%;
   padding: 14px;
@@ -38,13 +57,17 @@ main { padding: 22px 16px; }
   border-radius: 9px;
   font-size: 16px;
   margin: 10px 0 18px;
+  background: white;
+  color: #17243a;
 }
+
 .categories {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
   margin-bottom: 25px;
 }
+
 .category {
   background: white;
   border: 1px solid #dce3eb;
@@ -54,20 +77,38 @@ main { padding: 22px 16px; }
   cursor: pointer;
   color: #17243a;
 }
+
 .category.active {
   border: 2px solid #176b9b;
   background: #eaf4fa;
 }
-.category strong { display: block; margin-bottom: 7px; }
-.category small { color: #68758a; line-height: 1.4; }
-.update { border: 1px solid #e1e7ee; }
+
+.category strong {
+  display: block;
+  margin-bottom: 7px;
+}
+
+.category small {
+  color: #68758a;
+  line-height: 1.4;
+}
+
+.update {
+  border: 1px solid #e1e7ee;
+}
+
 .tag {
   color: #087b68;
   font-size: 12px;
   font-weight: bold;
   text-transform: uppercase;
 }
-.meta { color: #68758a; font-size: 13px; }
+
+.meta {
+  color: #68758a;
+  font-size: 13px;
+}
+
 .relevance {
   display: inline-block;
   background: #fff2d9;
@@ -77,6 +118,7 @@ main { padding: 22px 16px; }
   font-size: 12px;
   font-weight: bold;
 }
+
 .empty {
   background: white;
   padding: 25px;
@@ -84,70 +126,102 @@ main { padding: 22px 16px; }
   text-align: center;
   color: #68758a;
 }
+
 footer {
   text-align: center;
   padding: 28px;
   color: #68758a;
   font-size: 13px;
 }
+
 @media (min-width: 700px) {
-  .categories { grid-template-columns: repeat(4, 1fr); }
+  .categories {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 </style>
 </head>
+
 <body>
 
 <header>
   <div class="container">
     <div class="brand">project37</div>
-    <div class="subtitle">Medical Intelligence | Smarter Exam Preparation</div>
+    <div class="subtitle">
+      Medical Intelligence | Smarter Exam Preparation
+    </div>
   </div>
 </header>
 
 <main>
+
 <section class="welcome">
   <h2>Your medical intelligence dashboard</h2>
-  <p>Important medical developments, public health updates and exam-relevant information — in one place.</p>
+  <p>
+    Important medical developments, public health updates
+    and exam-relevant information — in one place.
+  </p>
 </section>
 
 <h2>Explore Categories</h2>
+
 <div class="categories" id="categories">
   <button class="category active" data-category="All">
-    <strong>🌐 All Updates</strong><small>Everything in one place</small>
+    <strong>🌐 All Updates</strong>
+    <small>Everything in one place</small>
   </button>
+
   <button class="category" data-category="New Drugs">
-    <strong>💊 New Drugs</strong><small>Approvals and trials</small>
+    <strong>💊 New Drugs</strong>
+    <small>Approvals and trials</small>
   </button>
+
   <button class="category" data-category="Indian Health">
-    <strong>🇮🇳 Indian Health</strong><small>Schemes and policies</small>
+    <strong>🇮🇳 Indian Health</strong>
+    <small>Schemes and policies</small>
   </button>
+
   <button class="category" data-category="WHO Updates">
-    <strong>🌍 WHO Updates</strong><small>Guidelines and programmes</small>
+    <strong>🌍 WHO Updates</strong>
+    <small>Guidelines and programmes</small>
   </button>
+
   <button class="category" data-category="INICET">
-    <strong>🎓 INICET Corner</strong><small>Exam-relevant developments</small>
+    <strong>🎓 INICET Corner</strong>
+    <small>Exam-relevant developments</small>
   </button>
+
   <button class="category" data-category="NEET-PG">
-  <strong>📚 NEET-PG</strong>
-  <small>Exam notices, results and counselling</small>
-</button>
+    <strong>📚 NEET-PG</strong>
+    <small>Exam notices, results and counselling</small>
+  </button>
+
   <button class="category" data-category="Outbreak Watch">
-    <strong>🦠 Outbreak Watch</strong><small>Emerging infections</small>
+    <strong>🦠 Outbreak Watch</strong>
+    <small>Emerging infections</small>
   </button>
+
   <button class="category" data-category="Research">
-    <strong>🔬 Research</strong><small>Landmark studies</small>
+    <strong>🔬 Research</strong>
+    <small>Landmark studies</small>
   </button>
+
   <button class="category" data-category="Clinical Guidelines">
-    <strong>📋 Clinical Guidelines</strong><small>Clinical practice updates</small>
+    <strong>📋 Clinical Guidelines</strong>
+    <small>Clinical practice updates</small>
   </button>
+
   <button class="category" data-category="Medical Education">
-    <strong>📢 Medical Education</strong><small>NMC, NBEMS and AIIMS</small>
+    <strong>📢 Medical Education</strong>
+    <small>NMC, NBEMS and AIIMS</small>
   </button>
 </div>
 
 <section class="welcome">
   <h2>💊 Drug Library</h2>
-  <p>Quick revision: indications, mechanisms and major adverse effects.</p>
+  <p>
+    Quick revision: indications, mechanisms and major adverse effects.
+  </p>
 
   <input
     id="drugSearch"
@@ -159,21 +233,76 @@ footer {
   <div id="drugResults"></div>
 </section>
 
+<section class="welcome">
+  <h2>🧬 High-Yield Drug Catalog</h2>
+  <p>
+    First-in-class drugs, novel therapies and exam essentials.
+  </p>
+
+  <input
+    id="catalogSearch"
+    class="search"
+    type="search"
+    placeholder="Search drug, specialty or mechanism..."
+  >
+
+  <select id="catalogFilter" class="search">
+    <option value="">All categories</option>
+    <option value="first-in-class">First-in-class</option>
+    <option value="recent-approval">Recent approvals</option>
+    <option value="high-yield">High-yield</option>
+    <option value="novel-therapy">Novel therapies</option>
+  </select>
+
+  <div id="catalogResults"></div>
+</section>
+
+<section class="welcome">
+  <h2>📚 High-Yield Pharmacology Topics</h2>
+  <p>
+    Clinical uses, mechanisms, adverse effects and exam pearls.
+  </p>
+
+  <input
+    id="topicSearch"
+    class="search"
+    type="search"
+    placeholder="Search drugs, uses or mechanisms..."
+  >
+
+  <select id="topicSpecialty" class="search">
+    <option value="">All specialties</option>
+  </select>
+
+  <p id="topicCount" class="meta"></p>
+  <div id="topicResults"></div>
+</section>
+
 <h2>Latest Medical Updates</h2>
-<input id="search" class="search" type="search"
-  placeholder="Search by topic or category...">
+
+<input
+  id="search"
+  class="search"
+  type="search"
+  placeholder="Search by topic or category..."
+>
 
 <div id="results"></div>
-<footer>
-  project37 | Medical Intelligence Platform<br><br>
-  Educational purposes only. Verify clinical information with official sources.
-</footer>
-</main>
 
+<footer>
+  project37 | Medical Intelligence Platform
+  <p>
+    Educational purposes only. Verify clinical information
+    with official sources.
+  </p>
+</footer>
+
+</main>
 
 <script>
 let updates = [];
 let selectedCategory = "All";
+let drugs = [];
 
 function escapeHTML(value) {
   return String(value ?? "").replace(/[&<>"']/g, char => ({
@@ -185,13 +314,26 @@ function escapeHTML(value) {
   })[char]);
 }
 
-async function loadUpdates() {
-  const results = document.getElementById("results");
-
-  results.innerHTML = '<div class="empty">Loading medical updates...</div>';
+function safeURL(value) {
+  if (typeof value !== "string") return "";
 
   try {
-    const response = await fetch("./updates.json?v=" + Date.now());
+    const url = new URL(value);
+    return url.protocol === "https:" ? url.href : "";
+  } catch {
+    return "";
+  }
+}
+
+async function loadUpdates() {
+  const results = document.getElementById("results");
+  results.innerHTML =
+    '<div class="empty">Loading medical updates...</div>';
+
+  try {
+    const response = await fetch(
+      "./updates.json?v=" + Date.now()
+    );
 
     if (!response.ok) {
       throw new Error("Could not load updates");
@@ -207,38 +349,44 @@ async function loadUpdates() {
   } catch (error) {
     results.innerHTML =
       '<div class="empty">Unable to load updates. Please try again later.</div>';
+    console.error(error);
   }
 }
 
 function renderUpdates() {
-  const search = document.getElementById("search").value.toLowerCase();
+  const search = document.getElementById("search")
+    .value.toLowerCase().trim();
 
   const filtered = updates.filter(item => {
     const matchesCategory =
       selectedCategory === "All" ||
       item.category === selectedCategory;
 
-    const matchesSearch = (
-      (item.title || "") + " " +
-      (item.summary || "") + " " +
-      (item.category || "")
-    ).toLowerCase().includes(search);
+    const matchesSearch = [
+      item.title,
+      item.summary,
+      item.category
+    ].join(" ").toLowerCase().includes(search);
 
     return matchesCategory && matchesSearch;
   });
 
   const results = document.getElementById("results");
 
-  if (filtered.length === 0) {
+  if (!filtered.length) {
     results.innerHTML =
       '<div class="empty">No updates available yet. Check back soon.</div>';
     return;
   }
 
   results.innerHTML = filtered.map(item => {
-    const link = typeof item.url === "string" &&
-      /^https:\/\//i.test(item.url)
-      ? `<p><a href="${escapeHTML(item.url)}" target="_blank" rel="noopener noreferrer">Read official source ↗</a></p>`
+    const url = safeURL(item.url);
+
+    const link = url
+      ? `<p><a href="${escapeHTML(url)}"
+          target="_blank" rel="noopener noreferrer">
+          Read official source ↗
+        </a></p>`
       : "";
 
     return `
@@ -246,9 +394,15 @@ function renderUpdates() {
         <div class="tag">${escapeHTML(item.category)}</div>
         <h3>${escapeHTML(item.title)}</h3>
         <p>${escapeHTML(item.summary)}</p>
-        <p class="meta">Publication: ${escapeHTML(item.date || "Not specified")}</p>
-        <p class="meta">Source: ${escapeHTML(item.source || "Not specified")}</p>
-        <span class="relevance">${escapeHTML(item.relevance || "Pending assessment")}</span>
+        <p class="meta">
+          Publication: ${escapeHTML(item.date || "Not specified")}
+        </p>
+        <p class="meta">
+          Source: ${escapeHTML(item.source || "Not specified")}
+        </p>
+        <span class="relevance">
+          ${escapeHTML(item.relevance || "Pending assessment")}
+        </span>
         ${link}
       </article>
     `;
@@ -268,21 +422,20 @@ document.querySelectorAll(".category").forEach(button => {
   });
 });
 
-document.getElementById("search").addEventListener("input", renderUpdates);
-
-loadUpdates();
-
-let drugs = [];
+document.getElementById("search")
+  .addEventListener("input", renderUpdates);
 
 async function loadDrugs() {
   const container = document.getElementById("drugResults");
   container.textContent = "Loading drugs...";
 
   try {
-    const response = await fetch("./drugs.json?v=" + Date.now());
+    const response = await fetch(
+      "./drugs.json?v=" + Date.now()
+    );
 
     if (!response.ok) {
-      throw new Error("Unable to fetch drugs.json");
+      throw new Error("Unable to load drugs.json");
     }
 
     drugs = await response.json();
@@ -303,15 +456,18 @@ function renderDrugs() {
     .value.toLowerCase().trim();
 
   const filtered = drugs.filter(drug =>
-    [drug.name, drug.brand, drug.use, drug.moa]
-      .join(" ")
-      .toLowerCase()
-      .includes(search)
+    [
+      drug.name,
+      drug.brand,
+      drug.use,
+      drug.moa,
+      drug.exam_pearl
+    ].join(" ").toLowerCase().includes(search)
   );
 
   const container = document.getElementById("drugResults");
 
-  if (filtered.length === 0) {
+  if (!filtered.length) {
     container.textContent = "No matching drugs found.";
     return;
   }
@@ -324,11 +480,18 @@ function renderDrugs() {
         ${escapeHTML(drug.regulator || "")} |
         ${escapeHTML(drug.approval_date || "")}
       </p>
-      <p><strong>Use:</strong> ${escapeHTML(drug.use)}</p>
-      <p><strong>MOA:</strong> ${escapeHTML(drug.moa)}</p>
+      <p><strong>Use:</strong>
+        ${escapeHTML(drug.use || "Not available")}
+      </p>
+      <p><strong>MOA:</strong>
+        ${escapeHTML(drug.moa || "Not available")}
+      </p>
       <p><strong>Major adverse effects:</strong>
-        ${escapeHTML(drug.major_adverse_effects)}</p>
-      <p class="meta">${escapeHTML(drug.exam_pearl || "")}</p>
+        ${escapeHTML(drug.major_adverse_effects || "Not available")}
+      </p>
+      <p><strong>Exam pearl:</strong>
+        ${escapeHTML(drug.exam_pearl || "Not available")}
+      </p>
     </article>
   `).join("");
 }
@@ -336,52 +499,12 @@ function renderDrugs() {
 document.getElementById("drugSearch")
   .addEventListener("input", renderDrugs);
 
-loadDrugs();
-  
 async function loadDrugCatalog() {
-  const existing = document.getElementById("catalogSection");
-  if (existing) existing.remove();
-
-  const section = document.createElement("section");
-  section.id = "catalogSection";
-  section.className = "welcome";
-
-  section.innerHTML = `
-    <h2>🧬 High-Yield Drug Catalog</h2>
-    <p>First-in-class drugs, novel therapies and exam essentials.</p>
-
-    <input
-      id="catalogSearch"
-      class="search"
-      type="search"
-      placeholder="Search drug, specialty, mechanism..."
-    >
-
-    <select id="catalogFilter" class="search">
-      <option value="">All categories</option>
-      <option value="first-in-class">First-in-class</option>
-      <option value="recent-approval">Recent approvals</option>
-      <option value="high-yield">High-yield</option>
-      <option value="novel-therapy">Novel therapies</option>
-    </select>
-
-    <div id="catalogResults"></div>
-  `;
-
-  document.body.appendChild(section);
-
   const results = document.getElementById("catalogResults");
   const search = document.getElementById("catalogSearch");
   const filter = document.getElementById("catalogFilter");
 
-  const escapeText = value =>
-    String(value ?? "").replace(/[&<>"']/g, char => ({
-      "&": "&amp;",
-      "<": "&lt;",
-      ">": "&gt;",
-      '"': "&quot;",
-      "'": "&#39;"
-    })[char]);
+  results.textContent = "Loading drug catalog...";
 
   try {
     const response = await fetch(
@@ -398,7 +521,7 @@ async function loadDrugCatalog() {
       throw new Error("Invalid drug catalog");
     }
 
-    function render() {
+    function renderCatalog() {
       const term = search.value.toLowerCase().trim();
       const category = filter.value;
 
@@ -421,89 +544,61 @@ async function loadDrugCatalog() {
       });
 
       results.innerHTML = filtered.length
-        ? filtered.map(drug => `
-          <article class="update">
-            <h3>${escapeText(drug.name)}</h3>
-            <p class="meta">
-              ${escapeText(drug.brand)} |
-              ${escapeText(drug.specialty)}
-            </p>
-            <p><strong>Use:</strong> ${escapeText(drug.use)}</p>
-            <p><strong>MOA:</strong> ${escapeText(drug.moa)}</p>
-            <p><strong>Major adverse effects:</strong>
-              ${escapeText(drug.major_adverse_effects)}</p>
-            <p><strong>Exam pearl:</strong>
-              ${escapeText(drug.exam_pearl)}</p>
-            <p class="meta">
-              ${escapeText(drug.approval_status)}
-            </p>
-            ${drug.source ? `
-              <a href="${escapeText(drug.source)}"
-                 target="_blank"
-                 rel="noopener noreferrer">
-                Official source
-              </a>
-            ` : ""}
-          </article>
-        `).join("")
-        : "<p>No matching drugs found.</p>";
+        ? filtered.map(drug => {
+          const url = safeURL(drug.source);
+
+          return `
+            <article class="update">
+              <h3>${escapeHTML(drug.name)}</h3>
+              <p class="meta">
+                ${escapeHTML(drug.brand || "")} |
+                ${escapeHTML(drug.specialty || "")}
+              </p>
+              <p><strong>Use:</strong>
+                ${escapeHTML(drug.use || "Not available")}
+              </p>
+              <p><strong>MOA:</strong>
+                ${escapeHTML(drug.moa || "Not available")}
+              </p>
+              <p><strong>Major adverse effects:</strong>
+                ${escapeHTML(drug.major_adverse_effects || "Not available")}
+              </p>
+              <p><strong>Exam pearl:</strong>
+                ${escapeHTML(drug.exam_pearl || "Not available")}
+              </p>
+              <p class="meta">
+                ${escapeHTML(drug.approval_status || "")}
+              </p>
+              ${url ? `
+                <a href="${escapeHTML(url)}"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                  Official source
+                </a>
+              ` : ""}
+            </article>
+          `;
+        }).join("")
+        : '<div class="empty">No matching drugs found.</div>';
     }
 
-    search.addEventListener("input", render);
-    filter.addEventListener("change", render);
+    search.addEventListener("input", renderCatalog);
+    filter.addEventListener("change", renderCatalog);
 
-    render();
-
+    renderCatalog();
   } catch (error) {
     results.textContent = "Unable to load drug catalog.";
     console.error(error);
   }
 }
 
-loadDrugCatalog();
-
 async function loadDrugTopics() {
-  const oldSection = document.getElementById("drugTopicsSection");
-  if (oldSection) oldSection.remove();
-
-  const section = document.createElement("section");
-  section.id = "drugTopicsSection";
-  section.className = "welcome";
-
-  section.innerHTML = `
-    <h2>📚 High-Yield Pharmacology Topics</h2>
-    <p>Novel mechanisms, biologics and exam-focused drugs.</p>
-
-    <input
-      id="topicSearch"
-      class="search"
-      type="search"
-      placeholder="Search drugs or mechanisms..."
-    >
-
-    <select id="topicSpecialty" class="search">
-      <option value="">All specialties</option>
-    </select>
-
-    <div id="topicCount"></div>
-    <div id="topicResults"></div>
-  `;
-
-  document.body.appendChild(section);
-
   const results = document.getElementById("topicResults");
   const search = document.getElementById("topicSearch");
   const specialty = document.getElementById("topicSpecialty");
   const count = document.getElementById("topicCount");
 
-  const escapeText = value =>
-    String(value ?? "").replace(/[&<>"']/g, char => ({
-      "&": "&amp;",
-      "<": "&lt;",
-      ">": "&gt;",
-      '"': "&quot;",
-      "'": "&#39;"
-    })[char]);
+  results.textContent = "Loading pharmacology topics...";
 
   try {
     const response = await fetch(
@@ -540,6 +635,9 @@ async function loadDrugTopics() {
           item.name,
           item.specialty,
           item.topic,
+          item.use,
+          item.adverse_effects,
+          item.exam_pearl,
           item.category
         ].join(" ").toLowerCase();
 
@@ -548,40 +646,54 @@ async function loadDrugTopics() {
       });
 
       count.textContent =
-        `Showing ${filtered.length} of ${topics.length} topics`;
+        `Showing ${filtered.length} of ${topics.length} drugs`;
 
       results.innerHTML = filtered.length
         ? filtered.map(item => `
           <article class="update">
-            <h3>${escapeText(item.name)}</h3>
+            <h3>${escapeHTML(item.name)}</h3>
+
             <p class="meta">
-              ${escapeText(item.specialty)} |
-              ${escapeText(item.category)}
+              ${escapeHTML(item.specialty || "")} |
+              ${escapeHTML(item.category || "")}
             </p>
-            <p><strong>Key mechanism:</strong>
-              ${escapeText(item.topic)}
+
+            <p><strong>Clinical use:</strong>
+              ${escapeHTML(item.use || "Not available")}
+            </p>
+
+            <p><strong>Mechanism of action:</strong>
+              ${escapeHTML(item.topic || "Not available")}
+            </p>
+
+            <p><strong>Major adverse effects:</strong>
+              ${escapeHTML(item.adverse_effects || "Not available")}
+            </p>
+
+            <p><strong>Exam pearl:</strong>
+              ${escapeHTML(item.exam_pearl || "Not available")}
             </p>
           </article>
         `).join("")
-        : "<p>No matching topics found.</p>";
+        : '<div class="empty">No matching drugs found.</div>';
     }
 
     search.addEventListener("input", renderTopics);
     specialty.addEventListener("change", renderTopics);
 
     renderTopics();
-
   } catch (error) {
     results.textContent = "Unable to load drug topics.";
     console.error(error);
   }
 }
 
+loadUpdates();
+loadDrugs();
+loadDrugCatalog();
 loadDrugTopics();
-
 </script>
 
 </body>
 </html>
-
 
