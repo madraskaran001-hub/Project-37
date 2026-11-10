@@ -4,120 +4,180 @@
     "name": "Tirzepatide",
     "specialty": "Endocrinology",
     "topic": "Dual GIP and GLP-1 receptor agonism",
+    "use": "Type 2 diabetes; chronic weight management; obesity-associated obstructive sleep apnea in eligible adults",
+    "adverse_effects": "Nausea, vomiting, diarrhea, gallbladder disease; pancreatitis warning",
+    "exam_pearl": "Dual incretin receptor agonist: GIP + GLP-1",
     "category": "Novel mechanism"
   },
   {
     "name": "Semaglutide",
     "specialty": "Endocrinology",
     "topic": "GLP-1 receptor agonism",
+    "use": "Type 2 diabetes; chronic weight management; selected cardiovascular and kidney risk-reduction indications",
+    "adverse_effects": "Gastrointestinal effects, gallbladder disease; pancreatitis warning",
+    "exam_pearl": "Long-acting GLP-1 receptor agonist",
     "category": "High-yield"
   },
   {
     "name": "Inclisiran",
     "specialty": "Cardiology",
     "topic": "siRNA-mediated PCSK9 suppression",
+    "use": "LDL cholesterol reduction in indicated patients",
+    "adverse_effects": "Injection-site reactions, arthralgia",
+    "exam_pearl": "siRNA reduces hepatic PCSK9 synthesis",
     "category": "Novel mechanism"
   },
   {
     "name": "Bempedoic acid",
     "specialty": "Cardiology",
     "topic": "ATP citrate lyase inhibition",
+    "use": "LDL cholesterol reduction and cardiovascular risk reduction in selected patients",
+    "adverse_effects": "Hyperuricemia, gout, tendon injury",
+    "exam_pearl": "Inhibits ATP citrate lyase upstream of HMG-CoA reductase",
     "category": "Novel mechanism"
   },
   {
     "name": "Vericiguat",
     "specialty": "Cardiology",
     "topic": "Soluble guanylate cyclase stimulation",
+    "use": "Selected adults with symptomatic chronic heart failure after recent worsening",
+    "adverse_effects": "Hypotension, anemia",
+    "exam_pearl": "Stimulates soluble guanylate cyclase to increase cGMP",
     "category": "Novel mechanism"
   },
   {
     "name": "Mavacamten",
     "specialty": "Cardiology",
     "topic": "Cardiac myosin inhibition",
+    "use": "Symptomatic obstructive hypertrophic cardiomyopathy in adults",
+    "adverse_effects": "Reduced left ventricular ejection fraction, heart failure",
+    "exam_pearl": "Cardiac myosin inhibitor; requires monitoring of systolic function",
     "category": "Novel mechanism"
   },
   {
     "name": "Anifrolumab",
     "specialty": "Rheumatology",
     "topic": "Type I interferon receptor blockade",
+    "use": "Moderate-to-severe systemic lupus erythematosus in indicated patients",
+    "adverse_effects": "Respiratory infections, herpes zoster, infusion reactions",
+    "exam_pearl": "Targets IFNAR1; blocks type I interferon signaling",
     "category": "Biologic"
   },
   {
     "name": "Belimumab",
     "specialty": "Rheumatology",
     "topic": "BAFF inhibition",
+    "use": "Systemic lupus erythematosus and active lupus nephritis",
+    "adverse_effects": "Infections, infusion reactions, hypersensitivity",
+    "exam_pearl": "Inhibits B-cell activating factor (BLyS/BAFF)",
     "category": "Biologic"
   },
   {
     "name": "Eculizumab",
     "specialty": "Hematology",
     "topic": "Complement C5 inhibition",
+    "use": "PNH, atypical HUS and selected complement-mediated neurological disorders",
+    "adverse_effects": "Serious meningococcal infection risk",
+    "exam_pearl": "C5 blockade prevents terminal complement activation",
     "category": "Biologic"
   },
   {
     "name": "Caplacizumab",
     "specialty": "Hematology",
     "topic": "von Willebrand factor A1-domain targeting",
+    "use": "Acquired thrombotic thrombocytopenic purpura alongside standard therapy",
+    "adverse_effects": "Bleeding, particularly mucocutaneous bleeding",
+    "exam_pearl": "Anti-vWF nanobody prevents platelet-vWF interaction",
     "category": "Biologic"
   },
   {
     "name": "Emicizumab",
     "specialty": "Hematology",
     "topic": "Bispecific antibody mimicking factor VIII cofactor activity",
+    "use": "Bleeding prophylaxis in hemophilia A with or without factor VIII inhibitors",
+    "adverse_effects": "Injection-site reactions; thrombotic complications with certain concomitant bypassing agents",
+    "exam_pearl": "Bridges activated factor IX and factor X",
     "category": "Biologic"
   },
   {
     "name": "Lecanemab",
     "specialty": "Neurology",
     "topic": "Amyloid-beta targeting",
+    "use": "Early Alzheimer's disease in selected patients with confirmed amyloid pathology",
+    "adverse_effects": "Amyloid-related imaging abnormalities, infusion reactions",
+    "exam_pearl": "Anti-amyloid antibody; ARIA is a major safety concern",
     "category": "Biologic"
   },
   {
     "name": "Efgartigimod",
     "specialty": "Neurology",
     "topic": "Neonatal Fc receptor blockade",
+    "use": "Generalized myasthenia gravis; certain formulations for CIDP",
+    "adverse_effects": "Infections, headache, hypersensitivity reactions",
+    "exam_pearl": "FcRn blockade accelerates degradation of circulating IgG",
     "category": "Novel mechanism"
   },
   {
     "name": "Satralizumab",
     "specialty": "Neurology",
     "topic": "IL-6 receptor inhibition",
+    "use": "AQP4 antibody-positive neuromyelitis optica spectrum disorder",
+    "adverse_effects": "Infections, neutropenia, elevated liver enzymes",
+    "exam_pearl": "IL-6 receptor inhibitor used in AQP4-positive NMOSD",
     "category": "Biologic"
   },
   {
     "name": "Dupilumab",
     "specialty": "Immunology",
     "topic": "IL-4 receptor alpha blockade",
+    "use": "Atopic dermatitis, selected asthma, nasal polyposis and eosinophilic esophagitis",
+    "adverse_effects": "Conjunctivitis, injection-site reactions, eosinophilia",
+    "exam_pearl": "IL-4R alpha blockade inhibits IL-4 and IL-13 signaling",
     "category": "Biologic"
   },
   {
     "name": "Tezepelumab",
     "specialty": "Pulmonology",
     "topic": "TSLP inhibition",
+    "use": "Add-on maintenance therapy for severe asthma",
+    "adverse_effects": "Pharyngitis, arthralgia, hypersensitivity reactions",
+    "exam_pearl": "Targets thymic stromal lymphopoietin upstream of type 2 inflammation",
     "category": "Biologic"
   },
   {
     "name": "Ivacaftor",
     "specialty": "Pulmonology",
     "topic": "CFTR potentiation",
+    "use": "Cystic fibrosis with eligible CFTR mutations",
+    "adverse_effects": "Elevated liver enzymes, cataract risk in pediatric patients",
+    "exam_pearl": "CFTR potentiator increases channel opening probability",
     "category": "High-yield"
   },
   {
     "name": "Resmetirom",
     "specialty": "Gastroenterology",
     "topic": "Selective thyroid hormone receptor-beta agonism",
+    "use": "Noncirrhotic MASH with moderate-to-advanced fibrosis",
+    "adverse_effects": "Diarrhea, nausea; hepatotoxicity and gallbladder-related warnings",
+    "exam_pearl": "First FDA-approved treatment for MASH",
     "category": "First-in-class"
   },
   {
     "name": "Vonoprazan",
     "specialty": "Gastroenterology",
     "topic": "Potassium-competitive acid blockade",
+    "use": "Erosive esophagitis; H. pylori eradication in combination regimens",
+    "adverse_effects": "Diarrhea, abdominal discomfort; acid-suppression-associated risks",
+    "exam_pearl": "P-CAB: inhibits gastric H+/K+-ATPase by competing with potassium",
     "category": "Novel mechanism"
   },
   {
     "name": "Nirsevimab",
     "specialty": "Pediatrics",
     "topic": "Long-acting monoclonal antibody targeting RSV",
+    "use": "Prevention of RSV lower respiratory tract disease in eligible infants and young children",
+    "adverse_effects": "Rash, injection-site reactions, hypersensitivity",
+    "exam_pearl": "Passive immunization against RSV; not a vaccine",
     "category": "Biologic"
   }
 ]
