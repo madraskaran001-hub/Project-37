@@ -1,0 +1,1421 @@
+[
+  {
+    "name": "Adenosine",
+    "specialty": "Cardiology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Acute termination of AV node-dependent supraventricular tachycardia",
+    "moa": "Transient AV nodal conduction blockade via A1 receptors",
+    "adverse_effects": "Flushing, chest discomfort, bronchospasm",
+    "exam_pearl": "Very short half-life; avoid in certain pre-excited tachyarrhythmias"
+  },
+  {
+    "name": "Amiodarone",
+    "specialty": "Cardiology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Atrial and ventricular arrhythmias",
+    "moa": "Predominantly class III potassium channel blockade with multichannel effects",
+    "adverse_effects": "Pulmonary toxicity, thyroid dysfunction, hepatotoxicity",
+    "exam_pearl": "Iodine-rich antiarrhythmic with very long half-life"
+  },
+  {
+    "name": "Dofetilide",
+    "specialty": "Cardiology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Maintenance of sinus rhythm in selected atrial fibrillation patients",
+    "moa": "Class III IKr potassium channel blockade",
+    "adverse_effects": "QT prolongation and torsades de pointes",
+    "exam_pearl": "Initiation requires monitored setting"
+  },
+  {
+    "name": "Flecainide",
+    "specialty": "Cardiology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Rhythm control in selected supraventricular arrhythmias",
+    "moa": "Class IC sodium channel blockade",
+    "adverse_effects": "Proarrhythmia, QRS widening",
+    "exam_pearl": "Avoid in significant structural heart disease"
+  },
+  {
+    "name": "Ivabradine",
+    "specialty": "Cardiology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Selected patients with chronic HFrEF and elevated sinus heart rate",
+    "moa": "Inhibition of sinoatrial If funny current",
+    "adverse_effects": "Bradycardia, luminous phenomena, atrial fibrillation",
+    "exam_pearl": "Reduces heart rate without directly reducing contractility"
+  },
+  {
+    "name": "Sacubitril/valsartan",
+    "specialty": "Cardiology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Heart failure with reduced ejection fraction",
+    "moa": "Neprilysin inhibition plus angiotensin II AT1 receptor blockade",
+    "adverse_effects": "Hypotension, hyperkalemia, angioedema",
+    "exam_pearl": "ARNI; do not combine with ACE inhibitor without washout"
+  },
+  {
+    "name": "Dapagliflozin",
+    "specialty": "Cardiology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Type 2 diabetes, heart failure and chronic kidney disease in eligible patients",
+    "moa": "SGLT2 inhibition in proximal renal tubule",
+    "adverse_effects": "Genital fungal infections, volume depletion, ketoacidosis",
+    "exam_pearl": "Heart and kidney benefits extend beyond glucose lowering"
+  },
+  {
+    "name": "Empagliflozin",
+    "specialty": "Cardiology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Type 2 diabetes, heart failure and chronic kidney disease in eligible patients",
+    "moa": "SGLT2 inhibition",
+    "adverse_effects": "Genital mycotic infection, volume depletion, ketoacidosis",
+    "exam_pearl": "Promotes urinary glucose excretion"
+  },
+  {
+    "name": "Ranolazine",
+    "specialty": "Cardiology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Chronic angina",
+    "moa": "Inhibition of late inward sodium current in myocardium",
+    "adverse_effects": "QT prolongation, constipation, dizziness",
+    "exam_pearl": "Antianginal with minimal effect on heart rate and blood pressure"
+  },
+  {
+    "name": "Riociguat",
+    "specialty": "Cardiology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Selected pulmonary arterial hypertension and chronic thromboembolic pulmonary hypertension",
+    "moa": "Soluble guanylate cyclase stimulation",
+    "adverse_effects": "Hypotension, headache, teratogenicity",
+    "exam_pearl": "Do not combine with PDE5 inhibitors"
+  },
+  {
+    "name": "Bosentan",
+    "specialty": "Cardiology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Pulmonary arterial hypertension",
+    "moa": "Dual endothelin ETA and ETB receptor antagonist",
+    "adverse_effects": "Hepatotoxicity, edema, teratogenicity",
+    "exam_pearl": "Monitor liver function; endothelin receptor antagonist"
+  },
+  {
+    "name": "Epoprostenol",
+    "specialty": "Cardiology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Severe pulmonary arterial hypertension",
+    "moa": "Prostacyclin receptor activation and vasodilation",
+    "adverse_effects": "Flushing, jaw pain, hypotension",
+    "exam_pearl": "Very short half-life; continuous infusion formulations"
+  },
+  {
+    "name": "Digoxin",
+    "specialty": "Cardiology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Selected heart failure symptoms and ventricular rate control in atrial fibrillation",
+    "moa": "Na/K ATPase inhibition increases intracellular calcium; vagotonic effect",
+    "adverse_effects": "Arrhythmias, nausea, visual disturbances",
+    "exam_pearl": "Hypokalemia increases toxicity risk"
+  },
+  {
+    "name": "Nitroprusside",
+    "specialty": "Cardiology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Selected hypertensive emergencies and controlled hypotension",
+    "moa": "Nitric oxide donor causing arterial and venous dilation",
+    "adverse_effects": "Hypotension, cyanide or thiocyanate toxicity",
+    "exam_pearl": "Rapid balanced vasodilator"
+  },
+  {
+    "name": "Ezetimibe",
+    "specialty": "Cardiology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "LDL cholesterol lowering",
+    "moa": "NPC1L1 intestinal cholesterol absorption inhibition",
+    "adverse_effects": "Diarrhea, transaminase elevation with some combinations",
+    "exam_pearl": "Blocks intestinal cholesterol uptake"
+  },
+  {
+    "name": "Metformin",
+    "specialty": "Endocrinology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Type 2 diabetes mellitus",
+    "moa": "Reduces hepatic glucose production and improves insulin sensitivity",
+    "adverse_effects": "GI intolerance, vitamin B12 deficiency, rare lactic acidosis",
+    "exam_pearl": "Usually weight-neutral; low hypoglycemia risk alone"
+  },
+  {
+    "name": "Acarbose",
+    "specialty": "Endocrinology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Type 2 diabetes, especially postprandial hyperglycemia",
+    "moa": "Intestinal alpha-glucosidase inhibition",
+    "adverse_effects": "Flatulence, diarrhea",
+    "exam_pearl": "Delays carbohydrate digestion"
+  },
+  {
+    "name": "Pioglitazone",
+    "specialty": "Endocrinology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Type 2 diabetes mellitus",
+    "moa": "PPAR-gamma agonism",
+    "adverse_effects": "Edema, weight gain, worsening heart failure, fractures",
+    "exam_pearl": "Improves insulin sensitivity; avoid in symptomatic heart failure"
+  },
+  {
+    "name": "Sitagliptin",
+    "specialty": "Endocrinology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Type 2 diabetes mellitus",
+    "moa": "DPP-4 inhibition increases endogenous incretin activity",
+    "adverse_effects": "Nasopharyngitis, rare pancreatitis, severe joint pain",
+    "exam_pearl": "Glucose-dependent incretin enhancement"
+  },
+  {
+    "name": "Glimepiride",
+    "specialty": "Endocrinology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Type 2 diabetes mellitus",
+    "moa": "Sulfonylurea closure of beta-cell KATP channels",
+    "adverse_effects": "Hypoglycemia, weight gain",
+    "exam_pearl": "Stimulates insulin release independent of glucose level"
+  },
+  {
+    "name": "Repaglinide",
+    "specialty": "Endocrinology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Postprandial glucose control in type 2 diabetes",
+    "moa": "Meglitinide blockade of beta-cell KATP channels",
+    "adverse_effects": "Hypoglycemia, weight gain",
+    "exam_pearl": "Short-acting meal-time insulin secretagogue"
+  },
+  {
+    "name": "Pramlintide",
+    "specialty": "Endocrinology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Adjunct treatment for selected insulin-treated diabetes",
+    "moa": "Amylin analogue slowing gastric emptying and suppressing glucagon",
+    "adverse_effects": "Nausea, hypoglycemia with insulin",
+    "exam_pearl": "Amylin analogue; not insulin"
+  },
+  {
+    "name": "Cabergoline",
+    "specialty": "Endocrinology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Hyperprolactinemia and prolactinoma",
+    "moa": "D2 dopamine receptor agonism",
+    "adverse_effects": "Nausea, orthostasis, impulse-control effects",
+    "exam_pearl": "Preferred dopamine agonist for many prolactinomas"
+  },
+  {
+    "name": "Metyrapone",
+    "specialty": "Endocrinology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Testing or treatment of hypercortisolism in selected settings",
+    "moa": "11-beta-hydroxylase inhibition",
+    "adverse_effects": "Hypertension, hypokalemia, androgen excess",
+    "exam_pearl": "Increases 11-deoxycortisol"
+  },
+  {
+    "name": "Osilodrostat",
+    "specialty": "Endocrinology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Cushing disease when surgery is unsuitable or not curative",
+    "moa": "11-beta-hydroxylase inhibition",
+    "adverse_effects": "Adrenal insufficiency, QT prolongation, hypokalemia",
+    "exam_pearl": "Steroidogenesis inhibitor for endogenous hypercortisolism"
+  },
+  {
+    "name": "Cinacalcet",
+    "specialty": "Endocrinology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Secondary hyperparathyroidism in dialysis and selected hypercalcemia",
+    "moa": "Calcium-sensing receptor positive allosteric modulation",
+    "adverse_effects": "Hypocalcemia, nausea",
+    "exam_pearl": "Calcimimetic lowers PTH"
+  },
+  {
+    "name": "Teriparatide",
+    "specialty": "Endocrinology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Selected patients at high fracture risk from osteoporosis",
+    "moa": "Recombinant PTH(1-34) with intermittent anabolic action",
+    "adverse_effects": "Hypercalcemia, dizziness",
+    "exam_pearl": "Intermittent PTH stimulates bone formation"
+  },
+  {
+    "name": "Denosumab",
+    "specialty": "Endocrinology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Osteoporosis and selected skeletal complications of malignancy",
+    "moa": "RANKL monoclonal antibody blockade",
+    "adverse_effects": "Hypocalcemia, osteonecrosis of jaw, rebound vertebral fractures after stopping",
+    "exam_pearl": "Anti-RANKL therapy; plan transition when discontinuing"
+  },
+  {
+    "name": "Romosozumab",
+    "specialty": "Endocrinology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Selected high-risk osteoporosis patients",
+    "moa": "Sclerostin inhibition",
+    "adverse_effects": "Cardiovascular warning, hypocalcemia, injection reactions",
+    "exam_pearl": "Dual anabolic and antiresorptive action"
+  },
+  {
+    "name": "Methimazole",
+    "specialty": "Endocrinology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Hyperthyroidism",
+    "moa": "Thyroid peroxidase inhibition",
+    "adverse_effects": "Agranulocytosis, liver injury, rash",
+    "exam_pearl": "Generally preferred thionamide except certain situations"
+  },
+  {
+    "name": "Levetiracetam",
+    "specialty": "Neurology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Focal and generalized seizure disorders",
+    "moa": "SV2A synaptic vesicle protein binding",
+    "adverse_effects": "Somnolence, irritability, behavioral changes",
+    "exam_pearl": "Minimal hepatic enzyme induction"
+  },
+  {
+    "name": "Lamotrigine",
+    "specialty": "Neurology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Epilepsy and bipolar maintenance therapy",
+    "moa": "Voltage-gated sodium channel inhibition",
+    "adverse_effects": "Rash including Stevens-Johnson syndrome, dizziness",
+    "exam_pearl": "Slow titration reduces serious rash risk"
+  },
+  {
+    "name": "Valproate",
+    "specialty": "Neurology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Epilepsy, bipolar mania, migraine prevention",
+    "moa": "Multiple actions including sodium channel effects and increased GABA signaling",
+    "adverse_effects": "Hepatotoxicity, pancreatitis, teratogenicity, weight gain",
+    "exam_pearl": "Avoid in pregnancy when possible because of major fetal risks"
+  },
+  {
+    "name": "Ethosuximide",
+    "specialty": "Neurology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Typical absence seizures",
+    "moa": "T-type calcium channel blockade",
+    "adverse_effects": "GI upset, fatigue, rash",
+    "exam_pearl": "First-line option for isolated typical absence seizures"
+  },
+  {
+    "name": "Vigabatrin",
+    "specialty": "Neurology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Infantile spasms and refractory focal seizures",
+    "moa": "Irreversible GABA transaminase inhibition",
+    "adverse_effects": "Permanent visual field loss, sedation",
+    "exam_pearl": "Risk of concentric visual field loss"
+  },
+  {
+    "name": "Felbamate",
+    "specialty": "Neurology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Selected severe refractory epilepsies",
+    "moa": "NMDA receptor modulation and other actions",
+    "adverse_effects": "Aplastic anemia, hepatic failure",
+    "exam_pearl": "Reserved because of serious toxicity"
+  },
+  {
+    "name": "Perampanel",
+    "specialty": "Neurology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Adjunctive treatment for selected seizures",
+    "moa": "Noncompetitive AMPA receptor antagonism",
+    "adverse_effects": "Dizziness, aggression, psychiatric effects",
+    "exam_pearl": "AMPA glutamate receptor antagonist"
+  },
+  {
+    "name": "Rimegepant",
+    "specialty": "Neurology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Acute migraine and episodic migraine prevention in eligible patients",
+    "moa": "CGRP receptor antagonism",
+    "adverse_effects": "Nausea, hypersensitivity",
+    "exam_pearl": "Oral gepant; nonvasoconstrictive migraine option"
+  },
+  {
+    "name": "Erenumab",
+    "specialty": "Neurology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Migraine prevention",
+    "moa": "CGRP receptor monoclonal antibody",
+    "adverse_effects": "Constipation, hypertension, injection reactions",
+    "exam_pearl": "Targets CGRP receptor rather than ligand"
+  },
+  {
+    "name": "Fremanezumab",
+    "specialty": "Neurology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Migraine prevention",
+    "moa": "CGRP ligand monoclonal antibody",
+    "adverse_effects": "Injection reactions, hypersensitivity",
+    "exam_pearl": "Anti-CGRP ligand therapy"
+  },
+  {
+    "name": "OnabotulinumtoxinA",
+    "specialty": "Neurology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Chronic migraine prevention and selected focal dystonias",
+    "moa": "Blocks acetylcholine release via SNAP-25 cleavage",
+    "adverse_effects": "Local weakness, dysphagia depending on site",
+    "exam_pearl": "Botulinum toxin type A cleaves SNAP-25"
+  },
+  {
+    "name": "Pyridostigmine",
+    "specialty": "Neurology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Symptomatic treatment of myasthenia gravis",
+    "moa": "Reversible acetylcholinesterase inhibition",
+    "adverse_effects": "Diarrhea, cramps, bradycardia",
+    "exam_pearl": "Improves neuromuscular transmission without treating autoimmunity"
+  },
+  {
+    "name": "Edaravone",
+    "specialty": "Neurology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Amyotrophic lateral sclerosis in eligible patients",
+    "moa": "Free radical scavenging antioxidant",
+    "adverse_effects": "Hypersensitivity, headache, bruising",
+    "exam_pearl": "ALS therapy with antioxidant action"
+  },
+  {
+    "name": "Riluzole",
+    "specialty": "Neurology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Amyotrophic lateral sclerosis",
+    "moa": "Modulates glutamatergic neurotransmission",
+    "adverse_effects": "Elevated liver enzymes, nausea",
+    "exam_pearl": "Modest survival benefit in ALS"
+  },
+  {
+    "name": "Deutetrabenazine",
+    "specialty": "Neurology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Huntington chorea and tardive dyskinesia",
+    "moa": "VMAT2 inhibition reduces presynaptic monoamine packaging",
+    "adverse_effects": "Depression warning in Huntington disease, somnolence, parkinsonism",
+    "exam_pearl": "Deuterated VMAT2 inhibitor"
+  },
+  {
+    "name": "Clozapine",
+    "specialty": "Psychiatry",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Treatment-resistant schizophrenia",
+    "moa": "Multireceptor atypical antipsychotic",
+    "adverse_effects": "Agranulocytosis, myocarditis, seizures, constipation",
+    "exam_pearl": "Requires absolute neutrophil count monitoring"
+  },
+  {
+    "name": "Lithium",
+    "specialty": "Psychiatry",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Bipolar disorder maintenance and acute mania",
+    "moa": "Modulates intracellular signaling including inositol pathways",
+    "adverse_effects": "Tremor, nephrogenic diabetes insipidus, hypothyroidism",
+    "exam_pearl": "Narrow therapeutic index; monitor renal and thyroid function"
+  },
+  {
+    "name": "Bupropion",
+    "specialty": "Psychiatry",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Depression and smoking cessation",
+    "moa": "Norepinephrine and dopamine reuptake inhibition",
+    "adverse_effects": "Insomnia, seizure risk",
+    "exam_pearl": "Relatively low sexual adverse effects; avoid in seizure disorders"
+  },
+  {
+    "name": "Mirtazapine",
+    "specialty": "Psychiatry",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Major depressive disorder",
+    "moa": "Alpha-2 adrenergic antagonism with serotonergic receptor effects",
+    "adverse_effects": "Sedation, increased appetite",
+    "exam_pearl": "Often sedating due to H1 blockade"
+  },
+  {
+    "name": "Buspirone",
+    "specialty": "Psychiatry",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Generalized anxiety disorder",
+    "moa": "5-HT1A partial agonism",
+    "adverse_effects": "Dizziness, nausea",
+    "exam_pearl": "Not a benzodiazepine; delayed anxiolytic effect"
+  },
+  {
+    "name": "Esketamine",
+    "specialty": "Psychiatry",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Treatment-resistant depression in supervised settings",
+    "moa": "NMDA receptor antagonism",
+    "adverse_effects": "Dissociation, sedation, increased blood pressure",
+    "exam_pearl": "Intranasal treatment administered under monitoring"
+  },
+  {
+    "name": "Varenicline",
+    "specialty": "Psychiatry",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Smoking cessation",
+    "moa": "Partial alpha4beta2 nicotinic receptor agonism",
+    "adverse_effects": "Nausea, vivid dreams",
+    "exam_pearl": "Reduces nicotine reward and withdrawal"
+  },
+  {
+    "name": "Disulfiram",
+    "specialty": "Psychiatry",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Alcohol use disorder relapse deterrence in selected patients",
+    "moa": "Aldehyde dehydrogenase inhibition",
+    "adverse_effects": "Hepatotoxicity, neuropathy",
+    "exam_pearl": "Causes acetaldehyde accumulation with alcohol"
+  },
+  {
+    "name": "Hydroxyurea",
+    "specialty": "Hematology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Sickle cell disease and selected myeloproliferative disorders",
+    "moa": "Ribonucleotide reductase inhibition",
+    "adverse_effects": "Myelosuppression, GI upset",
+    "exam_pearl": "Raises fetal hemoglobin in sickle cell disease"
+  },
+  {
+    "name": "Luspatercept",
+    "specialty": "Hematology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Selected anemia in beta-thalassemia and myelodysplastic syndromes",
+    "moa": "TGF-beta superfamily ligand trap enhancing erythroid maturation",
+    "adverse_effects": "Hypertension, thrombosis, bone pain",
+    "exam_pearl": "Promotes late-stage erythropoiesis"
+  },
+  {
+    "name": "Avatrombopag",
+    "specialty": "Hematology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Selected thrombocytopenia in chronic liver disease or chronic ITP",
+    "moa": "Thrombopoietin receptor agonism",
+    "adverse_effects": "Thrombosis, headache",
+    "exam_pearl": "Oral TPO receptor agonist"
+  },
+  {
+    "name": "Romiplostim",
+    "specialty": "Hematology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Chronic immune thrombocytopenia in eligible patients",
+    "moa": "Thrombopoietin receptor agonism",
+    "adverse_effects": "Thromboembolic events, headache",
+    "exam_pearl": "Stimulates megakaryocyte platelet production"
+  },
+  {
+    "name": "Tranexamic acid",
+    "specialty": "Hematology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Selected bleeding states including heavy menstrual bleeding",
+    "moa": "Inhibits plasminogen activation and fibrinolysis",
+    "adverse_effects": "Nausea, thrombosis concern in susceptible settings",
+    "exam_pearl": "Antifibrinolytic lysine analogue"
+  },
+  {
+    "name": "Idarucizumab",
+    "specialty": "Hematology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Reversal of dabigatran anticoagulation in emergencies",
+    "moa": "Monoclonal antibody fragment binding dabigatran",
+    "adverse_effects": "Hypersensitivity, thrombotic risk after reversal",
+    "exam_pearl": "Specific dabigatran reversal agent"
+  },
+  {
+    "name": "Fondaparinux",
+    "specialty": "Hematology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Venous thromboembolism prevention or treatment in selected patients",
+    "moa": "Antithrombin-mediated selective factor Xa inhibition",
+    "adverse_effects": "Bleeding",
+    "exam_pearl": "Synthetic pentasaccharide; no direct thrombin inhibition"
+  },
+  {
+    "name": "Argatroban",
+    "specialty": "Hematology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Anticoagulation in heparin-induced thrombocytopenia",
+    "moa": "Direct thrombin inhibition",
+    "adverse_effects": "Bleeding",
+    "exam_pearl": "Hepatic clearance; monitored using aPTT"
+  },
+  {
+    "name": "Imatinib",
+    "specialty": "Oncology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "BCR-ABL-positive CML and selected GIST",
+    "moa": "BCR-ABL, KIT and PDGFR tyrosine kinase inhibition",
+    "adverse_effects": "Edema, myelosuppression, nausea",
+    "exam_pearl": "Prototype targeted tyrosine kinase inhibitor"
+  },
+  {
+    "name": "Osimertinib",
+    "specialty": "Oncology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "EGFR-mutated non-small-cell lung cancer",
+    "moa": "Third-generation EGFR tyrosine kinase inhibition",
+    "adverse_effects": "Rash, diarrhea, pneumonitis, QT prolongation",
+    "exam_pearl": "Active against EGFR T790M resistance mutation"
+  },
+  {
+    "name": "Alectinib",
+    "specialty": "Oncology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "ALK-positive non-small-cell lung cancer",
+    "moa": "ALK tyrosine kinase inhibition",
+    "adverse_effects": "Myalgia, constipation, liver injury",
+    "exam_pearl": "CNS-active ALK inhibitor"
+  },
+  {
+    "name": "Trastuzumab",
+    "specialty": "Oncology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "HER2-positive breast and selected gastric cancers",
+    "moa": "HER2 monoclonal antibody",
+    "adverse_effects": "Cardiomyopathy, infusion reactions",
+    "exam_pearl": "Monitor left ventricular ejection fraction"
+  },
+  {
+    "name": "Pertuzumab",
+    "specialty": "Oncology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "HER2-positive breast cancer with other anti-HER2 agents",
+    "moa": "HER2 dimerization blockade",
+    "adverse_effects": "Diarrhea, cardiac dysfunction",
+    "exam_pearl": "Blocks HER2 heterodimerization"
+  },
+  {
+    "name": "Pembrolizumab",
+    "specialty": "Oncology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Multiple cancers with indication-specific eligibility",
+    "moa": "PD-1 immune checkpoint blockade",
+    "adverse_effects": "Immune-related colitis, pneumonitis, endocrinopathies",
+    "exam_pearl": "Releases T-cell inhibitory checkpoint"
+  },
+  {
+    "name": "Nivolumab",
+    "specialty": "Oncology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Multiple cancers with indication-specific eligibility",
+    "moa": "PD-1 immune checkpoint blockade",
+    "adverse_effects": "Immune-related hepatitis, colitis, pneumonitis",
+    "exam_pearl": "Anti-PD-1 antibody"
+  },
+  {
+    "name": "Ipilimumab",
+    "specialty": "Oncology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Selected melanoma and other malignancies",
+    "moa": "CTLA-4 immune checkpoint blockade",
+    "adverse_effects": "Immune-mediated colitis, hepatitis, hypophysitis",
+    "exam_pearl": "CTLA-4 blockade increases T-cell activation"
+  },
+  {
+    "name": "Olaparib",
+    "specialty": "Oncology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Selected BRCA or homologous-recombination-deficient cancers",
+    "moa": "PARP inhibition causing synthetic lethality",
+    "adverse_effects": "Anemia, nausea, rare MDS/AML",
+    "exam_pearl": "PARP inhibitors exploit homologous recombination defects"
+  },
+  {
+    "name": "Venetoclax",
+    "specialty": "Oncology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Selected CLL and AML regimens",
+    "moa": "Selective BCL-2 inhibition",
+    "adverse_effects": "Tumor lysis syndrome, neutropenia",
+    "exam_pearl": "BH3 mimetic induces apoptosis"
+  },
+  {
+    "name": "Ibrutinib",
+    "specialty": "Oncology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Selected B-cell malignancies",
+    "moa": "Bruton tyrosine kinase inhibition",
+    "adverse_effects": "Bleeding, atrial fibrillation, infections",
+    "exam_pearl": "BTK inhibitor of B-cell receptor signaling"
+  },
+  {
+    "name": "Daratumumab",
+    "specialty": "Oncology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Multiple myeloma and selected related disorders",
+    "moa": "CD38 monoclonal antibody",
+    "adverse_effects": "Infusion reactions, infections, interference with blood bank testing",
+    "exam_pearl": "Anti-CD38 antibody can affect compatibility testing"
+  },
+  {
+    "name": "Blinatumomab",
+    "specialty": "Oncology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Selected B-cell acute lymphoblastic leukemia",
+    "moa": "CD19-CD3 bispecific T-cell engager",
+    "adverse_effects": "Cytokine release syndrome, neurotoxicity",
+    "exam_pearl": "BiTE recruits T cells against CD19-positive cells"
+  },
+  {
+    "name": "Tisagenlecleucel",
+    "specialty": "Oncology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Selected relapsed or refractory B-cell malignancies",
+    "moa": "Autologous anti-CD19 CAR-T cell therapy",
+    "adverse_effects": "Cytokine release syndrome, neurotoxicity",
+    "exam_pearl": "CAR-T is a living cell therapy"
+  },
+  {
+    "name": "Enfortumab vedotin",
+    "specialty": "Oncology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Selected urothelial carcinoma regimens",
+    "moa": "Nectin-4 antibody-drug conjugate delivering microtubule inhibitor",
+    "adverse_effects": "Rash, neuropathy, hyperglycemia",
+    "exam_pearl": "Nectin-4-directed ADC"
+  },
+  {
+    "name": "Tofacitinib",
+    "specialty": "Rheumatology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Selected rheumatoid arthritis, psoriatic arthritis and ulcerative colitis",
+    "moa": "JAK inhibition predominantly JAK1/JAK3",
+    "adverse_effects": "Serious infections, thrombosis, malignancy and cardiovascular warnings",
+    "exam_pearl": "Oral targeted synthetic DMARD"
+  },
+  {
+    "name": "Upadacitinib",
+    "specialty": "Rheumatology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Selected inflammatory arthritis, dermatitis and bowel disease",
+    "moa": "JAK1-selective inhibition",
+    "adverse_effects": "Serious infection, thrombosis, cardiovascular warnings",
+    "exam_pearl": "JAK1 inhibitor"
+  },
+  {
+    "name": "Rituximab",
+    "specialty": "Rheumatology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "B-cell lymphomas, rheumatoid arthritis and selected autoimmune diseases",
+    "moa": "CD20 B-cell depletion",
+    "adverse_effects": "Infusion reactions, hepatitis B reactivation, rare PML",
+    "exam_pearl": "CD20 absent on mature plasma cells"
+  },
+  {
+    "name": "Tocilizumab",
+    "specialty": "Rheumatology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Rheumatoid arthritis, giant cell arteritis and selected cytokine syndromes",
+    "moa": "IL-6 receptor blockade",
+    "adverse_effects": "Infections, neutropenia, transaminitis",
+    "exam_pearl": "IL-6 blockade can suppress CRP response"
+  },
+  {
+    "name": "Secukinumab",
+    "specialty": "Rheumatology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Psoriasis, psoriatic arthritis and axial spondyloarthritis",
+    "moa": "IL-17A monoclonal antibody",
+    "adverse_effects": "Candida infections, possible IBD exacerbation",
+    "exam_pearl": "Anti-IL-17A biologic"
+  },
+  {
+    "name": "Ustekinumab",
+    "specialty": "Rheumatology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Psoriasis, psoriatic arthritis and inflammatory bowel disease",
+    "moa": "IL-12/23 p40 subunit blockade",
+    "adverse_effects": "Infections, injection reactions",
+    "exam_pearl": "Blocks shared p40 of IL-12 and IL-23"
+  },
+  {
+    "name": "Risankizumab",
+    "specialty": "Rheumatology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Psoriasis, psoriatic arthritis and selected inflammatory bowel disease",
+    "moa": "IL-23 p19 subunit blockade",
+    "adverse_effects": "Infections, hypersensitivity",
+    "exam_pearl": "Selective IL-23 p19 inhibitor"
+  },
+  {
+    "name": "Abatacept",
+    "specialty": "Rheumatology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Rheumatoid arthritis and selected autoimmune indications",
+    "moa": "CTLA-4-Ig inhibits CD80/86-mediated T-cell costimulation",
+    "adverse_effects": "Infections, infusion reactions",
+    "exam_pearl": "Blocks CD28 costimulatory signaling"
+  },
+  {
+    "name": "Apremilast",
+    "specialty": "Rheumatology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Psoriatic arthritis, plaque psoriasis and Behcet oral ulcers",
+    "moa": "PDE4 inhibition",
+    "adverse_effects": "Diarrhea, nausea, weight loss, mood changes",
+    "exam_pearl": "Oral PDE4 inhibitor"
+  },
+  {
+    "name": "Colchicine",
+    "specialty": "Rheumatology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Gout flares, gout prophylaxis and familial Mediterranean fever",
+    "moa": "Microtubule polymerization inhibition reduces neutrophil activity",
+    "adverse_effects": "Diarrhea, myopathy, bone marrow suppression",
+    "exam_pearl": "Strong CYP3A4/P-gp interactions increase toxicity"
+  },
+  {
+    "name": "Bedaquiline",
+    "specialty": "Infectious Diseases",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Drug-resistant tuberculosis in appropriate combination regimens",
+    "moa": "Mycobacterial ATP synthase inhibition",
+    "adverse_effects": "QT prolongation, hepatotoxicity",
+    "exam_pearl": "Diarylquinoline ATP synthase inhibitor"
+  },
+  {
+    "name": "Delamanid",
+    "specialty": "Infectious Diseases",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Selected drug-resistant tuberculosis regimens",
+    "moa": "Inhibits mycolic acid synthesis",
+    "adverse_effects": "QT prolongation",
+    "exam_pearl": "Nitroimidazole anti-TB agent"
+  },
+  {
+    "name": "Pretomanid",
+    "specialty": "Infectious Diseases",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Selected drug-resistant tuberculosis combination regimens",
+    "moa": "Nitroimidazooxazine affecting mycolic acid synthesis and respiration",
+    "adverse_effects": "Hepatotoxicity, neuropathy, QT-related regimen concerns",
+    "exam_pearl": "Part of BPaL/BPaLM regimens under guidelines"
+  },
+  {
+    "name": "Linezolid",
+    "specialty": "Infectious Diseases",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Resistant gram-positive infections and selected drug-resistant TB regimens",
+    "moa": "Binds 50S ribosomal subunit to block initiation",
+    "adverse_effects": "Myelosuppression, optic/peripheral neuropathy, serotonin syndrome",
+    "exam_pearl": "Oxazolidinone; monitor prolonged courses"
+  },
+  {
+    "name": "Daptomycin",
+    "specialty": "Infectious Diseases",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Complicated skin infections and S. aureus bacteremia",
+    "moa": "Calcium-dependent bacterial membrane depolarization",
+    "adverse_effects": "Myopathy, eosinophilic pneumonia",
+    "exam_pearl": "Not used for pneumonia because surfactant inactivates it"
+  },
+  {
+    "name": "Ceftaroline",
+    "specialty": "Infectious Diseases",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Selected MRSA skin infections and community-acquired pneumonia",
+    "moa": "Cephalosporin binding altered PBP2a",
+    "adverse_effects": "Hypersensitivity, neutropenia",
+    "exam_pearl": "Cephalosporin with MRSA activity"
+  },
+  {
+    "name": "Cefiderocol",
+    "specialty": "Infectious Diseases",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Selected difficult-to-treat gram-negative infections",
+    "moa": "Siderophore cephalosporin using bacterial iron transport",
+    "adverse_effects": "Diarrhea, infusion reactions; mortality warning in certain infections",
+    "exam_pearl": "Trojan horse siderophore antibiotic"
+  },
+  {
+    "name": "Meropenem/vaborbactam",
+    "specialty": "Infectious Diseases",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Selected resistant Enterobacterales infections",
+    "moa": "Carbapenem plus boronic acid beta-lactamase inhibitor",
+    "adverse_effects": "GI effects, hypersensitivity, seizures",
+    "exam_pearl": "Vaborbactam inhibits KPC carbapenemases"
+  },
+  {
+    "name": "Ceftazidime/avibactam",
+    "specialty": "Infectious Diseases",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Selected resistant gram-negative infections",
+    "moa": "Cephalosporin plus non-beta-lactam beta-lactamase inhibitor",
+    "adverse_effects": "GI upset, hypersensitivity",
+    "exam_pearl": "Avibactam inhibits KPC and some OXA-48-like enzymes, not metallo-beta-lactamases"
+  },
+  {
+    "name": "Fosfomycin",
+    "specialty": "Infectious Diseases",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Selected urinary tract infections",
+    "moa": "MurA inhibition blocks early peptidoglycan synthesis",
+    "adverse_effects": "Diarrhea, headache",
+    "exam_pearl": "Inhibits first committed step of cell wall synthesis"
+  },
+  {
+    "name": "Fidaxomicin",
+    "specialty": "Infectious Diseases",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Clostridioides difficile infection",
+    "moa": "Inhibits bacterial RNA polymerase transcription initiation",
+    "adverse_effects": "Nausea, abdominal discomfort",
+    "exam_pearl": "Narrow-spectrum macrocyclic agent for C. difficile"
+  },
+  {
+    "name": "Bezlotoxumab",
+    "specialty": "Infectious Diseases",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Reduction of recurrent C. difficile infection in selected patients where available",
+    "moa": "Monoclonal antibody neutralizing C. difficile toxin B",
+    "adverse_effects": "Infusion reactions, heart failure warning",
+    "exam_pearl": "Prevents recurrence; does not treat acute infection alone"
+  },
+  {
+    "name": "Baloxavir marboxil",
+    "specialty": "Infectious Diseases",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Uncomplicated influenza in eligible patients",
+    "moa": "Influenza cap-dependent endonuclease inhibition",
+    "adverse_effects": "Diarrhea, nausea",
+    "exam_pearl": "Single-dose antiviral in many eligible regimens"
+  },
+  {
+    "name": "Maribavir",
+    "specialty": "Infectious Diseases",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Refractory or resistant cytomegalovirus infection after transplantation",
+    "moa": "CMV UL97 kinase inhibition",
+    "adverse_effects": "Taste disturbance, nausea",
+    "exam_pearl": "UL97 inhibitor; antagonizes ganciclovir activity"
+  },
+  {
+    "name": "Letermovir",
+    "specialty": "Infectious Diseases",
+    "category": [
+      "high-yield"
+    ],
+    "use": "CMV prophylaxis in selected transplant recipients",
+    "moa": "CMV terminase complex inhibition",
+    "adverse_effects": "Nausea, drug interactions",
+    "exam_pearl": "Not active against HSV or VZV"
+  },
+  {
+    "name": "Dolutegravir",
+    "specialty": "Infectious Diseases",
+    "category": [
+      "high-yield"
+    ],
+    "use": "HIV treatment in combination antiretroviral therapy",
+    "moa": "HIV integrase strand transfer inhibition",
+    "adverse_effects": "Insomnia, weight gain, drug interactions",
+    "exam_pearl": "Integrase inhibitor; polyvalent cations impair absorption"
+  },
+  {
+    "name": "Lenacapavir",
+    "specialty": "Infectious Diseases",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Selected multidrug-resistant HIV treatment and region-specific prevention indications",
+    "moa": "HIV capsid inhibitor",
+    "adverse_effects": "Injection-site reactions, drug interactions",
+    "exam_pearl": "Long-acting capsid-targeting antiretroviral"
+  },
+  {
+    "name": "Ibalizumab",
+    "specialty": "Infectious Diseases",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Multidrug-resistant HIV in combination therapy",
+    "moa": "Post-attachment monoclonal antibody targeting CD4",
+    "adverse_effects": "Diarrhea, rash, immune reconstitution reactions",
+    "exam_pearl": "Blocks HIV entry after CD4 attachment"
+  },
+  {
+    "name": "Roflumilast",
+    "specialty": "Pulmonology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Selected severe COPD with chronic bronchitis and frequent exacerbations",
+    "moa": "PDE4 inhibition",
+    "adverse_effects": "Diarrhea, weight loss, psychiatric effects",
+    "exam_pearl": "Oral anti-inflammatory PDE4 inhibitor, not rescue bronchodilator"
+  },
+  {
+    "name": "Omalizumab",
+    "specialty": "Pulmonology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Selected allergic asthma, chronic spontaneous urticaria and other indications",
+    "moa": "Anti-IgE monoclonal antibody",
+    "adverse_effects": "Anaphylaxis, injection reactions",
+    "exam_pearl": "Binds free IgE"
+  },
+  {
+    "name": "Mepolizumab",
+    "specialty": "Pulmonology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Severe eosinophilic asthma and selected eosinophilic disorders",
+    "moa": "IL-5 monoclonal antibody",
+    "adverse_effects": "Headache, injection reactions, herpes zoster",
+    "exam_pearl": "Reduces eosinophils by IL-5 blockade"
+  },
+  {
+    "name": "Benralizumab",
+    "specialty": "Pulmonology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Severe eosinophilic asthma",
+    "moa": "IL-5 receptor alpha antibody causing eosinophil depletion",
+    "adverse_effects": "Headache, hypersensitivity",
+    "exam_pearl": "Afucosylated antibody enhances ADCC against eosinophils"
+  },
+  {
+    "name": "Ensifentrine",
+    "specialty": "Pulmonology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Maintenance treatment of COPD in eligible adults",
+    "moa": "Inhaled dual PDE3/PDE4 inhibition",
+    "adverse_effects": "Back pain, hypertension, urinary tract infection",
+    "exam_pearl": "First-in-class inhaled dual PDE3/PDE4 inhibitor"
+  },
+  {
+    "name": "Vedolizumab",
+    "specialty": "Gastroenterology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Ulcerative colitis and Crohn disease",
+    "moa": "Alpha4beta7 integrin blockade",
+    "adverse_effects": "Infections, headache, infusion reactions",
+    "exam_pearl": "Gut-selective integrin inhibitor"
+  },
+  {
+    "name": "Ozanimod",
+    "specialty": "Gastroenterology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Selected ulcerative colitis and relapsing multiple sclerosis",
+    "moa": "S1P1 and S1P5 receptor modulation",
+    "adverse_effects": "Bradycardia, liver enzyme elevation, infections",
+    "exam_pearl": "Sequesters lymphocytes in lymph nodes"
+  },
+  {
+    "name": "Eluxadoline",
+    "specialty": "Gastroenterology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Selected irritable bowel syndrome with diarrhea",
+    "moa": "Mixed mu and kappa opioid agonism and delta antagonism",
+    "adverse_effects": "Pancreatitis, sphincter of Oddi spasm, constipation",
+    "exam_pearl": "Contraindicated in patients without a gallbladder"
+  },
+  {
+    "name": "Linaclotide",
+    "specialty": "Gastroenterology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "IBS with constipation and chronic idiopathic constipation",
+    "moa": "Guanylate cyclase-C agonism increases intestinal secretion",
+    "adverse_effects": "Diarrhea",
+    "exam_pearl": "Activates intestinal GC-C and raises cGMP"
+  },
+  {
+    "name": "Rifaximin",
+    "specialty": "Gastroenterology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Hepatic encephalopathy recurrence prevention and selected IBS-D",
+    "moa": "Poorly absorbed rifamycin inhibits bacterial RNA polymerase",
+    "adverse_effects": "Nausea, edema, rare C. difficile infection",
+    "exam_pearl": "Minimally absorbed gut-directed antibiotic"
+  },
+  {
+    "name": "Tolvaptan",
+    "specialty": "Nephrology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Selected ADPKD and specific hyponatremia indications",
+    "moa": "V2 vasopressin receptor antagonism",
+    "adverse_effects": "Thirst, polyuria, hepatotoxicity",
+    "exam_pearl": "Vaptan; slows kidney volume progression in eligible ADPKD"
+  },
+  {
+    "name": "Finerenone",
+    "specialty": "Nephrology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Selected CKD associated with type 2 diabetes and other approved cardiorenal indications",
+    "moa": "Nonsteroidal mineralocorticoid receptor antagonism",
+    "adverse_effects": "Hyperkalemia, hypotension",
+    "exam_pearl": "Nonsteroidal MRA with kidney and cardiac outcome benefits"
+  },
+  {
+    "name": "Sparsentan",
+    "specialty": "Nephrology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Selected primary IgA nephropathy with proteinuria",
+    "moa": "Dual endothelin type A and angiotensin II type 1 receptor antagonism",
+    "adverse_effects": "Hepatotoxicity, edema, hypotension, fetal toxicity",
+    "exam_pearl": "Dual endothelin/angiotensin receptor antagonist"
+  },
+  {
+    "name": "Sodium zirconium cyclosilicate",
+    "specialty": "Nephrology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Hyperkalemia",
+    "moa": "Nonabsorbed gastrointestinal potassium binder",
+    "adverse_effects": "Edema, hypokalemia",
+    "exam_pearl": "Exchanges potassium for hydrogen and sodium in gut"
+  },
+  {
+    "name": "Patiromer",
+    "specialty": "Nephrology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Chronic hyperkalemia",
+    "moa": "Nonabsorbed potassium binder exchanging calcium for potassium",
+    "adverse_effects": "Constipation, hypomagnesemia",
+    "exam_pearl": "Separates administration from some oral medicines"
+  },
+  {
+    "name": "Baricitinib",
+    "specialty": "Dermatology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Selected rheumatoid arthritis and severe alopecia areata",
+    "moa": "JAK1/JAK2 inhibition",
+    "adverse_effects": "Serious infections, thrombosis and cardiovascular warnings",
+    "exam_pearl": "Oral JAK inhibitor used in alopecia areata"
+  },
+  {
+    "name": "Tralokinumab",
+    "specialty": "Dermatology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Moderate-to-severe atopic dermatitis",
+    "moa": "IL-13 monoclonal antibody",
+    "adverse_effects": "Conjunctivitis, injection reactions",
+    "exam_pearl": "Selective IL-13 blockade"
+  },
+  {
+    "name": "Deucravacitinib",
+    "specialty": "Dermatology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Moderate-to-severe plaque psoriasis",
+    "moa": "Allosteric TYK2 inhibition",
+    "adverse_effects": "Infections, acne, elevated creatine phosphokinase",
+    "exam_pearl": "Allosteric TYK2 inhibitor distinct from ATP-site JAK inhibitors"
+  },
+  {
+    "name": "Relugolix",
+    "specialty": "Obstetrics and Gynecology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Selected prostate cancer and combination therapy for uterine fibroids or endometriosis",
+    "moa": "Oral GnRH receptor antagonism",
+    "adverse_effects": "Hot flushes, bone density loss in suppression regimens",
+    "exam_pearl": "GnRH antagonist without initial testosterone flare"
+  },
+  {
+    "name": "Ulipristal acetate",
+    "specialty": "Obstetrics and Gynecology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Emergency contraception in eligible settings",
+    "moa": "Selective progesterone receptor modulation",
+    "adverse_effects": "Headache, nausea, menstrual changes",
+    "exam_pearl": "Emergency contraceptive progesterone receptor modulator"
+  },
+  {
+    "name": "Faricimab",
+    "specialty": "Ophthalmology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Neovascular age-related macular degeneration and diabetic macular edema",
+    "moa": "Bispecific antibody against VEGF-A and angiopoietin-2",
+    "adverse_effects": "Intraocular inflammation, endophthalmitis, increased IOP",
+    "exam_pearl": "Dual VEGF-A and Ang-2 targeting"
+  },
+  {
+    "name": "Brolucizumab",
+    "specialty": "Ophthalmology",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Neovascular age-related macular degeneration in selected settings",
+    "moa": "VEGF-A inhibitor single-chain antibody fragment",
+    "adverse_effects": "Retinal vasculitis, retinal vascular occlusion",
+    "exam_pearl": "Retinal vasculitis safety signal is high yield"
+  },
+  {
+    "name": "Palivizumab",
+    "specialty": "Pediatrics",
+    "category": [
+      "high-yield"
+    ],
+    "use": "RSV prophylaxis in selected high-risk infants where used",
+    "moa": "Monoclonal antibody against RSV F protein",
+    "adverse_effects": "Injection reactions, hypersensitivity",
+    "exam_pearl": "Passive RSV prevention; older shorter-acting monoclonal antibody"
+  },
+  {
+    "name": "Cerliponase alfa",
+    "specialty": "Pediatrics",
+    "category": [
+      "high-yield"
+    ],
+    "use": "CLN2 disease (late infantile neuronal ceroid lipofuscinosis)",
+    "moa": "Recombinant tripeptidyl peptidase 1 enzyme replacement",
+    "adverse_effects": "Device-related infections, hypersensitivity, seizures",
+    "exam_pearl": "Intracerebroventricular enzyme replacement for CLN2"
+  },
+  {
+    "name": "Onasemnogene abeparvovec",
+    "specialty": "Pediatrics",
+    "category": [
+      "high-yield"
+    ],
+    "use": "Selected spinal muscular atrophy patients",
+    "moa": "AAV9 gene therapy delivering functional SMN1",
+    "adverse_effects": "Hepatotoxicity, thrombocytopenia, thrombotic microangiopathy",
+    "exam_pearl": "Single-administration SMN1 gene replacement therapy"
+  }
+]
