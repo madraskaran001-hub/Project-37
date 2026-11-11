@@ -3,6 +3,10 @@ name: Build Project37 Drug Library
 
 on:
   workflow_dispatch:
+
+  schedule:
+    - cron: "30 2 * * *"
+
   push:
     branches:
       - main
@@ -10,11 +14,16 @@ on:
       - "drugs.json"
       - "drug_catalog.json"
       - "drug_topics.json"
+      - "project37_expansion.json"
       - "scripts/build_master_drugs.py"
       - ".github/workflows/build-drug-library.yml"
 
 permissions:
   contents: write
+
+concurrency:
+  group: project37-drug-library
+  cancel-in-progress: false
 
 jobs:
   build-library:
@@ -40,8 +49,9 @@ jobs:
           git add master_drugs.json
 
           if git diff --cached --quiet; then
-            echo "No changes to commit"
+            echo "No database changes detected"
           else
             git commit -m "Update Project37 master drug library"
-            git push
+            git pull --rebase origin main
+            git push origin main
           fi
