@@ -130,7 +130,6 @@ main { padding: 22px 16px; }
 }
 
 .drug-card h3 { margin-top: 0; }
-
 .drug-card p { line-height: 1.55; }
 
 .drug-count {
@@ -308,21 +307,54 @@ function safeURL(value) {
   }
 }
 
-function getCategories(drug) {
-  if (Array.isArray(drug.category)) {
-    return drug.category.filter(Boolean);
-  }
-
-  return drug.category ? [drug.category] : [];
+/*
+  FIX: Normalize drug category values.
+  Supports arrays, strings, comma-separated categories,
+  different capitalization, hyphens and spaces.
+*/
+function normalizeCategory(value) {
+  return String(value ?? "")
+    .trim()
+    .toLowerCase()
+    .replace(/[_–—-]+/g, " ")
+    .replace(/\s+/g, " ");
 }
 
-function populateFilter(select, values) {
+function getCategories(drug) {
+  const raw = drug.category ?? drug.categories ?? [];
+
+  const values = Array.isArray(raw) ? raw : [raw];
+
+  const categories = values.flatMap(value =>
+    String(value ?? "").split(/[,;|]/)
+  );
+
+  return [...new Set(
+    categories.map(normalizeCategory).filter(Boolean)
+  )];
+}
+
+function categoryLabel(value) {
+  return value
+    .split(" ")
+    .map(word => {
+      if (word === "fda") return "FDA";
+      return word.charAt(0).toUpperCase() + word.slice(1);
+    })
+    .join(" ");
+}
+
+function populateFilter(select, values, formatter) {
+  select.length = 1;
+
   [...new Set(values.filter(Boolean))]
     .sort((a, b) => a.localeCompare(b))
     .forEach(value => {
       const option = document.createElement("option");
       option.value = value;
-      option.textContent = value.replace(/-/g, " ");
+      option.textContent = formatter
+        ? formatter(value)
+        : value;
       select.appendChild(option);
     });
 }
@@ -343,13 +375,13 @@ async function loadMasterDrugs() {
       throw new Error("Unable to load master_drugs.json");
     }
 
-    masterDrugs = await response.json();
+    const data = await response.json();
 
-    if (!Array.isArray(masterDrugs)) {
+    if (!Array.isArray(data)) {
       throw new Error("Invalid master drug database");
     }
 
-    masterDrugs = masterDrugs.filter(
+    masterDrugs = data.filter(
       drug => drug && typeof drug === "object" && drug.name
     );
 
@@ -360,7 +392,8 @@ async function loadMasterDrugs() {
 
     populateFilter(
       document.getElementById("categoryFilter"),
-      masterDrugs.flatMap(getCategories)
+      masterDrugs.flatMap(getCategories),
+      categoryLabel
     );
 
     renderMasterDrugs();
@@ -383,6 +416,8 @@ function renderMasterDrugs() {
     document.getElementById("categoryFilter").value;
 
   const filtered = masterDrugs.filter(drug => {
+    const drugCategories = getCategories(drug);
+
     const searchable = [
       drug.name,
       drug.brand,
@@ -391,14 +426,16 @@ function renderMasterDrugs() {
       drug.moa,
       drug.adverse_effects,
       drug.exam_pearl,
-      ...getCategories(drug)
+      ...drugCategories
     ].join(" ").toLowerCase();
 
     const matchesSearch = searchable.includes(term);
+
     const matchesSpecialty =
       !specialty || drug.specialty === specialty;
+
     const matchesCategory =
-      !category || getCategories(drug).includes(category);
+      !category || drugCategories.includes(category);
 
     return matchesSearch &&
       matchesSpecialty &&
@@ -418,7 +455,7 @@ function renderMasterDrugs() {
 
   results.innerHTML = filtered.map(drug => {
     const categories = getCategories(drug)
-      .map(value => value.replace(/-/g, " "))
+      .map(categoryLabel)
       .join(" · ");
 
     const url = safeURL(drug.source);
@@ -426,7 +463,7 @@ function renderMasterDrugs() {
     return `
       <article class="update drug-card">
         <div class="tag">
-          ${escapeHTML(categories || "High-yield")}
+          ${escapeHTML(categories || "Uncategorized")}
         </div>
 
         <h3>${escapeHTML(drug.name)}</h3>
@@ -596,3 +633,4 @@ loadUpdates();
 
 </body>
 </html>
+
