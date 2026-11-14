@@ -1,0 +1,46 @@
+
+name: Project37 Daily Drug Discovery
+
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: "0 3 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: project37-drug-discovery
+  cancel-in-progress: false
+
+jobs:
+  discover-drugs:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Discover FDA drug approvals
+        run: python scripts/discover_drugs.py
+
+      - name: Commit discovered candidates
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add drug_candidates.json
+
+          if git diff --cached --quiet; then
+            echo "No new candidate changes"
+          else
+            git commit -m "Update FDA drug candidates"
+            git pull --rebase origin main
+            git push origin main
+          fi
