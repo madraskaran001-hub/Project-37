@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>PROJECT37 | Medical Intelligence</title>
 
 <style>
@@ -11,9 +11,9 @@
 
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
   background: #f3f6fa;
   color: #17243a;
+  font-family: Arial, sans-serif;
 }
 
 header {
@@ -31,7 +31,7 @@ header {
 .subtitle { color: #d5e5f2; margin-top: 7px; }
 main { padding: 22px 16px; }
 
-.welcome, .update {
+.panel, .update {
   background: white;
   padding: 22px;
   border-radius: 14px;
@@ -44,7 +44,6 @@ main { padding: 22px 16px; }
   border: 1px solid #ccd6e2;
   border-radius: 9px;
   font-size: 16px;
-  margin: 10px 0 18px;
   background: white;
   color: #17243a;
 }
@@ -53,15 +52,95 @@ main { padding: 22px 16px; }
   display: grid;
   grid-template-columns: 1fr;
   gap: 10px;
+  margin: 16px 0;
 }
 
-.filters .search { margin: 0 0 12px; }
+.library-stats {
+  color: #176b9b;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.note {
+  font-size: 13px;
+  color: #68758a;
+  line-height: 1.6;
+}
+
+.drug-card {
+  background: white;
+  border: 1px solid #dce3eb;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+
+.drug-card[open] {
+  border-color: #176b9b;
+}
+
+.drug-card summary {
+  padding: 17px;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.drug-card summary::-webkit-details-marker {
+  display: none;
+}
+
+.drug-name {
+  font-weight: bold;
+  font-size: 17px;
+  color: #123b5d;
+  overflow-wrap: anywhere;
+}
+
+.drug-source {
+  display: block;
+  margin-top: 6px;
+  font-size: 12px;
+  color: #68758a;
+  font-weight: normal;
+}
+
+.chevron {
+  font-size: 20px;
+  color: #176b9b;
+  flex-shrink: 0;
+}
+
+.drug-card[open] .chevron {
+  transform: rotate(180deg);
+}
+
+.drug-body {
+  padding: 5px 17px 20px;
+  border-top: 1px solid #e5ebf1;
+}
+
+.drug-field {
+  margin-top: 17px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.drug-field strong {
+  display: block;
+  color: #123b5d;
+  margin-bottom: 5px;
+}
 
 .categories {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
-  margin-bottom: 25px;
+  margin: 18px 0 25px;
 }
 
 .category {
@@ -88,8 +167,6 @@ main { padding: 22px 16px; }
   color: #68758a;
   line-height: 1.4;
 }
-
-.update { border: 1px solid #e1e7ee; }
 
 .tag {
   color: #087b68;
@@ -119,50 +196,7 @@ main { padding: 22px 16px; }
   border-radius: 12px;
   text-align: center;
   color: #68758a;
-}
-
-.drug-card h3 { margin-top: 0; }
-.drug-card p { line-height: 1.55; }
-
-.drug-count {
-  color: #176b9b;
-  font-weight: bold;
-  margin: 12px 0 20px;
-}
-
-.watchlist-note {
-  color: #68758a;
-  font-size: 13px;
   line-height: 1.6;
-}
-
-.watchlist-actions {
-  margin-bottom: 18px;
-}
-
-.action-button {
-  background: #123b5d;
-  color: white;
-  border: 0;
-  border-radius: 9px;
-  padding: 12px 18px;
-  cursor: pointer;
-  font-size: 14px;
-}
-
-.action-button:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
-}
-
-.pending {
-  display: inline-block;
-  background: #fff2d9;
-  color: #805400;
-  padding: 6px 9px;
-  border-radius: 6px;
-  font-size: 12px;
-  font-weight: bold;
 }
 
 footer {
@@ -173,12 +207,12 @@ footer {
 }
 
 @media (min-width: 700px) {
-  .categories {
-    grid-template-columns: repeat(4, 1fr);
+  .filters {
+    grid-template-columns: repeat(3, 1fr);
   }
 
-  .filters {
-    grid-template-columns: 1fr 1fr;
+  .categories {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 </style>
@@ -197,29 +231,32 @@ footer {
 
 <main>
 
-<section class="welcome">
-  <h2>Your medical intelligence dashboard</h2>
+<section class="panel">
+  <h2>Your Medical Intelligence Dashboard</h2>
   <p>
-    Important medical developments, public health updates
-    and exam-relevant information — in one place.
+    High-yield pharmacology and important medical
+    developments for NEET PG and INI-CET.
   </p>
 </section>
 
-<section class="welcome" id="drugLibrary">
-  <h2>💊 Master Drug Library</h2>
+<section class="panel" id="drugLibrary">
+
+  <h2>💊 Unified Drug Library</h2>
+
   <p>
-    First-in-class drugs, novel therapies and high-yield
-    pharmacology for NEET PG and INI-CET.
+    Master pharmacology library and reviewed FDA drug
+    additions, in one searchable collection.
   </p>
 
   <input
     id="drugSearch"
     class="search"
     type="search"
-    placeholder="Search drugs, clinical uses, mechanisms..."
+    placeholder="Search drug, MOA, uses, complications..."
   >
 
   <div class="filters">
+
     <select id="specialtyFilter" class="search">
       <option value="">All specialties</option>
     </select>
@@ -227,52 +264,37 @@ footer {
     <select id="categoryFilter" class="search">
       <option value="">All categories</option>
     </select>
+
+    <select id="sourceFilter" class="search">
+      <option value="">All drugs</option>
+      <option value="master">Master Library</option>
+      <option value="fda">Verified FDA additions</option>
+    </select>
+
   </div>
 
-  <p id="drugCount" class="drug-count"></p>
+  <p id="drugCount" class="library-stats">
+    Loading drug library...
+  </p>
+
   <div id="drugResults"></div>
-</section>
 
-<section class="welcome" id="fdaWatchlist">
-  <h2>🧪 FDA Drug Approval Watchlist</h2>
+  <p class="note" id="fdaStatus"></p>
 
-  <p>
-    Recently discovered FDA original-approval records,
-    collected automatically for review.
+  <p class="note">
+    FDA discovery records are collected automatically.
+    Only candidates with reviewed clinical information
+    are eligible to appear in this library.
+    Existing Master Library entries have not been
+    independently verified by this website.
   </p>
 
-  <p class="watchlist-note">
-    These are regulatory records, not necessarily new
-    molecular entities or first-in-class therapies.
-    Product details and exam relevance require verification.
-  </p>
-
-  <input
-    id="candidateSearch"
-    class="search"
-    type="search"
-    placeholder="Search drug name, ingredient, sponsor or application..."
-  >
-
-  <p id="candidateCount" class="drug-count"></p>
-
-  <div id="candidateResults"></div>
-
-  <div class="watchlist-actions">
-    <button
-      id="showMoreCandidates"
-      class="action-button"
-      type="button"
-      hidden
-    >
-      Show more approvals
-    </button>
-  </div>
 </section>
 
 <h2>Explore Medical Updates</h2>
 
 <div class="categories" id="categories">
+
   <button class="category active" data-category="All">
     <strong>🌐 All Updates</strong>
     <small>Everything in one place</small>
@@ -300,7 +322,7 @@ footer {
 
   <button class="category" data-category="NEET-PG">
     <strong>📚 NEET-PG</strong>
-    <small>Exam notices, results and counselling</small>
+    <small>Exam notices and counselling</small>
   </button>
 
   <button class="category" data-category="Outbreak Watch">
@@ -322,6 +344,7 @@ footer {
     <strong>📢 Medical Education</strong>
     <small>NMC, NBEMS and AIIMS</small>
   </button>
+
 </div>
 
 <h2>Latest Medical Updates</h2>
@@ -330,7 +353,7 @@ footer {
   id="search"
   class="search"
   type="search"
-  placeholder="Search by topic or category..."
+  placeholder="Search medical updates..."
 >
 
 <div id="results"></div>
@@ -338,19 +361,19 @@ footer {
 <footer>
   project37 | Medical Intelligence Platform
   <p>
-    Educational purposes only. Verify clinical information
-    with official sources.
+    Educational purposes only.
+    Verify clinical information with official sources.
   </p>
 </footer>
 
 </main>
 
 <script>
+
+let masterDrugs = [];
+let fdaDrugs = [];
 let updates = [];
 let selectedCategory = "All";
-let masterDrugs = [];
-let drugCandidates = [];
-let candidateDisplayLimit = 10;
 
 function escapeHTML(value) {
   return String(value ?? "").replace(/[&<>"']/g, char => ({
@@ -362,18 +385,7 @@ function escapeHTML(value) {
   })[char]);
 }
 
-function safeURL(value) {
-  if (typeof value !== "string") return "";
-
-  try {
-    const url = new URL(value);
-    return url.protocol === "https:" ? url.href : "";
-  } catch {
-    return "";
-  }
-}
-
-function normalizeCategory(value) {
+function normalize(value) {
   return String(value ?? "")
     .trim()
     .toLowerCase()
@@ -385,23 +397,69 @@ function getCategories(drug) {
   const raw = drug.category ?? drug.categories ?? [];
   const values = Array.isArray(raw) ? raw : [raw];
 
-  const categories = values.flatMap(value =>
-    String(value ?? "").split(/[,;|]/)
-  );
-
   return [...new Set(
-    categories.map(normalizeCategory).filter(Boolean)
+    values
+      .flatMap(value => String(value ?? "").split(/[,;|]/))
+      .map(normalize)
+      .filter(Boolean)
   )];
 }
 
 function categoryLabel(value) {
   return value
     .split(" ")
-    .map(word => {
-      if (word === "fda") return "FDA";
-      return word.charAt(0).toUpperCase() + word.slice(1);
-    })
+    .map(word =>
+      word.charAt(0).toUpperCase() + word.slice(1)
+    )
     .join(" ");
+}
+
+function clinicalFields(drug) {
+  return {
+    moa:
+      drug.moa ??
+      drug.mechanism_of_action ??
+      "",
+
+    uses:
+      drug.use ??
+      drug.uses ??
+      "",
+
+    complications:
+      drug.adverse_effects ??
+      drug.complications ??
+      drug.side_effects ??
+      ""
+  };
+}
+
+function hasContent(value) {
+  if (typeof value !== "string") return false;
+
+  const text = value.trim().toLowerCase();
+
+  return text.length > 0 &&
+    ![
+      "not available",
+      "not specified",
+      "unknown",
+      "n/a",
+      "pending"
+    ].includes(text);
+}
+
+function isVerifiedFDA(drug) {
+  const fields = clinicalFields(drug);
+
+  return (
+    drug.review_status === "verified" ||
+    drug.verified === true
+  ) &&
+  hasContent(drug.name) &&
+  hasContent(fields.moa) &&
+  hasContent(fields.uses) &&
+  hasContent(fields.complications);
 }
 
 function populateFilter(select, values, formatter) {
@@ -419,53 +477,97 @@ function populateFilter(select, values, formatter) {
     });
 }
 
-async function loadMasterDrugs() {
-  const results = document.getElementById("drugResults");
-  const count = document.getElementById("drugCount");
+function getUnifiedDrugs() {
+  const existingNames = new Set(
+    masterDrugs.map(drug => normalize(drug.name))
+  );
 
-  results.innerHTML =
-    '<div class="empty">Loading master drug library...</div>';
+  const addedNames = new Set();
 
-  try {
-    const response = await fetch(
-      "./master_drugs.json?v=" + Date.now()
-    );
+  const additions = fdaDrugs.filter(drug => {
+    const key = normalize(drug.name);
 
-    if (!response.ok) {
-      throw new Error("Unable to load master_drugs.json");
+    if (!key ||
+        existingNames.has(key) ||
+        addedNames.has(key)) {
+      return false;
     }
 
-    const data = await response.json();
+    addedNames.add(key);
+    return true;
+  });
 
-    if (!Array.isArray(data)) {
-      throw new Error("Invalid master drug database");
-    }
+  return [
+    ...masterDrugs.map(drug => ({
+      ...drug,
+      librarySource: "master"
+    })),
 
-    masterDrugs = data.filter(
-      drug => drug && typeof drug === "object" && drug.name
-    );
-
-    populateFilter(
-      document.getElementById("specialtyFilter"),
-      masterDrugs.map(drug => drug.specialty)
-    );
-
-    populateFilter(
-      document.getElementById("categoryFilter"),
-      masterDrugs.flatMap(getCategories),
-      categoryLabel
-    );
-
-    renderMasterDrugs();
-  } catch (error) {
-    count.textContent = "";
-    results.innerHTML =
-      '<div class="empty">Unable to load master drug library.</div>';
-    console.error(error);
-  }
+    ...additions.map(drug => ({
+      ...drug,
+      librarySource: "fda"
+    }))
+  ];
 }
 
-function renderMasterDrugs() {
+function renderDrugCard(drug) {
+  const fields = clinicalFields(drug);
+
+  const source = drug.librarySource === "fda"
+    ? "Verified FDA addition"
+    : "Master Library";
+
+  const specialty = drug.specialty
+    ? " · " + drug.specialty
+    : "";
+
+  return `
+    <details class="drug-card">
+
+      <summary>
+        <div>
+          <div class="drug-name">
+            ${escapeHTML(drug.name)}
+          </div>
+
+          <span class="drug-source">
+            ${escapeHTML(source + specialty)}
+          </span>
+        </div>
+
+        <span class="chevron" aria-hidden="true">
+          ⌄
+        </span>
+      </summary>
+
+      <div class="drug-body">
+
+        <div class="drug-field">
+          <strong>Mechanism of Action (MOA)</strong>
+          ${escapeHTML(fields.moa || "Not available")}
+        </div>
+
+        <div class="drug-field">
+          <strong>Uses</strong>
+          ${escapeHTML(fields.uses || "Not available")}
+        </div>
+
+        <div class="drug-field">
+          <strong>Complications / Adverse Effects</strong>
+          ${escapeHTML(
+            fields.complications || "Not available"
+          )}
+        </div>
+
+      </div>
+
+    </details>
+  `;
+}
+
+function renderDrugs() {
+  const allDrugs = getUnifiedDrugs();
+
   const term = document.getElementById("drugSearch")
     .value.toLowerCase().trim();
 
@@ -475,271 +577,128 @@ function renderMasterDrugs() {
   const category =
     document.getElementById("categoryFilter").value;
 
-  const filtered = masterDrugs.filter(drug => {
-    const drugCategories = getCategories(drug);
+  const source =
+    document.getElementById("sourceFilter").value;
+
+  const filtered = allDrugs.filter(drug => {
+    const fields = clinicalFields(drug);
+    const categories = getCategories(drug);
 
     const searchable = [
       drug.name,
       drug.brand,
       drug.specialty,
-      drug.use,
-      drug.moa,
-      drug.adverse_effects,
-      drug.exam_pearl,
-      ...drugCategories
+      fields.moa,
+      fields.uses,
+      fields.complications,
+      ...categories
     ].join(" ").toLowerCase();
 
-    return searchable.includes(term) &&
+    return (
+      searchable.includes(term) &&
       (!specialty || drug.specialty === specialty) &&
-      (!category || drugCategories.includes(category));
+      (!category || categories.includes(category)) &&
+      (!source || drug.librarySource === source)
+    );
   });
 
+  const masterCount = masterDrugs.length;
+  const fdaCount = allDrugs.length - masterCount;
+
   document.getElementById("drugCount").textContent =
-    `Showing ${filtered.length} of ${masterDrugs.length} drugs`;
+    `Showing ${filtered.length} of ${allDrugs.length} drugs ` +
+    `(${masterCount} Master + ${fdaCount} FDA additions)`;
 
+  document.getElementById("drugResults").innerHTML =
+    filtered.length
+      ? filtered.map(renderDrugCard).join("")
+      : '<div class="empty">No matching drugs found.</div>';
+}
+
+async function fetchJSON(path) {
+  const response = await fetch(
+    path + "?v=" + Date.now()
+  );
+
+  if (!response.ok) {
+    throw new Error("Unable to load " + path);
+  }
+
+  const data = await response.json();
+
+  if (!Array.isArray(data)) {
+    throw new Error("Expected an array in " + path);
+  }
+
+  return data;
+}
+
+async function loadDrugLibrary() {
   const results = document.getElementById("drugResults");
+  const status = document.getElementById("fdaStatus");
 
-  if (!filtered.length) {
+  results.innerHTML =
+    '<div class="empty">Loading drugs...</div>';
+
+  try {
+    const data = await fetchJSON("./master_drugs.json");
+
+    masterDrugs = data.filter(
+      drug =>
+        drug &&
+        typeof drug === "object" &&
+        hasContent(drug.name)
+    );
+  } catch (error) {
+    console.error(error);
     results.innerHTML =
-      '<div class="empty">No matching drugs found.</div>';
+      '<div class="empty">Unable to load Master Drug Library.</div>';
+    document.getElementById("drugCount").textContent = "";
     return;
   }
 
-  results.innerHTML = filtered.map(drug => {
-    const categories = getCategories(drug)
-      .map(categoryLabel)
-      .join(" · ");
-
-    const url = safeURL(drug.source);
-
-    return `
-      <article class="update drug-card">
-        <div class="tag">
-          ${escapeHTML(categories || "Uncategorized")}
-        </div>
-
-        <h3>${escapeHTML(drug.name)}</h3>
-
-        <p class="meta">
-          ${escapeHTML(drug.brand || "")}
-          ${drug.specialty
-            ? " | " + escapeHTML(drug.specialty)
-            : ""}
-        </p>
-
-        <p><strong>Clinical use:</strong>
-          ${escapeHTML(drug.use || "Not available")}
-        </p>
-
-        <p><strong>Mechanism of action:</strong>
-          ${escapeHTML(drug.moa || "Not available")}
-        </p>
-
-        <p><strong>Major adverse effects:</strong>
-          ${escapeHTML(drug.adverse_effects || "Not available")}
-        </p>
-
-        <p><strong>Exam pearl:</strong>
-          ${escapeHTML(drug.exam_pearl || "Not available")}
-        </p>
-
-        ${drug.approval_status ? `
-          <p class="meta">
-            Status: ${escapeHTML(drug.approval_status)}
-          </p>
-        ` : ""}
-
-        ${url ? `
-          <p>
-            <a href="${escapeHTML(url)}"
-               target="_blank"
-               rel="noopener noreferrer">
-              View source ↗
-            </a>
-          </p>
-        ` : ""}
-      </article>
-    `;
-  }).join("");
-}
-
-function formatApprovalDate(value) {
-  const text = String(value ?? "");
-
-  if (!/^\d{8}$/.test(text)) {
-    return text || "Not specified";
-  }
-
-  return (
-    text.slice(0, 4) + "-" +
-    text.slice(4, 6) + "-" +
-    text.slice(6, 8)
-  );
-}
-
-function candidateProducts(candidate) {
-  const products = Array.isArray(candidate.products)
-    ? candidate.products
-    : [];
-
-  const brands = [
-    ...new Set(
-      products
-        .map(product => product.brand_name)
-        .filter(Boolean)
-    )
-  ];
-
-  const ingredients = [
-    ...new Set(
-      products.flatMap(product => {
-        const raw = product.active_ingredients ?? [];
-
-        return (Array.isArray(raw) ? raw : [raw])
-          .map(item => {
-            if (typeof item === "string") return item;
-
-            if (item && typeof item === "object") {
-              return item.name || "";
-            }
-
-            return "";
-          })
-          .filter(Boolean);
-      })
-    )
-  ];
-
-  return { brands, ingredients };
-}
-
-async function loadDrugCandidates() {
-  const results = document.getElementById("candidateResults");
-
-  results.innerHTML =
-    '<div class="empty">Loading FDA approval candidates...</div>';
-
   try {
-    const response = await fetch(
-      "./drug_candidates.json?v=" + Date.now()
+    const candidates = await fetchJSON(
+      "./drug_candidates.json"
     );
 
-    if (!response.ok) {
-      throw new Error("Unable to load drug_candidates.json");
-    }
-
-    const data = await response.json();
-
-    if (!Array.isArray(data)) {
-      throw new Error("Invalid candidate database");
-    }
-
-    drugCandidates = data.filter(
-      item => item && typeof item === "object"
+    fdaDrugs = candidates.filter(
+      drug =>
+        drug &&
+        typeof drug === "object" &&
+        isVerifiedFDA(drug)
     );
 
-    drugCandidates.sort((a, b) =>
-      String(b.approval_date ?? "")
-        .localeCompare(String(a.approval_date ?? ""))
-    );
+    const pendingCount = candidates.length - fdaDrugs.length;
 
-    renderDrugCandidates();
+    status.textContent =
+      `${pendingCount} FDA candidate records are not yet ` +
+      `eligible for display because their clinical ` +
+      `information has not been verified.`;
+
   } catch (error) {
-    document.getElementById("candidateCount").textContent = "";
-    results.innerHTML =
-      '<div class="empty">Unable to load FDA approval candidates.</div>';
     console.error(error);
-  }
-}
+    fdaDrugs = [];
 
-function renderDrugCandidates() {
-  const term = document.getElementById("candidateSearch")
-    .value.toLowerCase().trim();
-
-  const filtered = drugCandidates.filter(candidate => {
-    const products = candidateProducts(candidate);
-
-    const searchable = [
-      candidate.application_number,
-      candidate.sponsor,
-      candidate.classification,
-      candidate.approval_date,
-      ...products.brands,
-      ...products.ingredients
-    ].join(" ").toLowerCase();
-
-    return searchable.includes(term);
-  });
-
-  const visible = filtered.slice(0, candidateDisplayLimit);
-
-  document.getElementById("candidateCount").textContent =
-    `Showing ${visible.length} of ${filtered.length} matching records`;
-
-  const results = document.getElementById("candidateResults");
-
-  if (!filtered.length) {
-    results.innerHTML =
-      '<div class="empty">No matching FDA records found.</div>';
-  } else {
-    results.innerHTML = visible.map(candidate => {
-      const products = candidateProducts(candidate);
-      const url = safeURL(candidate.source_url);
-
-      const brand = products.brands.join(", ") || "Not specified";
-      const ingredients =
-        products.ingredients.join(", ") || "Not specified";
-
-      return `
-        <article class="update">
-          <div class="tag">FDA Approval Record</div>
-
-          <h3>${escapeHTML(brand)}</h3>
-
-          <span class="pending">Pending review</span>
-
-          <p><strong>Active ingredient(s):</strong>
-            ${escapeHTML(ingredients)}
-          </p>
-
-          <p><strong>Application:</strong>
-            ${escapeHTML(
-              candidate.application_number || "Not specified"
-            )}
-          </p>
-
-          <p><strong>Approval date:</strong>
-            ${escapeHTML(
-              formatApprovalDate(candidate.approval_date)
-            )}
-          </p>
-
-          <p><strong>Sponsor:</strong>
-            ${escapeHTML(candidate.sponsor || "Not specified")}
-          </p>
-
-          <p><strong>Classification:</strong>
-            ${escapeHTML(
-              candidate.classification || "Not specified"
-            )}
-          </p>
-
-          ${url ? `
-            <p>
-              <a href="${escapeHTML(url)}"
-                 target="_blank"
-                 rel="noopener noreferrer">
-                View FDA source ↗
-              </a>
-            </p>
-          ` : ""}
-        </article>
-      `;
-    }).join("");
+    status.textContent =
+      "FDA candidate data could not be loaded. " +
+      "The Master Drug Library remains available.";
   }
 
-  document.getElementById("showMoreCandidates").hidden =
-    visible.length >= filtered.length;
+  const allDrugs = getUnifiedDrugs();
+
+  populateFilter(
+    document.getElementById("specialtyFilter"),
+    allDrugs.map(drug => drug.specialty)
+  );
+
+  populateFilter(
+    document.getElementById("categoryFilter"),
+    allDrugs.flatMap(getCategories),
+    categoryLabel
+  );
+
+  renderDrugs();
 }
 
 async function loadUpdates() {
@@ -749,30 +708,28 @@ async function loadUpdates() {
     '<div class="empty">Loading medical updates...</div>';
 
   try {
-    const response = await fetch(
-      "./updates.json?v=" + Date.now()
-    );
-
-    if (!response.ok) {
-      throw new Error("Could not load updates");
-    }
-
-    updates = await response.json();
-
-    if (!Array.isArray(updates)) {
-      throw new Error("Invalid updates database");
-    }
-
+    updates = await fetchJSON("./updates.json");
     renderUpdates();
   } catch (error) {
-    results.innerHTML =
-      '<div class="empty">Unable to load updates. Please try again later.</div>';
     console.error(error);
+    results.innerHTML =
+      '<div class="empty">Unable to load medical updates.</div>';
+  }
+}
+
+function safeURL(value) {
+  if (typeof value !== "string") return "";
+
+  try {
+    const url = new URL(value);
+    return url.protocol === "https:" ? url.href : "";
+  } catch {
+    return "";
   }
 }
 
 function renderUpdates() {
-  const search = document.getElementById("search")
+  const term = document.getElementById("search")
     .value.toLowerCase().trim();
 
   const filtered = updates.filter(item => {
@@ -780,35 +737,29 @@ function renderUpdates() {
       selectedCategory === "All" ||
       item.category === selectedCategory;
 
-    const matchesSearch = [
+    const searchable = [
       item.title,
       item.summary,
       item.category
-    ].join(" ").toLowerCase().includes(search);
+    ].join(" ").toLowerCase();
 
-    return matchesCategory && matchesSearch;
+    return matchesCategory && searchable.includes(term);
   });
 
   const results = document.getElementById("results");
 
   if (!filtered.length) {
     results.innerHTML =
-      '<div class="empty">No updates available yet. Check back soon.</div>';
+      '<div class="empty">No updates available yet.</div>';
     return;
   }
 
   results.innerHTML = filtered.map(item => {
     const url = safeURL(item.url);
 
-    const link = url
-      ? `<p><a href="${escapeHTML(url)}"
-          target="_blank" rel="noopener noreferrer">
-          Read official source ↗
-        </a></p>`
-      : "";
-
     return `
       <article class="update">
+
         <div class="tag">
           ${escapeHTML(item.category)}
         </div>
@@ -818,22 +769,50 @@ function renderUpdates() {
         <p>${escapeHTML(item.summary)}</p>
 
         <p class="meta">
-          Publication: ${escapeHTML(item.date || "Not specified")}
+          Publication:
+          ${escapeHTML(item.date || "Not specified")}
         </p>
 
         <p class="meta">
-          Source: ${escapeHTML(item.source || "Not specified")}
+          Source:
+          ${escapeHTML(item.source || "Not specified")}
         </p>
 
         <span class="relevance">
-          ${escapeHTML(item.relevance || "Pending assessment")}
+          ${escapeHTML(
+            item.relevance || "Pending assessment"
+          )}
         </span>
 
-        ${link}
+        ${url ? `
+          <p>
+            <a href="${escapeHTML(url)}"
+               target="_blank"
+               rel="noopener noreferrer">
+              Read official source ↗
+            </a>
+          </p>
+        ` : ""}
+
       </article>
     `;
   }).join("");
 }
+
+document.getElementById("drugSearch")
+  .addEventListener("input", renderDrugs);
+
+document.getElementById("specialtyFilter")
+  .addEventListener("change", renderDrugs);
+
+document.getElementById("categoryFilter")
+  .addEventListener("change", renderDrugs);
+
+document.getElementById("sourceFilter")
+  .addEventListener("change", renderDrugs);
+
+document.getElementById("search")
+  .addEventListener("input", renderUpdates);
 
 document.querySelectorAll(".category").forEach(button => {
   button.addEventListener("click", () => {
@@ -848,35 +827,12 @@ document.querySelectorAll(".category").forEach(button => {
   });
 });
 
-document.getElementById("search")
-  .addEventListener("input", renderUpdates);
-
-document.getElementById("drugSearch")
-  .addEventListener("input", renderMasterDrugs);
-
-document.getElementById("specialtyFilter")
-  .addEventListener("change", renderMasterDrugs);
-
-document.getElementById("categoryFilter")
-  .addEventListener("change", renderMasterDrugs);
-
-document.getElementById("candidateSearch")
-  .addEventListener("input", () => {
-    candidateDisplayLimit = 10;
-    renderDrugCandidates();
-  });
-
-document.getElementById("showMoreCandidates")
-  .addEventListener("click", () => {
-    candidateDisplayLimit += 10;
-    renderDrugCandidates();
-  });
-
-loadMasterDrugs();
-loadDrugCandidates();
+loadDrugLibrary();
 loadUpdates();
+
 </script>
 
 </body>
 </html>
+
 
