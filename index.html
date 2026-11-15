@@ -3,17 +3,20 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>PROJECT37 | Medical Intelligence</title>
 
 <style>
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
+  font-family: Arial, sans-serif;
   background: #f3f6fa;
   color: #17243a;
-  font-family: Arial, sans-serif;
 }
 
 header {
@@ -27,9 +30,19 @@ header {
   margin: auto;
 }
 
-.brand { font-size: 30px; font-weight: bold; }
-.subtitle { color: #d5e5f2; margin-top: 7px; }
-main { padding: 22px 16px; }
+.brand {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.subtitle {
+  color: #d5e5f2;
+  margin-top: 7px;
+}
+
+main {
+  padding: 22px 16px;
+}
 
 .panel, .update {
   background: white;
@@ -71,61 +84,28 @@ main { padding: 22px 16px; }
 .drug-card {
   background: white;
   border: 1px solid #dce3eb;
+  border-left: 4px solid #176b9b;
   border-radius: 12px;
-  margin-bottom: 12px;
-  overflow: hidden;
-}
-
-.drug-card[open] {
-  border-color: #176b9b;
-}
-
-.drug-card summary {
-  padding: 17px;
-  cursor: pointer;
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-}
-
-.drug-card summary::-webkit-details-marker {
-  display: none;
+  padding: 18px;
+  margin-bottom: 14px;
 }
 
 .drug-name {
+  font-size: 18px;
   font-weight: bold;
-  font-size: 17px;
   color: #123b5d;
+  margin: 0 0 7px;
   overflow-wrap: anywhere;
 }
 
 .drug-source {
-  display: block;
-  margin-top: 6px;
   font-size: 12px;
   color: #68758a;
-  font-weight: normal;
-}
-
-.chevron {
-  font-size: 20px;
-  color: #176b9b;
-  flex-shrink: 0;
-}
-
-.drug-card[open] .chevron {
-  transform: rotate(180deg);
-}
-
-.drug-body {
-  padding: 5px 17px 20px;
-  border-top: 1px solid #e5ebf1;
+  margin-bottom: 14px;
 }
 
 .drug-field {
-  margin-top: 17px;
+  margin-top: 16px;
   line-height: 1.6;
   overflow-wrap: anywhere;
 }
@@ -133,7 +113,33 @@ main { padding: 22px 16px; }
 .drug-field strong {
   display: block;
   color: #123b5d;
-  margin-bottom: 5px;
+  margin-bottom: 4px;
+}
+
+.show-more-wrap {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.show-more {
+  background: #123b5d;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 14px 24px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  max-width: 350px;
+}
+
+.show-more:hover {
+  background: #176b9b;
+}
+
+.show-more[hidden] {
+  display: none;
 }
 
 .categories {
@@ -245,7 +251,7 @@ footer {
 
   <p>
     Master pharmacology library and reviewed FDA drug
-    additions, in one searchable collection.
+    additions in one searchable collection.
   </p>
 
   <input
@@ -278,6 +284,17 @@ footer {
   </p>
 
   <div id="drugResults"></div>
+
+  <div class="show-more-wrap">
+    <button
+      id="showMoreDrugs"
+      class="show-more"
+      type="button"
+      hidden
+    >
+      Show 10 More Drugs ↓
+    </button>
+  </div>
 
   <p class="note" id="fdaStatus"></p>
 
@@ -374,6 +391,7 @@ let masterDrugs = [];
 let fdaDrugs = [];
 let updates = [];
 let selectedCategory = "All";
+let visibleDrugLimit = 10;
 
 function escapeHTML(value) {
   return String(value ?? "").replace(/[&<>"']/g, char => ({
@@ -522,46 +540,34 @@ function renderDrugCard(drug) {
     : "";
 
   return `
-    <details class="drug-card">
+    <article class="drug-card">
 
-      <summary>
-        <div>
-          <div class="drug-name">
-            ${escapeHTML(drug.name)}
-          </div>
+      <h3 class="drug-name">
+        ${escapeHTML(drug.name)}
+      </h3>
 
-          <span class="drug-source">
-            ${escapeHTML(source + specialty)}
-          </span>
-        </div>
-
-        <span class="chevron" aria-hidden="true">
-          ⌄
-        </span>
-      </summary>
-
-      <div class="drug-body">
-
-        <div class="drug-field">
-          <strong>Mechanism of Action (MOA)</strong>
-          ${escapeHTML(fields.moa || "Not available")}
-        </div>
-
-        <div class="drug-field">
-          <strong>Uses</strong>
-          ${escapeHTML(fields.uses || "Not available")}
-        </div>
-
-        <div class="drug-field">
-          <strong>Complications / Adverse Effects</strong>
-          ${escapeHTML(
-            fields.complications || "Not available"
-          )}
-        </div>
-
+      <div class="drug-source">
+        ${escapeHTML(source + specialty)}
       </div>
 
-    </details>
+      <div class="drug-field">
+        <strong>Mechanism of Action (MOA)</strong>
+        ${escapeHTML(fields.moa || "Not available")}
+      </div>
+
+      <div class="drug-field">
+        <strong>Uses</strong>
+        ${escapeHTML(fields.uses || "Not available")}
+      </div>
+
+      <div class="drug-field">
+        <strong>Complications / Adverse Effects</strong>
+        ${escapeHTML(
+          fields.complications || "Not available"
+        )}
+      </div>
+
+    </article>
   `;
 }
 
@@ -602,17 +608,30 @@ function renderDrugs() {
     );
   });
 
+  const visibleDrugs = filtered.slice(0, visibleDrugLimit);
+
   const masterCount = masterDrugs.length;
   const fdaCount = allDrugs.length - masterCount;
 
   document.getElementById("drugCount").textContent =
-    `Showing ${filtered.length} of ${allDrugs.length} drugs ` +
+    `Showing ${visibleDrugs.length} of ${filtered.length} matching drugs ` +
     `(${masterCount} Master + ${fdaCount} FDA additions)`;
 
   document.getElementById("drugResults").innerHTML =
-    filtered.length
-      ? filtered.map(renderDrugCard).join("")
+    visibleDrugs.length
+      ? visibleDrugs.map(renderDrugCard).join("")
       : '<div class="empty">No matching drugs found.</div>';
+
+  const showMoreButton =
+    document.getElementById("showMoreDrugs");
+
+  const remaining = filtered.length - visibleDrugs.length;
+
+  showMoreButton.hidden = remaining <= 0;
+
+  showMoreButton.textContent =
+    `Show ${Math.min(10, remaining)} More Drugs ↓ ` +
+    `(${remaining} remaining)`;
 }
 
 async function fetchJSON(path) {
@@ -651,8 +670,10 @@ async function loadDrugLibrary() {
     );
   } catch (error) {
     console.error(error);
+
     results.innerHTML =
       '<div class="empty">Unable to load Master Drug Library.</div>';
+
     document.getElementById("drugCount").textContent = "";
     return;
   }
@@ -799,17 +820,28 @@ function renderUpdates() {
   }).join("");
 }
 
+function resetDrugLimit() {
+  visibleDrugLimit = 10;
+  renderDrugs();
+}
+
 document.getElementById("drugSearch")
-  .addEventListener("input", renderDrugs);
+  .addEventListener("input", resetDrugLimit);
 
 document.getElementById("specialtyFilter")
-  .addEventListener("change", renderDrugs);
+  .addEventListener("change", resetDrugLimit);
 
 document.getElementById("categoryFilter")
-  .addEventListener("change", renderDrugs);
+  .addEventListener("change", resetDrugLimit);
 
 document.getElementById("sourceFilter")
-  .addEventListener("change", renderDrugs);
+  .addEventListener("change", resetDrugLimit);
+
+document.getElementById("showMoreDrugs")
+  .addEventListener("click", () => {
+    visibleDrugLimit += 10;
+    renderDrugs();
+  });
 
 document.getElementById("search")
   .addEventListener("input", renderUpdates);
@@ -836,3 +868,4 @@ loadUpdates();
 </html>
 
 
+    
