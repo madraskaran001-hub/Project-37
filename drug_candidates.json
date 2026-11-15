@@ -31,6 +31,37 @@
     "discovered_at": "2026-11-14T07:31:45.699831+00:00"
   },
   {
+    "id": "NDA221093-1",
+    "application_number": "NDA221093",
+    "products": [
+      {
+        "brand_name": "OXDERYS",
+        "active_ingredients": [
+          {
+            "name": "DOXORUBICIN HYDROCHLORIDE",
+            "strength": "160MG/80ML (2MG/ML)"
+          }
+        ]
+      },
+      {
+        "brand_name": "OXDERYS",
+        "active_ingredients": [
+          {
+            "name": "DOXORUBICIN HYDROCHLORIDE",
+            "strength": "40MG/20ML (2MG/ML)"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20261109",
+    "sponsor": "AVYXA HOLDINGS",
+    "classification": "Type 5 - New Formulation or New Manufacturer",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-15T03:46:38.900339+00:00"
+  },
+  {
     "id": "ANDA220619-1",
     "application_number": "ANDA220619",
     "products": [
@@ -741,6 +772,28 @@
     "discovered_at": "2026-11-14T07:31:45.699831+00:00"
   },
   {
+    "id": "ANDA218930-1",
+    "application_number": "ANDA218930",
+    "products": [
+      {
+        "brand_name": "ERIBULIN MESYLATE",
+        "active_ingredients": [
+          {
+            "name": "ERIBULIN MESYLATE",
+            "strength": "1MG/2ML (0.5MG/ML)"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20261019",
+    "sponsor": "KINDOS",
+    "classification": "",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-15T03:46:38.900339+00:00"
+  },
+  {
     "id": "ANDA220432-1",
     "application_number": "ANDA220432",
     "products": [
@@ -1261,6 +1314,28 @@
     "discovered_at": "2026-11-14T07:31:45.699831+00:00"
   },
   {
+    "id": "BLA761369-1",
+    "application_number": "BLA761369",
+    "products": [
+      {
+        "brand_name": "HYMPAVZI",
+        "active_ingredients": [
+          {
+            "name": "MARSTACIMAB-HNCQ",
+            "strength": "300MG"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20241011",
+    "sponsor": "PFIZER INC",
+    "classification": "Type 1 - New Molecular Entity",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-15T03:46:38.900339+00:00"
+  },
+  {
     "id": "BLA761298-1",
     "application_number": "BLA761298",
     "products": [
@@ -1281,6 +1356,46 @@
     "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
     "review_status": "pending",
     "discovered_at": "2026-11-14T07:31:45.699831+00:00"
+  },
+  {
+    "id": "ANDA217193-1",
+    "application_number": "ANDA217193",
+    "products": [
+      {
+        "brand_name": "LANREOTIDE ACETATE",
+        "active_ingredients": [
+          {
+            "name": "LANREOTIDE ACETATE",
+            "strength": "EQ 120MG BASE/0.5ML (EQ 120MG BASE/0.5ML)"
+          }
+        ]
+      },
+      {
+        "brand_name": "LANREOTIDE ACETATE",
+        "active_ingredients": [
+          {
+            "name": "LANREOTIDE ACETATE",
+            "strength": "EQ 60MG BASE/0.2ML (EQ 60MG BASE/0.2ML)"
+          }
+        ]
+      },
+      {
+        "brand_name": "LANREOTIDE ACETATE",
+        "active_ingredients": [
+          {
+            "name": "LANREOTIDE ACETATE",
+            "strength": "EQ 90MG BASE/0.3ML (EQ 90MG BASE/0.3ML)"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20240521",
+    "sponsor": "INVAGEN PHARMS",
+    "classification": "",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-15T03:46:38.900339+00:00"
   },
   {
     "id": "BLA761274-1",
@@ -2705,6 +2820,46 @@
     "discovered_at": "2026-11-14T07:31:45.699831+00:00"
   },
   {
+    "id": "ANDA090802-1",
+    "application_number": "ANDA090802",
+    "products": [
+      {
+        "brand_name": "TACROLIMUS",
+        "active_ingredients": [
+          {
+            "name": "TACROLIMUS",
+            "strength": "EQ 5MG BASE"
+          }
+        ]
+      },
+      {
+        "brand_name": "TACROLIMUS",
+        "active_ingredients": [
+          {
+            "name": "TACROLIMUS",
+            "strength": "EQ 0.5MG BASE"
+          }
+        ]
+      },
+      {
+        "brand_name": "TACROLIMUS",
+        "active_ingredients": [
+          {
+            "name": "TACROLIMUS",
+            "strength": "EQ 1MG BASE"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20120928",
+    "sponsor": "PANACEA",
+    "classification": "",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-15T03:46:38.900339+00:00"
+  },
+  {
     "id": "ANDA203071-1",
     "application_number": "ANDA203071",
     "products": [
@@ -2894,6 +3049,37 @@
     "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
     "review_status": "pending",
     "discovered_at": "2026-11-14T07:31:45.699831+00:00"
+  },
+  {
+    "id": "BLA125370-1",
+    "application_number": "BLA125370",
+    "products": [
+      {
+        "brand_name": "BENLYSTA",
+        "active_ingredients": [
+          {
+            "name": "BELIMUMAB",
+            "strength": "400MG"
+          }
+        ]
+      },
+      {
+        "brand_name": "BENLYSTA",
+        "active_ingredients": [
+          {
+            "name": "BELIMUMAB",
+            "strength": "120MG"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20110309",
+    "sponsor": "HUMAN GENOME SCIENCES INC.",
+    "classification": "Type 1 - New Molecular Entity",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-15T03:46:38.900339+00:00"
   },
   {
     "id": "ANDA077854-1",
