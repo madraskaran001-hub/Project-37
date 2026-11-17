@@ -1,5 +1,49 @@
 [
   {
+    "id": "BLA761488-1",
+    "application_number": "BLA761488",
+    "products": [
+      {
+        "brand_name": "KLYGEFA",
+        "active_ingredients": [
+          {
+            "name": "GEFURULIMAB",
+            "strength": "600MG"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20261113",
+    "sponsor": "ALEXION PHARM",
+    "classification": "Type 1 - New Molecular Entity",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-17T03:48:02.311481+00:00"
+  },
+  {
+    "id": "BLA761501-1",
+    "application_number": "BLA761501",
+    "products": [
+      {
+        "brand_name": "PEBRILZO",
+        "active_ingredients": [
+          {
+            "name": "PERTUZUMAB",
+            "strength": "420MG/14ML (30MG/ML)"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20261112",
+    "sponsor": "BIOCON BIOLOGICS INC",
+    "classification": "",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-17T03:48:02.311481+00:00"
+  },
+  {
     "id": "ANDA220458-2",
     "application_number": "ANDA220458",
     "products": [
@@ -60,6 +104,50 @@
     "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
     "review_status": "pending",
     "discovered_at": "2026-11-15T03:46:38.900339+00:00"
+  },
+  {
+    "id": "NDA221291-1",
+    "application_number": "NDA221291",
+    "products": [
+      {
+        "brand_name": "SUNHARBO",
+        "active_ingredients": [
+          {
+            "name": "ASUNDEXIAN",
+            "strength": "50MG"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20261109",
+    "sponsor": "BAYER HEALTHCARE",
+    "classification": "Type 1 - New Molecular Entity",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-17T03:48:02.311481+00:00"
+  },
+  {
+    "id": "NDA219457-1",
+    "application_number": "NDA219457",
+    "products": [
+      {
+        "brand_name": "MULTIBIC",
+        "active_ingredients": [
+          {
+            "name": "MULTIBIC",
+            "strength": "N/A"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20261109",
+    "sponsor": "FRESENIUS MEDICAL CARE RENAL THERAPIES GROUP LLC",
+    "classification": "Type 2 - New Active Ingredient",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-17T03:48:02.311481+00:00"
   },
   {
     "id": "ANDA220619-1",
@@ -217,6 +305,28 @@
     "discovered_at": "2026-11-14T07:31:45.699831+00:00"
   },
   {
+    "id": "ANDA218617-1",
+    "application_number": "ANDA218617",
+    "products": [
+      {
+        "brand_name": "TAFAMIDIS MEGLUMINE",
+        "active_ingredients": [
+          {
+            "name": "TAFAMIDIS MEGLUMINE",
+            "strength": "20MG"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20261106",
+    "sponsor": "AUROBINDO PHARMA LTD",
+    "classification": "",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-17T03:48:02.311481+00:00"
+  },
+  {
     "id": "ANDA221019-1",
     "application_number": "ANDA221019",
     "products": [
@@ -286,6 +396,37 @@
     "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
     "review_status": "pending",
     "discovered_at": "2026-11-14T07:31:45.699831+00:00"
+  },
+  {
+    "id": "ANDA220300-1",
+    "application_number": "ANDA220300",
+    "products": [
+      {
+        "brand_name": "HYDROXYUREA",
+        "active_ingredients": [
+          {
+            "name": "HYDROXYUREA",
+            "strength": "1GM"
+          }
+        ]
+      },
+      {
+        "brand_name": "HYDROXYUREA",
+        "active_ingredients": [
+          {
+            "name": "HYDROXYUREA",
+            "strength": "100MG"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20261103",
+    "sponsor": "ESJAY PHARMA",
+    "classification": "",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-17T03:48:02.311481+00:00"
   },
   {
     "id": "ANDA210890-1",
@@ -543,6 +684,46 @@
     "discovered_at": "2026-11-14T07:31:45.699831+00:00"
   },
   {
+    "id": "ANDA214747-1",
+    "application_number": "ANDA214747",
+    "products": [
+      {
+        "brand_name": "VENETOCLAX",
+        "active_ingredients": [
+          {
+            "name": "VENETOCLAX",
+            "strength": "10MG"
+          }
+        ]
+      },
+      {
+        "brand_name": "VENETOCLAX",
+        "active_ingredients": [
+          {
+            "name": "VENETOCLAX",
+            "strength": "50MG"
+          }
+        ]
+      },
+      {
+        "brand_name": "VENETOCLAX",
+        "active_ingredients": [
+          {
+            "name": "VENETOCLAX",
+            "strength": "100MG"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20261028",
+    "sponsor": "ALEMBIC",
+    "classification": "",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-17T03:48:02.311481+00:00"
+  },
+  {
     "id": "ANDA212247-1",
     "application_number": "ANDA212247",
     "products": [
@@ -636,6 +817,86 @@
     "discovered_at": "2026-11-16T04:00:39.904280+00:00"
   },
   {
+    "id": "ANDA217267-1",
+    "application_number": "ANDA217267",
+    "products": [
+      {
+        "brand_name": "VALGANCICLOVIR HYDROCHLORIDE",
+        "active_ingredients": [
+          {
+            "name": "VALGANCICLOVIR HYDROCHLORIDE",
+            "strength": "50MG/ML"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20261026",
+    "sponsor": "ALEMBIC",
+    "classification": "",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-17T03:48:02.311481+00:00"
+  },
+  {
+    "id": "ANDA216072-1",
+    "application_number": "ANDA216072",
+    "products": [
+      {
+        "brand_name": "PROPRANOLOL HYDROCHLORIDE",
+        "active_ingredients": [
+          {
+            "name": "PROPRANOLOL HYDROCHLORIDE",
+            "strength": "10MG"
+          }
+        ]
+      },
+      {
+        "brand_name": "PROPRANOLOL HYDROCHLORIDE",
+        "active_ingredients": [
+          {
+            "name": "PROPRANOLOL HYDROCHLORIDE",
+            "strength": "60MG"
+          }
+        ]
+      },
+      {
+        "brand_name": "PROPRANOLOL HYDROCHLORIDE",
+        "active_ingredients": [
+          {
+            "name": "PROPRANOLOL HYDROCHLORIDE",
+            "strength": "20MG"
+          }
+        ]
+      },
+      {
+        "brand_name": "PROPRANOLOL HYDROCHLORIDE",
+        "active_ingredients": [
+          {
+            "name": "PROPRANOLOL HYDROCHLORIDE",
+            "strength": "80MG"
+          }
+        ]
+      },
+      {
+        "brand_name": "PROPRANOLOL HYDROCHLORIDE",
+        "active_ingredients": [
+          {
+            "name": "PROPRANOLOL HYDROCHLORIDE",
+            "strength": "40MG"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20261026",
+    "sponsor": "SENORES PHARMS",
+    "classification": "",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-17T03:48:02.311481+00:00"
+  },
+  {
     "id": "ANDA221194-1",
     "application_number": "ANDA221194",
     "products": [
@@ -656,6 +917,28 @@
     "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
     "review_status": "pending",
     "discovered_at": "2026-11-16T04:00:39.904280+00:00"
+  },
+  {
+    "id": "ANDA214412-1",
+    "application_number": "ANDA214412",
+    "products": [
+      {
+        "brand_name": "TERIPARATIDE",
+        "active_ingredients": [
+          {
+            "name": "TERIPARATIDE",
+            "strength": "0.56MG/2.24ML (0.25MG/ML)"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20261023",
+    "sponsor": "DR REDDYS",
+    "classification": "",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-17T03:48:02.311481+00:00"
   },
   {
     "id": "BLA761298-2",
@@ -810,6 +1093,28 @@
     "discovered_at": "2026-11-16T04:00:39.904280+00:00"
   },
   {
+    "id": "ANDA221301-1",
+    "application_number": "ANDA221301",
+    "products": [
+      {
+        "brand_name": "BRIVARACETAM",
+        "active_ingredients": [
+          {
+            "name": "BRIVARACETAM",
+            "strength": "10MG/ML"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20261020",
+    "sponsor": "ZYDUS LIFESCIENCES",
+    "classification": "",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-17T03:48:02.311481+00:00"
+  },
+  {
     "id": "ANDA217103-1",
     "application_number": "ANDA217103",
     "products": [
@@ -923,6 +1228,59 @@
     "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
     "review_status": "pending",
     "discovered_at": "2026-11-16T04:00:39.904280+00:00"
+  },
+  {
+    "id": "NDA219455-1",
+    "application_number": "NDA219455",
+    "products": [
+      {
+        "brand_name": "CIENBY",
+        "active_ingredients": [
+          {
+            "name": "SODIUM CTIRATE",
+            "strength": "40G/L trisodium citrate dihydrate (136MMOL/L citrate)"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20261019",
+    "sponsor": "FRESENIUS MEDCL CARE",
+    "classification": "Type 2 - New Active Ingredient",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-17T03:48:02.311481+00:00"
+  },
+  {
+    "id": "ANDA219542-2",
+    "application_number": "ANDA219542",
+    "products": [
+      {
+        "brand_name": "TOFACITINIB CITRATE",
+        "active_ingredients": [
+          {
+            "name": "TOFACITINIB CITRATE",
+            "strength": "EQ 11MG BASE"
+          }
+        ]
+      },
+      {
+        "brand_name": "TOFACITINIB CITRATE",
+        "active_ingredients": [
+          {
+            "name": "TOFACITINIB CITRATE",
+            "strength": "EQ 22MG BASE"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20261019",
+    "sponsor": "AJANTA PHARMA LTD",
+    "classification": "",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-17T03:48:02.311481+00:00"
   },
   {
     "id": "ANDA220432-1",
@@ -1163,6 +1521,71 @@
     "discovered_at": "2026-11-14T07:31:45.699831+00:00"
   },
   {
+    "id": "ANDA211466-1",
+    "application_number": "ANDA211466",
+    "products": [
+      {
+        "brand_name": "DAPAGLIFLOZIN AND METFORMIN HYDROCHLORIDE",
+        "active_ingredients": [
+          {
+            "name": "DAPAGLIFLOZIN",
+            "strength": "10MG"
+          },
+          {
+            "name": "METFORMIN HYDROCHLORIDE",
+            "strength": "1GM"
+          }
+        ]
+      },
+      {
+        "brand_name": "DAPAGLIFLOZIN AND METFORMIN HYDROCHLORIDE",
+        "active_ingredients": [
+          {
+            "name": "DAPAGLIFLOZIN",
+            "strength": "5MG"
+          },
+          {
+            "name": "METFORMIN HYDROCHLORIDE",
+            "strength": "1GM"
+          }
+        ]
+      },
+      {
+        "brand_name": "DAPAGLIFLOZIN AND METFORMIN HYDROCHLORIDE",
+        "active_ingredients": [
+          {
+            "name": "DAPAGLIFLOZIN",
+            "strength": "10MG"
+          },
+          {
+            "name": "METFORMIN HYDROCHLORIDE",
+            "strength": "500MG"
+          }
+        ]
+      },
+      {
+        "brand_name": "DAPAGLIFLOZIN AND METFORMIN HYDROCHLORIDE",
+        "active_ingredients": [
+          {
+            "name": "DAPAGLIFLOZIN",
+            "strength": "5MG"
+          },
+          {
+            "name": "METFORMIN HYDROCHLORIDE",
+            "strength": "500MG"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20260406",
+    "sponsor": "MICRO LABS",
+    "classification": "",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-17T03:48:02.311481+00:00"
+  },
+  {
     "id": "BLA761326-2",
     "application_number": "BLA761326",
     "products": [
@@ -1182,6 +1605,217 @@
     "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
     "review_status": "pending",
     "discovered_at": "2026-11-14T07:31:45.699831+00:00"
+  },
+  {
+    "id": "ANDA219489-1",
+    "application_number": "ANDA219489",
+    "products": [
+      {
+        "brand_name": "BISOPROLOL FUMARATE AND HYDROCHLOROTHIAZIDE",
+        "active_ingredients": [
+          {
+            "name": "BISOPROLOL FUMARATE",
+            "strength": "5MG"
+          },
+          {
+            "name": "HYDROCHLOROTHIAZIDE",
+            "strength": "6.25MG"
+          }
+        ]
+      },
+      {
+        "brand_name": "BISOPROLOL FUMARATE AND HYDROCHLOROTHIAZIDE",
+        "active_ingredients": [
+          {
+            "name": "BISOPROLOL FUMARATE",
+            "strength": "10MG"
+          },
+          {
+            "name": "HYDROCHLOROTHIAZIDE",
+            "strength": "6.25MG"
+          }
+        ]
+      },
+      {
+        "brand_name": "BISOPROLOL FUMARATE AND HYDROCHLOROTHIAZIDE",
+        "active_ingredients": [
+          {
+            "name": "BISOPROLOL FUMARATE",
+            "strength": "2.5MG"
+          },
+          {
+            "name": "HYDROCHLOROTHIAZIDE",
+            "strength": "6.25MG"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20260324",
+    "sponsor": "UNIQUE PHARM",
+    "classification": "",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-17T03:48:02.311481+00:00"
+  },
+  {
+    "id": "ANDA213981-1",
+    "application_number": "ANDA213981",
+    "products": [
+      {
+        "brand_name": "BOSENTAN",
+        "active_ingredients": [
+          {
+            "name": "BOSENTAN",
+            "strength": "32MG"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20260217",
+    "sponsor": "ZYDUS PHARMS",
+    "classification": "",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-17T03:48:02.311481+00:00"
+  },
+  {
+    "id": "ANDA218535-1",
+    "application_number": "ANDA218535",
+    "products": [
+      {
+        "brand_name": "CARBIDOPA, LEVODOPA AND ENTACAPONE",
+        "active_ingredients": [
+          {
+            "name": "CARBIDOPA",
+            "strength": "50MG"
+          },
+          {
+            "name": "ENTACAPONE",
+            "strength": "200MG"
+          },
+          {
+            "name": "LEVODOPA",
+            "strength": "200MG"
+          }
+        ]
+      },
+      {
+        "brand_name": "CARBIDOPA, LEVODOPA AND ENTACAPONE",
+        "active_ingredients": [
+          {
+            "name": "CARBIDOPA",
+            "strength": "31.25MG"
+          },
+          {
+            "name": "ENTACAPONE",
+            "strength": "200MG"
+          },
+          {
+            "name": "LEVODOPA",
+            "strength": "125MG"
+          }
+        ]
+      },
+      {
+        "brand_name": "CARBIDOPA, LEVODOPA AND ENTACAPONE",
+        "active_ingredients": [
+          {
+            "name": "CARBIDOPA",
+            "strength": "18.75MG"
+          },
+          {
+            "name": "ENTACAPONE",
+            "strength": "200MG"
+          },
+          {
+            "name": "LEVODOPA",
+            "strength": "75MG"
+          }
+        ]
+      },
+      {
+        "brand_name": "CARBIDOPA, LEVODOPA AND ENTACAPONE",
+        "active_ingredients": [
+          {
+            "name": "CARBIDOPA",
+            "strength": "37.5MG"
+          },
+          {
+            "name": "ENTACAPONE",
+            "strength": "200MG"
+          },
+          {
+            "name": "LEVODOPA",
+            "strength": "150MG"
+          }
+        ]
+      },
+      {
+        "brand_name": "CARBIDOPA, LEVODOPA AND ENTACAPONE",
+        "active_ingredients": [
+          {
+            "name": "CARBIDOPA",
+            "strength": "25MG"
+          },
+          {
+            "name": "ENTACAPONE",
+            "strength": "200MG"
+          },
+          {
+            "name": "LEVODOPA",
+            "strength": "100MG"
+          }
+        ]
+      },
+      {
+        "brand_name": "CARBIDOPA, LEVODOPA AND ENTACAPONE",
+        "active_ingredients": [
+          {
+            "name": "CARBIDOPA",
+            "strength": "12.5MG"
+          },
+          {
+            "name": "ENTACAPONE",
+            "strength": "200MG"
+          },
+          {
+            "name": "LEVODOPA",
+            "strength": "50MG"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20260205",
+    "sponsor": "ALEMBIC",
+    "classification": "",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-17T03:48:02.311481+00:00"
+  },
+  {
+    "id": "ANDA219048-1",
+    "application_number": "ANDA219048",
+    "products": [
+      {
+        "brand_name": "OLANZAPINE",
+        "active_ingredients": [
+          {
+            "name": "OLANZAPINE",
+            "strength": "10MG/VIAL"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20260123",
+    "sponsor": "OMNIVIUM PHARMS",
+    "classification": "",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-17T03:48:02.311481+00:00"
   },
   {
     "id": "ANDA217922-1",
@@ -1234,6 +1868,37 @@
     "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
     "review_status": "pending",
     "discovered_at": "2026-11-14T07:31:45.699831+00:00"
+  },
+  {
+    "id": "BLA761433-1",
+    "application_number": "BLA761433",
+    "products": [
+      {
+        "brand_name": "RYBREVANT FASPRO",
+        "active_ingredients": [
+          {
+            "name": "AMIVANTAMAB AND HYALURONIDASE-LPUJ",
+            "strength": "14ML"
+          }
+        ]
+      },
+      {
+        "brand_name": "RYBREVANT FASPRO",
+        "active_ingredients": [
+          {
+            "name": "AMIVANTAMAB AND HYALURONIDASE-LPUJ",
+            "strength": "10ML"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20251217",
+    "sponsor": "JANSSEN BIOTECH",
+    "classification": "Type 5 - New Formulation or New Manufacturer",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-17T03:48:02.311481+00:00"
   },
   {
     "id": "NDA219884-1",
@@ -1294,6 +1959,59 @@
     "discovered_at": "2026-11-14T07:31:45.699831+00:00"
   },
   {
+    "id": "BLA761450-1",
+    "application_number": "BLA761450",
+    "products": [
+      {
+        "brand_name": "POHERDY",
+        "active_ingredients": [
+          {
+            "name": "PERTUZUMAB-DPZB",
+            "strength": "420MG/14ML(30MG/ML)"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20251113",
+    "sponsor": "SHANGHAI HENLIUS BIOTECH",
+    "classification": "",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-17T03:48:02.311481+00:00"
+  },
+  {
+    "id": "BLA761398-2",
+    "application_number": "BLA761398",
+    "products": [
+      {
+        "brand_name": "CONEXXENCE",
+        "active_ingredients": [
+          {
+            "name": "DENOSUMAB-BNHT",
+            "strength": "60MG/ML"
+          }
+        ]
+      },
+      {
+        "brand_name": "BOMYNTRA",
+        "active_ingredients": [
+          {
+            "name": "DENOSUMAB-BNHT",
+            "strength": "120MG/1.7ML (70 MG/ML)"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20251029",
+    "sponsor": "FRESENIUS KABI USA LLC",
+    "classification": "Efficacy",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-17T03:48:02.311481+00:00"
+  },
+  {
     "id": "ANDA218031-1",
     "application_number": "ANDA218031",
     "products": [
@@ -1320,6 +2038,73 @@
     "discovered_at": "2026-11-16T04:00:39.904280+00:00"
   },
   {
+    "id": "ANDA216097-1",
+    "application_number": "ANDA216097",
+    "products": [
+      {
+        "brand_name": "ISOTRETINOIN",
+        "active_ingredients": [
+          {
+            "name": "ISOTRETINOIN",
+            "strength": "40MG"
+          }
+        ]
+      },
+      {
+        "brand_name": "ISOTRETINOIN",
+        "active_ingredients": [
+          {
+            "name": "ISOTRETINOIN",
+            "strength": "30MG"
+          }
+        ]
+      },
+      {
+        "brand_name": "ISOTRETINOIN",
+        "active_ingredients": [
+          {
+            "name": "ISOTRETINOIN",
+            "strength": "20MG"
+          }
+        ]
+      },
+      {
+        "brand_name": "ISOTRETINOIN",
+        "active_ingredients": [
+          {
+            "name": "ISOTRETINOIN",
+            "strength": "35MG"
+          }
+        ]
+      },
+      {
+        "brand_name": "ISOTRETINOIN",
+        "active_ingredients": [
+          {
+            "name": "ISOTRETINOIN",
+            "strength": "25MG"
+          }
+        ]
+      },
+      {
+        "brand_name": "ISOTRETINOIN",
+        "active_ingredients": [
+          {
+            "name": "ISOTRETINOIN",
+            "strength": "10MG"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20251007",
+    "sponsor": "AMNEAL PHARMS NY",
+    "classification": "",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-17T03:48:02.311481+00:00"
+  },
+  {
     "id": "ANDA219922-1",
     "application_number": "ANDA219922",
     "products": [
@@ -1340,6 +2125,37 @@
     "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
     "review_status": "pending",
     "discovered_at": "2026-11-14T07:31:45.699831+00:00"
+  },
+  {
+    "id": "ANDA219542-1",
+    "application_number": "ANDA219542",
+    "products": [
+      {
+        "brand_name": "TOFACITINIB CITRATE",
+        "active_ingredients": [
+          {
+            "name": "TOFACITINIB CITRATE",
+            "strength": "EQ 11MG BASE"
+          }
+        ]
+      },
+      {
+        "brand_name": "TOFACITINIB CITRATE",
+        "active_ingredients": [
+          {
+            "name": "TOFACITINIB CITRATE",
+            "strength": "EQ 22MG BASE"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20250819",
+    "sponsor": "AJANTA PHARMA LTD",
+    "classification": "",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-17T03:48:02.311481+00:00"
   },
   {
     "id": "ANDA219939-1",
@@ -1449,6 +2265,130 @@
     "discovered_at": "2026-11-14T07:31:45.699831+00:00"
   },
   {
+    "id": "NDA211448-1",
+    "application_number": "NDA211448",
+    "products": [
+      {
+        "brand_name": "MEZOFY",
+        "active_ingredients": [
+          {
+            "name": "ARIPIPRAZOLE",
+            "strength": "15MG"
+          }
+        ]
+      },
+      {
+        "brand_name": "MEZOFY",
+        "active_ingredients": [
+          {
+            "name": "ARIPIPRAZOLE",
+            "strength": "5MG"
+          }
+        ]
+      },
+      {
+        "brand_name": "MEZOFY",
+        "active_ingredients": [
+          {
+            "name": "ARIPIPRAZOLE",
+            "strength": "10MG"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20250415",
+    "sponsor": "CMG PHARM CO LTD",
+    "classification": "Type 3 - New Dosage Form",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-17T03:48:02.311481+00:00"
+  },
+  {
+    "id": "BLA761398-1",
+    "application_number": "BLA761398",
+    "products": [
+      {
+        "brand_name": "CONEXXENCE",
+        "active_ingredients": [
+          {
+            "name": "DENOSUMAB-BNHT",
+            "strength": "60MG/ML"
+          }
+        ]
+      },
+      {
+        "brand_name": "BOMYNTRA",
+        "active_ingredients": [
+          {
+            "name": "DENOSUMAB-BNHT",
+            "strength": "120MG/1.7ML (70 MG/ML)"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20250325",
+    "sponsor": "FRESENIUS KABI USA LLC",
+    "classification": "",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-17T03:48:02.311481+00:00"
+  },
+  {
+    "id": "ANDA213154-1",
+    "application_number": "ANDA213154",
+    "products": [
+      {
+        "brand_name": "BOSENTAN",
+        "active_ingredients": [
+          {
+            "name": "BOSENTAN",
+            "strength": "32MG"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20250205",
+    "sponsor": "NATCO PHARMA LTD",
+    "classification": "",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-17T03:48:02.311481+00:00"
+  },
+  {
+    "id": "ANDA218492-1",
+    "application_number": "ANDA218492",
+    "products": [
+      {
+        "brand_name": "PRUCALOPRIDE SUCCINATE",
+        "active_ingredients": [
+          {
+            "name": "PRUCALOPRIDE SUCCINATE",
+            "strength": "EQ 1MG BASE"
+          }
+        ]
+      },
+      {
+        "brand_name": "PRUCALOPRIDE SUCCINATE",
+        "active_ingredients": [
+          {
+            "name": "PRUCALOPRIDE SUCCINATE",
+            "strength": "EQ 2MG BASE"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20241226",
+    "sponsor": "NOVITIUM PHARMA",
+    "classification": "",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-17T03:48:02.311481+00:00"
+  },
+  {
     "id": "ANDA215899-1",
     "application_number": "ANDA215899",
     "products": [
@@ -1515,6 +2455,37 @@
     "discovered_at": "2026-11-14T07:31:45.699831+00:00"
   },
   {
+    "id": "NDA219008-1",
+    "application_number": "NDA219008",
+    "products": [
+      {
+        "brand_name": "LAZCLUZE",
+        "active_ingredients": [
+          {
+            "name": "LAZERTINIB MESYLATE",
+            "strength": "EQ 80MG BASE"
+          }
+        ]
+      },
+      {
+        "brand_name": "LAZCLUZE",
+        "active_ingredients": [
+          {
+            "name": "LAZERTINIB MESYLATE",
+            "strength": "EQ 240MG BASE"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20240819",
+    "sponsor": "JANSSEN BIOTECH",
+    "classification": "Type 1 - New Molecular Entity",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-17T03:48:02.311481+00:00"
+  },
+  {
     "id": "BLA761382-1",
     "application_number": "BLA761382",
     "products": [
@@ -1535,6 +2506,46 @@
     "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
     "review_status": "pending",
     "discovered_at": "2026-11-16T04:00:39.904280+00:00"
+  },
+  {
+    "id": "NDA216490-1",
+    "application_number": "NDA216490",
+    "products": [
+      {
+        "brand_name": "YORVIPATH",
+        "active_ingredients": [
+          {
+            "name": "PALOPEGTERIPARATIDE",
+            "strength": "EQ 0.42MG TERIPARATIDE/1.4ML (EQ 0.3MG TERIPARATIDE/ML)"
+          }
+        ]
+      },
+      {
+        "brand_name": "YORVIPATH",
+        "active_ingredients": [
+          {
+            "name": "PALOPEGTERIPARATIDE",
+            "strength": "EQ 0.168MG TERIPARATIDE/0.56ML (EQ 0.168MG TERIPARATIDE/0.56ML)"
+          }
+        ]
+      },
+      {
+        "brand_name": "YORVIPATH",
+        "active_ingredients": [
+          {
+            "name": "PALOPEGTERIPARATIDE",
+            "strength": "EQ 0.294MG TERIPARATIDE/0.98ML (EQ 0.294MG TERIPARATIDE/0.98ML)"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20240809",
+    "sponsor": "ASCENDIS PHARMA BONE",
+    "classification": "Type 1 - New Molecular Entity",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-17T03:48:02.311481+00:00"
   },
   {
     "id": "BLA761378-1",
@@ -1717,6 +2728,28 @@
     "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
     "review_status": "pending",
     "discovered_at": "2026-11-14T07:31:45.699831+00:00"
+  },
+  {
+    "id": "ANDA217682-1",
+    "application_number": "ANDA217682",
+    "products": [
+      {
+        "brand_name": "GABAPENTIN",
+        "active_ingredients": [
+          {
+            "name": "GABAPENTIN",
+            "strength": "250MG/5ML"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20240117",
+    "sponsor": "ANNORA PHARMA",
+    "classification": "",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-17T03:48:02.311481+00:00"
   },
   {
     "id": "BLA761349-1",
@@ -1950,6 +2983,37 @@
     "discovered_at": "2026-11-14T07:31:45.699831+00:00"
   },
   {
+    "id": "NDA214801-1",
+    "application_number": "NDA214801",
+    "products": [
+      {
+        "brand_name": "LYTGOBI",
+        "active_ingredients": [
+          {
+            "name": "FUTIBATINIB",
+            "strength": "16MG"
+          }
+        ]
+      },
+      {
+        "brand_name": "LYTGOBI",
+        "active_ingredients": [
+          {
+            "name": "FUTIBATINIB",
+            "strength": "4MG"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20220930",
+    "sponsor": "TAIHO ONCOLOGY",
+    "classification": "Type 1 - New Molecular Entity",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-17T03:48:02.311481+00:00"
+  },
+  {
     "id": "NDA215430-1",
     "application_number": "NDA215430",
     "products": [
@@ -2053,6 +3117,262 @@
     "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
     "review_status": "pending",
     "discovered_at": "2026-11-14T07:31:45.699831+00:00"
+  },
+  {
+    "id": "BLA761082-1",
+    "application_number": "BLA761082",
+    "products": [
+      {
+        "brand_name": "RELEUKO",
+        "active_ingredients": [
+          {
+            "name": "FILGRASTIM-AYOW",
+            "strength": "300MCG/0.5ML"
+          }
+        ]
+      },
+      {
+        "brand_name": "RELEUKO",
+        "active_ingredients": [
+          {
+            "name": "FILGRASTIM-AYOW",
+            "strength": "300MCG/ML/VIAL"
+          }
+        ]
+      },
+      {
+        "brand_name": "RELEUKO",
+        "active_ingredients": [
+          {
+            "name": "FILGRASTIM-AYOW",
+            "strength": "480MCG/0.8ML"
+          }
+        ]
+      },
+      {
+        "brand_name": "RELEUKO",
+        "active_ingredients": [
+          {
+            "name": "FILGRASTIM-AYOW",
+            "strength": "480MCG/1.6ML/VIAL"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20220225",
+    "sponsor": "KASHIV BIOSCIENCES LLC",
+    "classification": "Type 5 - New Formulation or New Manufacturer",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-17T03:48:02.311481+00:00"
+  },
+  {
+    "id": "ANDA215995-1",
+    "application_number": "ANDA215995",
+    "products": [
+      {
+        "brand_name": "BISOPROLOL FUMARATE AND HYDROCHLOROTHIAZIDE",
+        "active_ingredients": [
+          {
+            "name": "BISOPROLOL FUMARATE",
+            "strength": "5MG"
+          },
+          {
+            "name": "HYDROCHLOROTHIAZIDE",
+            "strength": "6.25MG"
+          }
+        ]
+      },
+      {
+        "brand_name": "BISOPROLOL FUMARATE AND HYDROCHLOROTHIAZIDE",
+        "active_ingredients": [
+          {
+            "name": "BISOPROLOL FUMARATE",
+            "strength": "10MG"
+          },
+          {
+            "name": "HYDROCHLOROTHIAZIDE",
+            "strength": "6.25MG"
+          }
+        ]
+      },
+      {
+        "brand_name": "BISOPROLOL FUMARATE AND HYDROCHLOROTHIAZIDE",
+        "active_ingredients": [
+          {
+            "name": "BISOPROLOL FUMARATE",
+            "strength": "2.5MG"
+          },
+          {
+            "name": "HYDROCHLOROTHIAZIDE",
+            "strength": "6.25MG"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20220126",
+    "sponsor": "GLENMARK PHARMS LTD",
+    "classification": "",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-17T03:48:02.311481+00:00"
+  },
+  {
+    "id": "ANDA213212-1",
+    "application_number": "ANDA213212",
+    "products": [
+      {
+        "brand_name": "CARBIDOPA, LEVODOPA AND ENTACAPONE",
+        "active_ingredients": [
+          {
+            "name": "CARBIDOPA",
+            "strength": "37.5MG"
+          },
+          {
+            "name": "ENTACAPONE",
+            "strength": "200MG"
+          },
+          {
+            "name": "LEVODOPA",
+            "strength": "150MG"
+          }
+        ]
+      },
+      {
+        "brand_name": "CARBIDOPA, LEVODOPA AND ENTACAPONE",
+        "active_ingredients": [
+          {
+            "name": "CARBIDOPA",
+            "strength": "25MG"
+          },
+          {
+            "name": "ENTACAPONE",
+            "strength": "200MG"
+          },
+          {
+            "name": "LEVODOPA",
+            "strength": "100MG"
+          }
+        ]
+      },
+      {
+        "brand_name": "CARBIDOPA, LEVODOPA AND ENTACAPONE",
+        "active_ingredients": [
+          {
+            "name": "CARBIDOPA",
+            "strength": "12.5MG"
+          },
+          {
+            "name": "ENTACAPONE",
+            "strength": "200MG"
+          },
+          {
+            "name": "LEVODOPA",
+            "strength": "50MG"
+          }
+        ]
+      },
+      {
+        "brand_name": "CARBIDOPA, LEVODOPA AND ENTACAPONE",
+        "active_ingredients": [
+          {
+            "name": "CARBIDOPA",
+            "strength": "50MG"
+          },
+          {
+            "name": "ENTACAPONE",
+            "strength": "200MG"
+          },
+          {
+            "name": "LEVODOPA",
+            "strength": "200MG"
+          }
+        ]
+      },
+      {
+        "brand_name": "CARBIDOPA, LEVODOPA AND ENTACAPONE",
+        "active_ingredients": [
+          {
+            "name": "CARBIDOPA",
+            "strength": "31.25MG"
+          },
+          {
+            "name": "ENTACAPONE",
+            "strength": "200MG"
+          },
+          {
+            "name": "LEVODOPA",
+            "strength": "125MG"
+          }
+        ]
+      },
+      {
+        "brand_name": "CARBIDOPA, LEVODOPA AND ENTACAPONE",
+        "active_ingredients": [
+          {
+            "name": "CARBIDOPA",
+            "strength": "18.75MG"
+          },
+          {
+            "name": "ENTACAPONE",
+            "strength": "200MG"
+          },
+          {
+            "name": "LEVODOPA",
+            "strength": "75MG"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20220125",
+    "sponsor": "RISING",
+    "classification": "",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-17T03:48:02.311481+00:00"
+  },
+  {
+    "id": "ANDA214699-1",
+    "application_number": "ANDA214699",
+    "products": [
+      {
+        "brand_name": "IBUPROFEN",
+        "active_ingredients": [
+          {
+            "name": "IBUPROFEN",
+            "strength": "600MG"
+          }
+        ]
+      },
+      {
+        "brand_name": "IBUPROFEN",
+        "active_ingredients": [
+          {
+            "name": "IBUPROFEN",
+            "strength": "800MG"
+          }
+        ]
+      },
+      {
+        "brand_name": "IBUPROFEN",
+        "active_ingredients": [
+          {
+            "name": "IBUPROFEN",
+            "strength": "400MG"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20210913",
+    "sponsor": "ALKEM LABS LTD",
+    "classification": "",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-17T03:48:02.311481+00:00"
   },
   {
     "id": "NDA215383-1",
@@ -2210,6 +3530,37 @@
     "discovered_at": "2026-11-14T07:31:45.699831+00:00"
   },
   {
+    "id": "NDA213969-1",
+    "application_number": "NDA213969",
+    "products": [
+      {
+        "brand_name": "ZOKINVY",
+        "active_ingredients": [
+          {
+            "name": "LONAFARNIB",
+            "strength": "75MG"
+          }
+        ]
+      },
+      {
+        "brand_name": "ZOKINVY",
+        "active_ingredients": [
+          {
+            "name": "LONAFARNIB",
+            "strength": "50MG"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20201120",
+    "sponsor": "SENTYNL THERAPS INC",
+    "classification": "Type 1 - New Molecular Entity",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-17T03:48:02.311481+00:00"
+  },
+  {
     "id": "ANDA213813-1",
     "application_number": "ANDA213813",
     "products": [
@@ -2339,6 +3690,28 @@
     "discovered_at": "2026-11-14T07:31:45.699831+00:00"
   },
   {
+    "id": "ANDA208317-1",
+    "application_number": "ANDA208317",
+    "products": [
+      {
+        "brand_name": "ICATIBANT ACETATE",
+        "active_ingredients": [
+          {
+            "name": "ICATIBANT ACETATE",
+            "strength": "EQ 30MG BASE/3ML (EQ 10MG BASE/ML)"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20200618",
+    "sponsor": "FRESENIUS KABI USA",
+    "classification": "",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-17T03:48:02.311481+00:00"
+  },
+  {
     "id": "ANDA203442-1",
     "application_number": "ANDA203442",
     "products": [
@@ -2394,6 +3767,28 @@
     "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
     "review_status": "pending",
     "discovered_at": "2026-11-14T07:31:45.699831+00:00"
+  },
+  {
+    "id": "ANDA213181-1",
+    "application_number": "ANDA213181",
+    "products": [
+      {
+        "brand_name": "DIVALPROEX SODIUM",
+        "active_ingredients": [
+          {
+            "name": "DIVALPROEX SODIUM",
+            "strength": "EQ 125MG VALPROIC ACID"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20200228",
+    "sponsor": "AJANTA PHARMA LTD",
+    "classification": "",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-17T03:48:02.311481+00:00"
   },
   {
     "id": "ANDA212971-1",
@@ -2547,6 +3942,37 @@
     "discovered_at": "2026-11-14T07:31:45.699831+00:00"
   },
   {
+    "id": "BLA761073-1",
+    "application_number": "BLA761073",
+    "products": [
+      {
+        "brand_name": "KANJINTI",
+        "active_ingredients": [
+          {
+            "name": "TRASTUZUMAB-ANNS",
+            "strength": "150MG"
+          }
+        ]
+      },
+      {
+        "brand_name": "KANJINTI",
+        "active_ingredients": [
+          {
+            "name": "TRASTUZUMAB-ANNS",
+            "strength": "420MG"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20190613",
+    "sponsor": "AMGEN INC",
+    "classification": "",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-17T03:48:02.311481+00:00"
+  },
+  {
     "id": "ANDA206987-1",
     "application_number": "ANDA206987",
     "products": [
@@ -2669,6 +4095,209 @@
     "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
     "review_status": "pending",
     "discovered_at": "2026-11-16T04:00:39.904280+00:00"
+  },
+  {
+    "id": "ANDA209742-1",
+    "application_number": "ANDA209742",
+    "products": [
+      {
+        "brand_name": "BOSENTAN",
+        "active_ingredients": [
+          {
+            "name": "BOSENTAN",
+            "strength": "125MG"
+          }
+        ]
+      },
+      {
+        "brand_name": "BOSENTAN",
+        "active_ingredients": [
+          {
+            "name": "BOSENTAN",
+            "strength": "62.5MG"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20190426",
+    "sponsor": "AMNEAL PHARMS CO",
+    "classification": "",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-17T03:48:02.311481+00:00"
+  },
+  {
+    "id": "ANDA206381-1",
+    "application_number": "ANDA206381",
+    "products": [
+      {
+        "brand_name": "ROSUVASTATIN CALCIUM",
+        "active_ingredients": [
+          {
+            "name": "ROSUVASTATIN CALCIUM",
+            "strength": "EQ 40MG BASE"
+          }
+        ]
+      },
+      {
+        "brand_name": "ROSUVASTATIN CALCIUM",
+        "active_ingredients": [
+          {
+            "name": "ROSUVASTATIN CALCIUM",
+            "strength": "EQ 10MG BASE"
+          }
+        ]
+      },
+      {
+        "brand_name": "ROSUVASTATIN CALCIUM",
+        "active_ingredients": [
+          {
+            "name": "ROSUVASTATIN CALCIUM",
+            "strength": "EQ 20MG BASE"
+          }
+        ]
+      },
+      {
+        "brand_name": "ROSUVASTATIN CALCIUM",
+        "active_ingredients": [
+          {
+            "name": "ROSUVASTATIN CALCIUM",
+            "strength": "EQ 5MG BASE"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20190424",
+    "sponsor": "SCIEGEN PHARMS",
+    "classification": "",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-17T03:48:02.311481+00:00"
+  },
+  {
+    "id": "BLA761105-1",
+    "application_number": "BLA761105",
+    "products": [
+      {
+        "brand_name": "SKYRIZI",
+        "active_ingredients": [
+          {
+            "name": "RISANKIZUMAB-RZAA",
+            "strength": "150MG/ML"
+          }
+        ]
+      },
+      {
+        "brand_name": "SKYRIZI",
+        "active_ingredients": [
+          {
+            "name": "RISANKIZUMAB-RZAA",
+            "strength": "75MG/0.83ML"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20190423",
+    "sponsor": "ABBVIE INC",
+    "classification": "Type 1 - New Molecular Entity",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-17T03:48:02.311481+00:00"
+  },
+  {
+    "id": "ANDA209371-1",
+    "application_number": "ANDA209371",
+    "products": [
+      {
+        "brand_name": "AMOXICILLIN AND CLAVULANATE POTASSIUM",
+        "active_ingredients": [
+          {
+            "name": "AMOXICILLIN",
+            "strength": "250MG/5ML"
+          },
+          {
+            "name": "CLAVULANATE POTASSIUM",
+            "strength": "EQ 62.5MG BASE/5ML"
+          }
+        ]
+      },
+      {
+        "brand_name": "AMOXICILLIN AND CLAVULANATE POTASSIUM",
+        "active_ingredients": [
+          {
+            "name": "AMOXICILLIN",
+            "strength": "125MG/5ML"
+          },
+          {
+            "name": "CLAVULANATE POTASSIUM",
+            "strength": "EQ 31.25MG BASE/5ML"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20190419",
+    "sponsor": "AUROBINDO PHARMA",
+    "classification": "",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-17T03:48:02.311481+00:00"
+  },
+  {
+    "id": "ANDA206791-1",
+    "application_number": "ANDA206791",
+    "products": [
+      {
+        "brand_name": "CISATRACURIUM BESYLATE PRESERVATIVE FREE",
+        "active_ingredients": [
+          {
+            "name": "CISATRACURIUM BESYLATE",
+            "strength": "EQ 2MG BASE/ML"
+          }
+        ]
+      },
+      {
+        "brand_name": "CISATRACURIUM BESYLATE PRESERVATIVE FREE",
+        "active_ingredients": [
+          {
+            "name": "CISATRACURIUM BESYLATE",
+            "strength": "EQ 10MG BASE/ML"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20190220",
+    "sponsor": "SOMERSET THERAPS LLC",
+    "classification": "",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-17T03:48:02.311481+00:00"
+  },
+  {
+    "id": "ANDA204843-1",
+    "application_number": "ANDA204843",
+    "products": [
+      {
+        "brand_name": "DEXMEDETOMIDINE HYDROCHLORIDE",
+        "active_ingredients": [
+          {
+            "name": "DEXMEDETOMIDINE HYDROCHLORIDE",
+            "strength": "EQ 200MCG BASE/2ML (EQ 100MCG BASE/ML)"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20190118",
+    "sponsor": "MEITHEAL",
+    "classification": "",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-17T03:48:02.311481+00:00"
   },
   {
     "id": "ANDA207402-1",
@@ -2880,6 +4509,28 @@
     "discovered_at": "2026-11-14T07:31:45.699831+00:00"
   },
   {
+    "id": "BLA761067-1",
+    "application_number": "BLA761067",
+    "products": [
+      {
+        "brand_name": "ILUMYA",
+        "active_ingredients": [
+          {
+            "name": "TILDRAKIZUMAB-ASMN",
+            "strength": "100MG/1ML"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20180320",
+    "sponsor": "SUN PHARMA GLOBAL",
+    "classification": "Type 1 - New Molecular Entity",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-17T03:48:02.311481+00:00"
+  },
+  {
     "id": "NDA209279-1",
     "application_number": "NDA209279",
     "products": [
@@ -2902,6 +4553,28 @@
     "discovered_at": "2026-11-14T07:31:45.699831+00:00"
   },
   {
+    "id": "BLA761043-1",
+    "application_number": "BLA761043",
+    "products": [
+      {
+        "brand_name": "BENLYSTA",
+        "active_ingredients": [
+          {
+            "name": "BELIMUMAB",
+            "strength": "200MG/ML"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20170720",
+    "sponsor": "GLAXOSMITHKLINE LLC",
+    "classification": "Type 3 - New Dosage Form",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-17T03:48:02.311481+00:00"
+  },
+  {
     "id": "ANDA205531-1",
     "application_number": "ANDA205531",
     "products": [
@@ -2922,6 +4595,28 @@
     "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
     "review_status": "pending",
     "discovered_at": "2026-11-14T07:31:45.699831+00:00"
+  },
+  {
+    "id": "BLA761069-1",
+    "application_number": "BLA761069",
+    "products": [
+      {
+        "brand_name": "IMFINZI",
+        "active_ingredients": [
+          {
+            "name": "DURVALUMAB",
+            "strength": "50MG/ML"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20170501",
+    "sponsor": "ASTRAZENECA UK LTD",
+    "classification": "Type 1 - New Molecular Entity",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-17T03:48:02.311481+00:00"
   },
   {
     "id": "NDA209241-1",
@@ -2962,6 +4657,28 @@
     "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
     "review_status": "pending",
     "discovered_at": "2026-11-14T07:31:45.699831+00:00"
+  },
+  {
+    "id": "ANDA207989-1",
+    "application_number": "ANDA207989",
+    "products": [
+      {
+        "brand_name": "MOMETASONE FUROATE",
+        "active_ingredients": [
+          {
+            "name": "MOMETASONE FUROATE",
+            "strength": "0.05MG/SPRAY"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20170403",
+    "sponsor": "AMNEAL PHARMS",
+    "classification": "",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-17T03:48:02.311481+00:00"
   },
   {
     "id": "ANDA201619-1",
@@ -3013,6 +4730,169 @@
     "discovered_at": "2026-11-16T04:00:39.904280+00:00"
   },
   {
+    "id": "ANDA206434-1",
+    "application_number": "ANDA206434",
+    "products": [
+      {
+        "brand_name": "ROSUVASTATIN CALCIUM",
+        "active_ingredients": [
+          {
+            "name": "ROSUVASTATIN CALCIUM",
+            "strength": "EQ 20MG BASE"
+          }
+        ]
+      },
+      {
+        "brand_name": "ROSUVASTATIN CALCIUM",
+        "active_ingredients": [
+          {
+            "name": "ROSUVASTATIN CALCIUM",
+            "strength": "EQ 5MG BASE"
+          }
+        ]
+      },
+      {
+        "brand_name": "ROSUVASTATIN CALCIUM",
+        "active_ingredients": [
+          {
+            "name": "ROSUVASTATIN CALCIUM",
+            "strength": "EQ 40MG BASE"
+          }
+        ]
+      },
+      {
+        "brand_name": "ROSUVASTATIN CALCIUM",
+        "active_ingredients": [
+          {
+            "name": "ROSUVASTATIN CALCIUM",
+            "strength": "EQ 10MG BASE"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20161031",
+    "sponsor": "ACCORD HLTHCARE",
+    "classification": "",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-17T03:48:02.311481+00:00"
+  },
+  {
+    "id": "BLA761024-1",
+    "application_number": "BLA761024",
+    "products": [
+      {
+        "brand_name": "AMJEVITA",
+        "active_ingredients": [
+          {
+            "name": "ADALIMUMAB-ATTO",
+            "strength": "40MG/0.8ML"
+          }
+        ]
+      },
+      {
+        "brand_name": "AMJEVITA",
+        "active_ingredients": [
+          {
+            "name": "ADALIMUMAB-ATTO",
+            "strength": "20MG/0.4ML"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20160923",
+    "sponsor": "AMGEN INC",
+    "classification": "Type 2 New Active Ingredient and Type 4 New Combination",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-17T03:48:02.311481+00:00"
+  },
+  {
+    "id": "ANDA205220-1",
+    "application_number": "ANDA205220",
+    "products": [
+      {
+        "brand_name": "VALGANCICLOVIR HYDROCHLORIDE",
+        "active_ingredients": [
+          {
+            "name": "VALGANCICLOVIR HYDROCHLORIDE",
+            "strength": "50MG/ML"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20160718",
+    "sponsor": "ACTAVIS LABS FL INC",
+    "classification": "",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-17T03:48:02.311481+00:00"
+  },
+  {
+    "id": "ANDA203339-1",
+    "application_number": "ANDA203339",
+    "products": [
+      {
+        "brand_name": "AMABELZ",
+        "active_ingredients": [
+          {
+            "name": "ESTRADIOL",
+            "strength": "1MG"
+          },
+          {
+            "name": "NORETHINDRONE ACETATE",
+            "strength": "0.5MG"
+          }
+        ]
+      },
+      {
+        "brand_name": "AMABELZ",
+        "active_ingredients": [
+          {
+            "name": "ESTRADIOL",
+            "strength": "0.5MG"
+          },
+          {
+            "name": "NORETHINDRONE ACETATE",
+            "strength": "0.1MG"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20160620",
+    "sponsor": "LUPIN",
+    "classification": "",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-17T03:48:02.311481+00:00"
+  },
+  {
+    "id": "ANDA202964-1",
+    "application_number": "ANDA202964",
+    "products": [
+      {
+        "brand_name": "DICLOFENAC POTASSIUM",
+        "active_ingredients": [
+          {
+            "name": "DICLOFENAC POTASSIUM",
+            "strength": "50MG"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20160502",
+    "sponsor": "PH HEALTH",
+    "classification": "",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-17T03:48:02.311481+00:00"
+  },
+  {
     "id": "ANDA201406-1",
     "application_number": "ANDA201406",
     "products": [
@@ -3050,6 +4930,76 @@
     "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
     "review_status": "pending",
     "discovered_at": "2026-11-14T07:31:45.699831+00:00"
+  },
+  {
+    "id": "ANDA203320-1",
+    "application_number": "ANDA203320",
+    "products": [
+      {
+        "brand_name": "CLONIDINE HYDROCHLORIDE",
+        "active_ingredients": [
+          {
+            "name": "CLONIDINE HYDROCHLORIDE",
+            "strength": "0.2MG"
+          }
+        ]
+      },
+      {
+        "brand_name": "CLONIDINE HYDROCHLORIDE",
+        "active_ingredients": [
+          {
+            "name": "CLONIDINE HYDROCHLORIDE",
+            "strength": "0.1MG"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20150515",
+    "sponsor": "ACTAVIS ELIZABETH",
+    "classification": "",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-17T03:48:02.311481+00:00"
+  },
+  {
+    "id": "ANDA201024-1",
+    "application_number": "ANDA201024",
+    "products": [
+      {
+        "brand_name": "AMPICILLIN AND SULBACTAM",
+        "active_ingredients": [
+          {
+            "name": "AMPICILLIN SODIUM",
+            "strength": "EQ 1GM BASE/VIAL"
+          },
+          {
+            "name": "SULBACTAM SODIUM",
+            "strength": "EQ 500MG BASE/VIAL"
+          }
+        ]
+      },
+      {
+        "brand_name": "AMPICILLIN AND SULBACTAM",
+        "active_ingredients": [
+          {
+            "name": "AMPICILLIN SODIUM",
+            "strength": "EQ 2GM BASE/VIAL"
+          },
+          {
+            "name": "SULBACTAM SODIUM",
+            "strength": "EQ 1GM BASE/VIAL"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20140407",
+    "sponsor": "ONESOURCE SPECIALTY",
+    "classification": "Not Applicable",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-17T03:48:02.311481+00:00"
   },
   {
     "id": "NDA204684-1",
@@ -3185,6 +5135,64 @@
     "discovered_at": "2026-11-14T07:31:45.699831+00:00"
   },
   {
+    "id": "NDA203752-1",
+    "application_number": "NDA203752",
+    "products": [
+      {
+        "brand_name": "MINIVELLE",
+        "active_ingredients": [
+          {
+            "name": "ESTRADIOL",
+            "strength": "0.1MG/24HR"
+          }
+        ]
+      },
+      {
+        "brand_name": "MINIVELLE",
+        "active_ingredients": [
+          {
+            "name": "ESTRADIOL",
+            "strength": "0.075MG/24HR"
+          }
+        ]
+      },
+      {
+        "brand_name": "MINIVELLE",
+        "active_ingredients": [
+          {
+            "name": "ESTRADIOL",
+            "strength": "0.025MG/24HR"
+          }
+        ]
+      },
+      {
+        "brand_name": "MINIVELLE",
+        "active_ingredients": [
+          {
+            "name": "ESTRADIOL",
+            "strength": "0.05MG/24HR"
+          }
+        ]
+      },
+      {
+        "brand_name": "MINIVELLE",
+        "active_ingredients": [
+          {
+            "name": "ESTRADIOL",
+            "strength": "0.0375MG/24HR"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20121029",
+    "sponsor": "NOVEN",
+    "classification": "Type 5 - New Formulation or New Manufacturer",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-17T03:48:02.311481+00:00"
+  },
+  {
     "id": "ANDA090802-1",
     "application_number": "ANDA090802",
     "products": [
@@ -3263,6 +5271,28 @@
     "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
     "review_status": "pending",
     "discovered_at": "2026-11-14T07:31:45.699831+00:00"
+  },
+  {
+    "id": "ANDA090862-1",
+    "application_number": "ANDA090862",
+    "products": [
+      {
+        "brand_name": "VORICONAZOLE",
+        "active_ingredients": [
+          {
+            "name": "VORICONAZOLE",
+            "strength": "200MG/VIAL"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20120530",
+    "sponsor": "SANDOZ INC",
+    "classification": "",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-17T03:48:02.311481+00:00"
   },
   {
     "id": "ANDA091441-1",
@@ -3376,6 +5406,46 @@
     "discovered_at": "2026-11-14T07:31:45.699831+00:00"
   },
   {
+    "id": "NDA202231-1",
+    "application_number": "NDA202231",
+    "products": [
+      {
+        "brand_name": "LEVOTHYROXINE SODIUM",
+        "active_ingredients": [
+          {
+            "name": "LEVOTHYROXINE SODIUM",
+            "strength": "200MCG/VIAL"
+          }
+        ]
+      },
+      {
+        "brand_name": "LEVOTHYROXINE SODIUM",
+        "active_ingredients": [
+          {
+            "name": "LEVOTHYROXINE SODIUM",
+            "strength": "500MCG/VIAL"
+          }
+        ]
+      },
+      {
+        "brand_name": "LEVOTHYROXINE SODIUM",
+        "active_ingredients": [
+          {
+            "name": "LEVOTHYROXINE SODIUM",
+            "strength": "100MCG/VIAL"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20110624",
+    "sponsor": "FRESENIUS KABI USA",
+    "classification": "Type 7 - Drug Already Marketed without Approved NDA",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-17T03:48:02.311481+00:00"
+  },
+  {
     "id": "ANDA079163-1",
     "application_number": "ANDA079163",
     "products": [
@@ -3445,6 +5515,54 @@
     "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
     "review_status": "pending",
     "discovered_at": "2026-11-15T03:46:38.900339+00:00"
+  },
+  {
+    "id": "ANDA090612-1",
+    "application_number": "ANDA090612",
+    "products": [
+      {
+        "brand_name": "CHLOROQUINE PHOSPHATE",
+        "active_ingredients": [
+          {
+            "name": "CHLOROQUINE PHOSPHATE",
+            "strength": "500MG"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20110121",
+    "sponsor": "NATCO PHARMA LTD",
+    "classification": "",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-17T03:48:02.311481+00:00"
+  },
+  {
+    "id": "ANDA076298-1",
+    "application_number": "ANDA076298",
+    "products": [
+      {
+        "brand_name": "FEXOFENADINE HYDROCHLORIDE AND PSEUDOEPHEDRINE HYDROCHLORIDE",
+        "active_ingredients": [
+          {
+            "name": "FEXOFENADINE HYDROCHLORIDE",
+            "strength": "60MG"
+          },
+          {
+            "name": "PSEUDOEPHEDRINE HYDROCHLORIDE",
+            "strength": "120MG"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20101112",
+    "sponsor": "IMPAX PHARMS",
+    "classification": "",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-17T03:48:02.311481+00:00"
   },
   {
     "id": "ANDA077854-1",
@@ -3579,6 +5697,28 @@
     "discovered_at": "2026-11-14T07:31:45.699831+00:00"
   },
   {
+    "id": "ANDA078058-1",
+    "application_number": "ANDA078058",
+    "products": [
+      {
+        "brand_name": "ANASTROZOLE",
+        "active_ingredients": [
+          {
+            "name": "ANASTROZOLE",
+            "strength": "1MG"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20100628",
+    "sponsor": "TEVA PHARMS",
+    "classification": "",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-17T03:48:02.311481+00:00"
+  },
+  {
     "id": "ANDA090764-1",
     "application_number": "ANDA090764",
     "products": [
@@ -3601,6 +5741,46 @@
     "discovered_at": "2026-11-14T07:31:45.699831+00:00"
   },
   {
+    "id": "ANDA077471-1",
+    "application_number": "ANDA077471",
+    "products": [
+      {
+        "brand_name": "HYDROMORPHONE HYDROCHLORIDE",
+        "active_ingredients": [
+          {
+            "name": "HYDROMORPHONE HYDROCHLORIDE",
+            "strength": "4MG"
+          }
+        ]
+      },
+      {
+        "brand_name": "HYDROMORPHONE HYDROCHLORIDE",
+        "active_ingredients": [
+          {
+            "name": "HYDROMORPHONE HYDROCHLORIDE",
+            "strength": "8MG"
+          }
+        ]
+      },
+      {
+        "brand_name": "HYDROMORPHONE HYDROCHLORIDE",
+        "active_ingredients": [
+          {
+            "name": "HYDROMORPHONE HYDROCHLORIDE",
+            "strength": "2MG"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20091209",
+    "sponsor": "GENUS",
+    "classification": "",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-17T03:48:02.311481+00:00"
+  },
+  {
     "id": "NDA021918-1",
     "application_number": "NDA021918",
     "products": [
@@ -3621,6 +5801,28 @@
     "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
     "review_status": "pending",
     "discovered_at": "2026-11-14T07:31:45.699831+00:00"
+  },
+  {
+    "id": "ANDA079242-1",
+    "application_number": "ANDA079242",
+    "products": [
+      {
+        "brand_name": "SUMATRIPTAN SUCCINATE",
+        "active_ingredients": [
+          {
+            "name": "SUMATRIPTAN SUCCINATE",
+            "strength": "EQ 6MG BASE/0.5ML (EQ 12MG BASE/ML)"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20090302",
+    "sponsor": "FRESENIUS KABI USA",
+    "classification": "",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-17T03:48:02.311481+00:00"
   },
   {
     "id": "NDA022196-1",
@@ -3665,6 +5867,165 @@
     "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
     "review_status": "pending",
     "discovered_at": "2026-11-14T07:31:45.699831+00:00"
+  },
+  {
+    "id": "NDA022015-1",
+    "application_number": "NDA022015",
+    "products": [
+      {
+        "brand_name": "MIRALAX",
+        "active_ingredients": [
+          {
+            "name": "POLYETHYLENE GLYCOL 3350",
+            "strength": "17GM/SCOOPFUL"
+          }
+        ]
+      },
+      {
+        "brand_name": "MIRALAX",
+        "active_ingredients": [
+          {
+            "name": "POLYETHYLENE GLYCOL 3350",
+            "strength": "17GM/PACKET"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20061006",
+    "sponsor": "BAYER HEALTHCARE LLC",
+    "classification": "Type 8 - Partial Rx to OTC Switch",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-17T03:48:02.311481+00:00"
+  },
+  {
+    "id": "NDA021704-1",
+    "application_number": "NDA021704",
+    "products": [
+      {
+        "brand_name": "ALLEGRA-D 24 HOUR ALLERGY AND CONGESTION",
+        "active_ingredients": [
+          {
+            "name": "FEXOFENADINE HYDROCHLORIDE",
+            "strength": "180MG"
+          },
+          {
+            "name": "PSEUDOEPHEDRINE HYDROCHLORIDE",
+            "strength": "240MG"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20041019",
+    "sponsor": "CHATTEM SANOFI",
+    "classification": "Type 3 - New Dosage Form",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-17T03:48:02.311481+00:00"
+  },
+  {
+    "id": "ANDA076019-1",
+    "application_number": "ANDA076019",
+    "products": [
+      {
+        "brand_name": "DEFEROXAMINE MESYLATE",
+        "active_ingredients": [
+          {
+            "name": "DEFEROXAMINE MESYLATE",
+            "strength": "2GM/VIAL"
+          }
+        ]
+      },
+      {
+        "brand_name": "DEFEROXAMINE MESYLATE",
+        "active_ingredients": [
+          {
+            "name": "DEFEROXAMINE MESYLATE",
+            "strength": "500MG/VIAL"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20040317",
+    "sponsor": "HOSPIRA",
+    "classification": "",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-17T03:48:02.311481+00:00"
+  },
+  {
+    "id": "ANDA075416-1",
+    "application_number": "ANDA075416",
+    "products": [
+      {
+        "brand_name": "NAPROXEN SODIUM",
+        "active_ingredients": [
+          {
+            "name": "NAPROXEN SODIUM",
+            "strength": "EQ 750MG BASE"
+          }
+        ]
+      },
+      {
+        "brand_name": "NAPROXEN SODIUM",
+        "active_ingredients": [
+          {
+            "name": "NAPROXEN SODIUM",
+            "strength": "EQ 500MG BASE"
+          }
+        ]
+      },
+      {
+        "brand_name": "NAPROXEN SODIUM",
+        "active_ingredients": [
+          {
+            "name": "NAPROXEN SODIUM",
+            "strength": "EQ 375MG BASE"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20020827",
+    "sponsor": "ACTAVIS LABS FL INC",
+    "classification": "",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-17T03:48:02.311481+00:00"
+  },
+  {
+    "id": "NDA021290-1",
+    "application_number": "NDA021290",
+    "products": [
+      {
+        "brand_name": "TRACLEER",
+        "active_ingredients": [
+          {
+            "name": "BOSENTAN",
+            "strength": "62.5MG"
+          }
+        ]
+      },
+      {
+        "brand_name": "TRACLEER",
+        "active_ingredients": [
+          {
+            "name": "BOSENTAN",
+            "strength": "125MG"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20011120",
+    "sponsor": "ACTELION",
+    "classification": "Type 1 - New Molecular Entity",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-17T03:48:02.311481+00:00"
   },
   {
     "id": "NDA021131-1",
@@ -3758,6 +6119,64 @@
     "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
     "review_status": "pending",
     "discovered_at": "2026-11-14T07:31:45.699831+00:00"
+  },
+  {
+    "id": "NDA020323-1",
+    "application_number": "NDA020323",
+    "products": [
+      {
+        "brand_name": "VIVELLE",
+        "active_ingredients": [
+          {
+            "name": "ESTRADIOL",
+            "strength": "0.1MG/24HR"
+          }
+        ]
+      },
+      {
+        "brand_name": "VIVELLE",
+        "active_ingredients": [
+          {
+            "name": "ESTRADIOL",
+            "strength": "0.05MG/24HR"
+          }
+        ]
+      },
+      {
+        "brand_name": "VIVELLE",
+        "active_ingredients": [
+          {
+            "name": "ESTRADIOL",
+            "strength": "0.025MG/24HR"
+          }
+        ]
+      },
+      {
+        "brand_name": "VIVELLE",
+        "active_ingredients": [
+          {
+            "name": "ESTRADIOL",
+            "strength": "0.075MG/24HR"
+          }
+        ]
+      },
+      {
+        "brand_name": "VIVELLE",
+        "active_ingredients": [
+          {
+            "name": "ESTRADIOL",
+            "strength": "0.0375MG/24HR"
+          }
+        ]
+      }
+    ],
+    "approval_date": "19941028",
+    "sponsor": "SANDOZ",
+    "classification": "Type 3 - New Dosage Form",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-17T03:48:02.311481+00:00"
   },
   {
     "id": "NDA019952-1",
