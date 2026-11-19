@@ -482,6 +482,28 @@
     "discovered_at": "2026-11-18T03:50:12.693255+00:00"
   },
   {
+    "id": "ANDA203421-1",
+    "application_number": "ANDA203421",
+    "products": [
+      {
+        "brand_name": "PROPOFOL",
+        "active_ingredients": [
+          {
+            "name": "PROPOFOL",
+            "strength": "10MG/ML"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20261103",
+    "sponsor": "BAXTER HLTHCARE CORP",
+    "classification": "",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-19T03:51:55.543094+00:00"
+  },
+  {
     "id": "ANDA210890-1",
     "application_number": "ANDA210890",
     "products": [
@@ -3462,6 +3484,37 @@
     "discovered_at": "2026-11-14T07:31:45.699831+00:00"
   },
   {
+    "id": "NDA215390-1",
+    "application_number": "NDA215390",
+    "products": [
+      {
+        "brand_name": "IGALMI",
+        "active_ingredients": [
+          {
+            "name": "DEXMEDETOMIDINE HYDROCHLORIDE",
+            "strength": "EQ 0.18MG BASE"
+          }
+        ]
+      },
+      {
+        "brand_name": "IGALMI",
+        "active_ingredients": [
+          {
+            "name": "DEXMEDETOMIDINE HYDROCHLORIDE",
+            "strength": "EQ 0.12MG BASE"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20220405",
+    "sponsor": "TEVA",
+    "classification": "Type 3 - New Dosage Form",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-19T03:51:55.543094+00:00"
+  },
+  {
     "id": "BLA761082-1",
     "application_number": "BLA761082",
     "products": [
@@ -4397,6 +4450,28 @@
     "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
     "review_status": "pending",
     "discovered_at": "2026-11-17T03:48:02.311481+00:00"
+  },
+  {
+    "id": "ANDA210510-1",
+    "application_number": "ANDA210510",
+    "products": [
+      {
+        "brand_name": "ATOVAQUONE",
+        "active_ingredients": [
+          {
+            "name": "ATOVAQUONE",
+            "strength": "750MG/5ML"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20190531",
+    "sponsor": "ABHAI LLC",
+    "classification": "",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-19T03:51:55.543094+00:00"
   },
   {
     "id": "ANDA211253-1",
