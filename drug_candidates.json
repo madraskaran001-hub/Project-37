@@ -1,5 +1,114 @@
 [
   {
+    "id": "NDA221144-1",
+    "application_number": "NDA221144",
+    "products": [
+      {
+        "brand_name": "INFILBRAY",
+        "active_ingredients": [
+          {
+            "name": "VENGLUSTAT",
+            "strength": "15MG"
+          }
+        ]
+      },
+      {
+        "brand_name": "INFILBRAY",
+        "active_ingredients": [
+          {
+            "name": "VENGLUSTAT",
+            "strength": "6MG"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20261118",
+    "sponsor": "GENZYME CORP A SANOFI CO",
+    "classification": "Type 1 - New Molecular Entity",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-21T03:45:55.434379+00:00"
+  },
+  {
+    "id": "NDA221251-1",
+    "application_number": "NDA221251",
+    "products": [
+      {
+        "brand_name": "LIVSAYIS",
+        "active_ingredients": [
+          {
+            "name": "CEMDISIRAN",
+            "strength": "189MG/ML"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20261118",
+    "sponsor": "REGENERON PHARMACEUTICALS",
+    "classification": "Type 1 - New Molecular Entity",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-21T03:45:55.434379+00:00"
+  },
+  {
+    "id": "NDA221313-1",
+    "application_number": "NDA221313",
+    "products": [],
+    "approval_date": "20261118",
+    "sponsor": "LUPIN LTD",
+    "classification": "Type 3 - New Dosage Form",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-21T03:45:55.434379+00:00"
+  },
+  {
+    "id": "NDA220936-1",
+    "application_number": "NDA220936",
+    "products": [
+      {
+        "brand_name": "NELKARMI",
+        "active_ingredients": [
+          {
+            "name": "NELADALKIB",
+            "strength": "150MG"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20261117",
+    "sponsor": "NUVALENT",
+    "classification": "Type 1 - New Molecular Entity",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-21T03:45:55.434379+00:00"
+  },
+  {
+    "id": "NDA220996-1",
+    "application_number": "NDA220996",
+    "products": [
+      {
+        "brand_name": "LEMBAZ",
+        "active_ingredients": [
+          {
+            "name": "ADRABETADEX",
+            "strength": "900MG/4.5ML (200MG/ML)"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20261117",
+    "sponsor": "MANDOS LLC",
+    "classification": "Type 1 - New Molecular Entity",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-21T03:45:55.434379+00:00"
+  },
+  {
     "id": "NDA220791-1",
     "application_number": "NDA220791",
     "products": [
@@ -20,6 +129,59 @@
     "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
     "review_status": "pending",
     "discovered_at": "2026-11-20T03:48:22.626721+00:00"
+  },
+  {
+    "id": "ANDA220792-1",
+    "application_number": "ANDA220792",
+    "products": [
+      {
+        "brand_name": "MIRABEGRON",
+        "active_ingredients": [
+          {
+            "name": "MIRABEGRON",
+            "strength": "50MG"
+          }
+        ]
+      },
+      {
+        "brand_name": "MIRABEGRON",
+        "active_ingredients": [
+          {
+            "name": "MIRABEGRON",
+            "strength": "25MG"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20261116",
+    "sponsor": "RENATA",
+    "classification": "",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-21T03:45:55.434379+00:00"
+  },
+  {
+    "id": "ANDA220985-1",
+    "application_number": "ANDA220985",
+    "products": [
+      {
+        "brand_name": "CALCIUM CHLORIDE 10%",
+        "active_ingredients": [
+          {
+            "name": "CALCIUM CHLORIDE",
+            "strength": "100MG/ML"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20261116",
+    "sponsor": "ANTHEA PHARMA",
+    "classification": "",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-21T03:45:55.434379+00:00"
   },
   {
     "id": "BLA761488-1",
@@ -88,6 +250,59 @@
     "discovered_at": "2026-11-20T03:48:22.626721+00:00"
   },
   {
+    "id": "ANDA218007-1",
+    "application_number": "ANDA218007",
+    "products": [
+      {
+        "brand_name": "AMIFAMPRIDINE PHOSPHATE",
+        "active_ingredients": [
+          {
+            "name": "AMIFAMPRIDINE PHOSPHATE",
+            "strength": "EQ 10MG BASE"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20261113",
+    "sponsor": "ANNORA PHARMA",
+    "classification": "",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-21T03:45:55.434379+00:00"
+  },
+  {
+    "id": "ANDA217678-1",
+    "application_number": "ANDA217678",
+    "products": [
+      {
+        "brand_name": "BINIMETINIB",
+        "active_ingredients": [
+          {
+            "name": "BINIMETINIB",
+            "strength": "45MG"
+          }
+        ]
+      },
+      {
+        "brand_name": "BINIMETINIB",
+        "active_ingredients": [
+          {
+            "name": "BINIMETINIB",
+            "strength": "15MG"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20261113",
+    "sponsor": "ALEMBIC",
+    "classification": "",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-21T03:45:55.434379+00:00"
+  },
+  {
     "id": "BLA761501-1",
     "application_number": "BLA761501",
     "products": [
@@ -130,6 +345,28 @@
     "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
     "review_status": "pending",
     "discovered_at": "2026-11-20T03:48:22.626721+00:00"
+  },
+  {
+    "id": "ANDA218029-1",
+    "application_number": "ANDA218029",
+    "products": [
+      {
+        "brand_name": "AMIFAMPRIDINE PHOSPHATE",
+        "active_ingredients": [
+          {
+            "name": "AMIFAMPRIDINE PHOSPHATE",
+            "strength": "EQ 10MG BASE"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20261112",
+    "sponsor": "TEVA PHARMS INC",
+    "classification": "",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-21T03:45:55.434379+00:00"
   },
   {
     "id": "NDA220414-1",
@@ -3970,6 +4207,50 @@
     "discovered_at": "2026-11-17T03:48:02.311481+00:00"
   },
   {
+    "id": "NDA215499-1",
+    "application_number": "NDA215499",
+    "products": [
+      {
+        "brand_name": "APRETUDE",
+        "active_ingredients": [
+          {
+            "name": "CABOTEGRAVIR",
+            "strength": "600MG/3ML (200MG/ML)"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20211220",
+    "sponsor": "VIIV HLTHCARE",
+    "classification": "Type 5 - New Formulation or New Manufacturer",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-21T03:45:55.434379+00:00"
+  },
+  {
+    "id": "ANDA214272-1",
+    "application_number": "ANDA214272",
+    "products": [
+      {
+        "brand_name": "ATOVAQUONE",
+        "active_ingredients": [
+          {
+            "name": "ATOVAQUONE",
+            "strength": "750MG/5ML"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20211025",
+    "sponsor": "PAI HOLDINGS",
+    "classification": "",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-21T03:45:55.434379+00:00"
+  },
+  {
     "id": "ANDA214699-1",
     "application_number": "ANDA214699",
     "products": [
@@ -4030,6 +4311,28 @@
     "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
     "review_status": "pending",
     "discovered_at": "2026-11-14T07:31:45.699831+00:00"
+  },
+  {
+    "id": "ANDA212802-1",
+    "application_number": "ANDA212802",
+    "products": [
+      {
+        "brand_name": "GLYCOPYRROLATE",
+        "active_ingredients": [
+          {
+            "name": "GLYCOPYRROLATE",
+            "strength": "0.2MG/ML"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20210706",
+    "sponsor": "MEITHEAL",
+    "classification": "",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-21T03:45:55.434379+00:00"
   },
   {
     "id": "ANDA214092-1",
@@ -4457,6 +4760,55 @@
     "discovered_at": "2026-11-14T07:31:45.699831+00:00"
   },
   {
+    "id": "ANDA205135-1",
+    "application_number": "ANDA205135",
+    "products": [
+      {
+        "brand_name": "METHYLPHENIDATE HYDROCHLORIDE",
+        "active_ingredients": [
+          {
+            "name": "METHYLPHENIDATE HYDROCHLORIDE",
+            "strength": "27MG"
+          }
+        ]
+      },
+      {
+        "brand_name": "METHYLPHENIDATE HYDROCHLORIDE",
+        "active_ingredients": [
+          {
+            "name": "METHYLPHENIDATE HYDROCHLORIDE",
+            "strength": "36MG"
+          }
+        ]
+      },
+      {
+        "brand_name": "METHYLPHENIDATE HYDROCHLORIDE",
+        "active_ingredients": [
+          {
+            "name": "METHYLPHENIDATE HYDROCHLORIDE",
+            "strength": "18MG"
+          }
+        ]
+      },
+      {
+        "brand_name": "METHYLPHENIDATE HYDROCHLORIDE",
+        "active_ingredients": [
+          {
+            "name": "METHYLPHENIDATE HYDROCHLORIDE",
+            "strength": "54MG"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20200819",
+    "sponsor": "SUN PHARM INDS INC",
+    "classification": "",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-21T03:45:55.434379+00:00"
+  },
+  {
     "id": "ANDA208317-1",
     "application_number": "ANDA208317",
     "products": [
@@ -4534,6 +4886,32 @@
     "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
     "review_status": "pending",
     "discovered_at": "2026-11-14T07:31:45.699831+00:00"
+  },
+  {
+    "id": "NDA211039-1",
+    "application_number": "NDA211039",
+    "products": [
+      {
+        "brand_name": "FLUORESCEIN SODIUM AND BENOXINATE HYDROCHLORIDE",
+        "active_ingredients": [
+          {
+            "name": "BENOXINATE HYDROCHLORIDE",
+            "strength": "0.4%"
+          },
+          {
+            "name": "FLUORESCEIN SODIUM",
+            "strength": "0.3%"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20200309",
+    "sponsor": "BAUSCH LOMB IRELAND",
+    "classification": "Type 4 - New Combination",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-21T03:45:55.434379+00:00"
   },
   {
     "id": "ANDA213181-1",
@@ -5111,6 +5489,28 @@
     "discovered_at": "2026-11-17T03:48:02.311481+00:00"
   },
   {
+    "id": "ANDA211661-1",
+    "application_number": "ANDA211661",
+    "products": [
+      {
+        "brand_name": "VORICONAZOLE",
+        "active_ingredients": [
+          {
+            "name": "VORICONAZOLE",
+            "strength": "200MG/VIAL"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20181130",
+    "sponsor": "HAINAN POLY",
+    "classification": "",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-21T03:45:55.434379+00:00"
+  },
+  {
     "id": "ANDA207402-1",
     "application_number": "ANDA207402",
     "products": [
@@ -5415,6 +5815,37 @@
     "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
     "review_status": "pending",
     "discovered_at": "2026-11-17T03:48:02.311481+00:00"
+  },
+  {
+    "id": "ANDA203614-1",
+    "application_number": "ANDA203614",
+    "products": [
+      {
+        "brand_name": "DEXMETHYLPHENIDATE HYDROCHLORIDE",
+        "active_ingredients": [
+          {
+            "name": "DEXMETHYLPHENIDATE HYDROCHLORIDE",
+            "strength": "25MG"
+          }
+        ]
+      },
+      {
+        "brand_name": "DEXMETHYLPHENIDATE HYDROCHLORIDE",
+        "active_ingredients": [
+          {
+            "name": "DEXMETHYLPHENIDATE HYDROCHLORIDE",
+            "strength": "35MG"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20170705",
+    "sponsor": "IMPAX LABS INC",
+    "classification": "",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-21T03:45:55.434379+00:00"
   },
   {
     "id": "ANDA205531-1",
@@ -6929,6 +7360,28 @@
     "discovered_at": "2026-11-17T03:48:02.311481+00:00"
   },
   {
+    "id": "ANDA090191-1",
+    "application_number": "ANDA090191",
+    "products": [
+      {
+        "brand_name": "CETIRIZINE HYDROCHLORIDE",
+        "active_ingredients": [
+          {
+            "name": "CETIRIZINE HYDROCHLORIDE",
+            "strength": "5MG/5ML"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20091112",
+    "sponsor": "BAJAJ",
+    "classification": "",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-21T03:45:55.434379+00:00"
+  },
+  {
     "id": "NDA021918-1",
     "application_number": "NDA021918",
     "products": [
@@ -6971,6 +7424,37 @@
     "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
     "review_status": "pending",
     "discovered_at": "2026-11-17T03:48:02.311481+00:00"
+  },
+  {
+    "id": "ANDA078239-1",
+    "application_number": "ANDA078239",
+    "products": [
+      {
+        "brand_name": "DIVALPROEX SODIUM",
+        "active_ingredients": [
+          {
+            "name": "DIVALPROEX SODIUM",
+            "strength": "EQ 500MG VALPROIC ACID"
+          }
+        ]
+      },
+      {
+        "brand_name": "DIVALPROEX SODIUM",
+        "active_ingredients": [
+          {
+            "name": "DIVALPROEX SODIUM",
+            "strength": "EQ 250MG VALPROIC ACID"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20090227",
+    "sponsor": "ZYDUS PHARMS USA INC",
+    "classification": "",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-21T03:45:55.434379+00:00"
   },
   {
     "id": "NDA022196-1",
@@ -7365,6 +7849,28 @@
     "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
     "review_status": "pending",
     "discovered_at": "2026-11-18T03:50:12.693255+00:00"
+  },
+  {
+    "id": "NDA020310-1",
+    "application_number": "NDA020310",
+    "products": [
+      {
+        "brand_name": "NIZORAL ANTI-DANDRUFF",
+        "active_ingredients": [
+          {
+            "name": "KETOCONAZOLE",
+            "strength": "1%"
+          }
+        ]
+      }
+    ],
+    "approval_date": "19971010",
+    "sponsor": "KRAMER",
+    "classification": "Type 3 - New Dosage Form",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-21T03:45:55.434379+00:00"
   },
   {
     "id": "NDA020323-1",
