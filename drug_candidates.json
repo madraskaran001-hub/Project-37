@@ -7276,6 +7276,37 @@
     "discovered_at": "2026-11-17T03:48:02.311481+00:00"
   },
   {
+    "id": "ANDA090547-1",
+    "application_number": "ANDA090547",
+    "products": [
+      {
+        "brand_name": "VORICONAZOLE",
+        "active_ingredients": [
+          {
+            "name": "VORICONAZOLE",
+            "strength": "200MG"
+          }
+        ]
+      },
+      {
+        "brand_name": "VORICONAZOLE",
+        "active_ingredients": [
+          {
+            "name": "VORICONAZOLE",
+            "strength": "50MG"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20100422",
+    "sponsor": "MYLAN PHARMS INC",
+    "classification": "",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-22T03:48:53.574924+00:00"
+  },
+  {
     "id": "ANDA091189-1",
     "application_number": "ANDA091189",
     "products": [
