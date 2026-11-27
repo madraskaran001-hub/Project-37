@@ -163,6 +163,64 @@
     "discovered_at": "2026-11-26T03:53:01.180358+00:00"
   },
   {
+    "id": "ANDA208906-1",
+    "application_number": "ANDA208906",
+    "products": [
+      {
+        "brand_name": "TREPROSTINIL DIOLAMINE",
+        "active_ingredients": [
+          {
+            "name": "TREPROSTINIL DIOLAMINE",
+            "strength": "EQ 0.25MG BASE"
+          }
+        ]
+      },
+      {
+        "brand_name": "TREPROSTINIL DIOLAMINE",
+        "active_ingredients": [
+          {
+            "name": "TREPROSTINIL DIOLAMINE",
+            "strength": "EQ 5MG BASE"
+          }
+        ]
+      },
+      {
+        "brand_name": "TREPROSTINIL DIOLAMINE",
+        "active_ingredients": [
+          {
+            "name": "TREPROSTINIL DIOLAMINE",
+            "strength": "EQ 1MG BASE"
+          }
+        ]
+      },
+      {
+        "brand_name": "TREPROSTINIL DIOLAMINE",
+        "active_ingredients": [
+          {
+            "name": "TREPROSTINIL DIOLAMINE",
+            "strength": "EQ 0.125MG BASE"
+          }
+        ]
+      },
+      {
+        "brand_name": "TREPROSTINIL DIOLAMINE",
+        "active_ingredients": [
+          {
+            "name": "TREPROSTINIL DIOLAMINE",
+            "strength": "EQ 2.5MG BASE"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20261120",
+    "sponsor": "ACTAVIS LABS FL",
+    "classification": "",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-27T03:54:53.363710+00:00"
+  },
+  {
     "id": "NDA221144-1",
     "application_number": "NDA221144",
     "products": [
@@ -5052,6 +5110,37 @@
     "discovered_at": "2026-11-18T03:50:12.693255+00:00"
   },
   {
+    "id": "ANDA214629-1",
+    "application_number": "ANDA214629",
+    "products": [
+      {
+        "brand_name": "METFORMIN HYDROCHLORIDE",
+        "active_ingredients": [
+          {
+            "name": "METFORMIN HYDROCHLORIDE",
+            "strength": "1GM"
+          }
+        ]
+      },
+      {
+        "brand_name": "METFORMIN HYDROCHLORIDE",
+        "active_ingredients": [
+          {
+            "name": "METFORMIN HYDROCHLORIDE",
+            "strength": "500MG"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20220222",
+    "sponsor": "SCIEGEN PHARMS",
+    "classification": "",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-27T03:54:53.363710+00:00"
+  },
+  {
     "id": "ANDA215995-1",
     "application_number": "ANDA215995",
     "products": [
@@ -6230,6 +6319,46 @@
     "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
     "review_status": "pending",
     "discovered_at": "2026-11-14T07:31:45.699831+00:00"
+  },
+  {
+    "id": "NDA211675-1",
+    "application_number": "NDA211675",
+    "products": [
+      {
+        "brand_name": "RINVOQ",
+        "active_ingredients": [
+          {
+            "name": "UPADACITINIB",
+            "strength": "30MG"
+          }
+        ]
+      },
+      {
+        "brand_name": "RINVOQ",
+        "active_ingredients": [
+          {
+            "name": "UPADACITINIB",
+            "strength": "45MG"
+          }
+        ]
+      },
+      {
+        "brand_name": "RINVOQ",
+        "active_ingredients": [
+          {
+            "name": "UPADACITINIB",
+            "strength": "15MG"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20190816",
+    "sponsor": "ABBVIE",
+    "classification": "Type 1 - New Molecular Entity",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-27T03:54:53.363710+00:00"
   },
   {
     "id": "NDA210557-1",
@@ -8800,6 +8929,73 @@
     "discovered_at": "2026-11-26T03:53:01.180358+00:00"
   },
   {
+    "id": "ANDA091434-1",
+    "application_number": "ANDA091434",
+    "products": [
+      {
+        "brand_name": "OLANZAPINE",
+        "active_ingredients": [
+          {
+            "name": "OLANZAPINE",
+            "strength": "20MG"
+          }
+        ]
+      },
+      {
+        "brand_name": "OLANZAPINE",
+        "active_ingredients": [
+          {
+            "name": "OLANZAPINE",
+            "strength": "10MG"
+          }
+        ]
+      },
+      {
+        "brand_name": "OLANZAPINE",
+        "active_ingredients": [
+          {
+            "name": "OLANZAPINE",
+            "strength": "5MG"
+          }
+        ]
+      },
+      {
+        "brand_name": "OLANZAPINE",
+        "active_ingredients": [
+          {
+            "name": "OLANZAPINE",
+            "strength": "15MG"
+          }
+        ]
+      },
+      {
+        "brand_name": "OLANZAPINE",
+        "active_ingredients": [
+          {
+            "name": "OLANZAPINE",
+            "strength": "7.5MG"
+          }
+        ]
+      },
+      {
+        "brand_name": "OLANZAPINE",
+        "active_ingredients": [
+          {
+            "name": "OLANZAPINE",
+            "strength": "2.5MG"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20120423",
+    "sponsor": "TORRENT PHARMS LTD",
+    "classification": "",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-27T03:54:53.363710+00:00"
+  },
+  {
     "id": "ANDA077561-1",
     "application_number": "ANDA077561",
     "products": [
@@ -10150,6 +10346,37 @@
     "discovered_at": "2026-11-18T03:50:12.693255+00:00"
   },
   {
+    "id": "NDA020882-1",
+    "application_number": "NDA020882",
+    "products": [
+      {
+        "brand_name": "NEURONTIN",
+        "active_ingredients": [
+          {
+            "name": "GABAPENTIN",
+            "strength": "600MG"
+          }
+        ]
+      },
+      {
+        "brand_name": "NEURONTIN",
+        "active_ingredients": [
+          {
+            "name": "GABAPENTIN",
+            "strength": "800MG"
+          }
+        ]
+      }
+    ],
+    "approval_date": "19981009",
+    "sponsor": "VIATRIS",
+    "classification": "Type 3 - New Dosage Form",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-27T03:54:53.363710+00:00"
+  },
+  {
     "id": "NDA020834-1",
     "application_number": "NDA020834",
     "products": [
@@ -10170,6 +10397,28 @@
     "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
     "review_status": "pending",
     "discovered_at": "2026-11-26T03:53:01.180358+00:00"
+  },
+  {
+    "id": "ANDA074889-1",
+    "application_number": "ANDA074889",
+    "products": [
+      {
+        "brand_name": "ACYCLOVIR",
+        "active_ingredients": [
+          {
+            "name": "ACYCLOVIR",
+            "strength": "200MG"
+          }
+        ]
+      }
+    ],
+    "approval_date": "19971031",
+    "sponsor": "HERITAGE",
+    "classification": "",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-27T03:54:53.363710+00:00"
   },
   {
     "id": "NDA020310-1",
