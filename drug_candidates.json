@@ -1,5 +1,289 @@
 [
   {
+    "id": "ANDA217545-1",
+    "application_number": "ANDA217545",
+    "products": [
+      {
+        "brand_name": "SITAGLIPTIN AND METFORMIN HYDROCHLORIDE",
+        "active_ingredients": [
+          {
+            "name": "METFORMIN HYDROCHLORIDE",
+            "strength": "1GM"
+          },
+          {
+            "name": "SITAGLIPTIN PHOSPHATE",
+            "strength": "EQ 50MG BASE"
+          }
+        ]
+      },
+      {
+        "brand_name": "SITAGLIPTIN AND METFORMIN HYDROCHLORIDE",
+        "active_ingredients": [
+          {
+            "name": "METFORMIN HYDROCHLORIDE",
+            "strength": "500MG"
+          },
+          {
+            "name": "SITAGLIPTIN PHOSPHATE",
+            "strength": "EQ 50MG BASE"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20261124",
+    "sponsor": "LAURUS",
+    "classification": "",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-28T03:50:27.720296+00:00"
+  },
+  {
+    "id": "ANDA216644-1",
+    "application_number": "ANDA216644",
+    "products": [
+      {
+        "brand_name": "SITAGLIPTIN AND METFORMIN HYDROCHLORIDE",
+        "active_ingredients": [
+          {
+            "name": "SITAGLIPTIN, METFORMIN HYDROCHLORIDE",
+            "strength": "1000MG"
+          }
+        ]
+      },
+      {
+        "brand_name": "SITAGLIPTIN AND METFORMIN HYDROCHLORIDE",
+        "active_ingredients": [
+          {
+            "name": "METFORMIN HYDROCHLORIDE",
+            "strength": "500MG"
+          },
+          {
+            "name": "SITAGLIPTIN PHOSPHATE",
+            "strength": "EQ 50MG BASE"
+          }
+        ]
+      },
+      {
+        "brand_name": "SITAGLIPTIN AND METFORMIN HYDROCHLORIDE",
+        "active_ingredients": [
+          {
+            "name": "METFORMIN HYDROCHLORIDE",
+            "strength": "1GM"
+          },
+          {
+            "name": "SITAGLIPTIN PHOSPHATE",
+            "strength": "EQ 50MG BASE"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20261124",
+    "sponsor": "ANNORA PHARMA",
+    "classification": "",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-28T03:50:27.720296+00:00"
+  },
+  {
+    "id": "ANDA216288-1",
+    "application_number": "ANDA216288",
+    "products": [
+      {
+        "brand_name": "SITAGLIPTIN AND METFORMIN HYDROCHLORIDE",
+        "active_ingredients": [
+          {
+            "name": "METFORMIN HYDROCHLORIDE, SITAGLIPTIN",
+            "strength": "500MG"
+          }
+        ]
+      },
+      {
+        "brand_name": "SITAGLIPTIN AND METFORMIN HYDROCHLORIDE",
+        "active_ingredients": [
+          {
+            "name": "METFORMIN HYDROCHLORIDE",
+            "strength": "500MG"
+          },
+          {
+            "name": "SITAGLIPTIN PHOSPHATE",
+            "strength": "EQ 50MG BASE"
+          }
+        ]
+      },
+      {
+        "brand_name": "SITAGLIPTIN AND METFORMIN HYDROCHLORIDE",
+        "active_ingredients": [
+          {
+            "name": "METFORMIN HYDROCHLORIDE",
+            "strength": "1GM"
+          },
+          {
+            "name": "SITAGLIPTIN PHOSPHATE",
+            "strength": "EQ 50MG BASE"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20261124",
+    "sponsor": "MSN",
+    "classification": "",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-28T03:50:27.720296+00:00"
+  },
+  {
+    "id": "ANDA218405-1",
+    "application_number": "ANDA218405",
+    "products": [
+      {
+        "brand_name": "SITAGLIPTIN AND METFORMIN HYDROCHLORIDE",
+        "active_ingredients": [
+          {
+            "name": "METFORMIN HYDROCHLORIDE",
+            "strength": "1GM"
+          },
+          {
+            "name": "SITAGLIPTIN PHOSPHATE",
+            "strength": "EQ 50MG BASE"
+          }
+        ]
+      },
+      {
+        "brand_name": "SITAGLIPTIN AND METFORMIN HYDROCHLORIDE",
+        "active_ingredients": [
+          {
+            "name": "SITAGLIPTIN, METFORMIN HYDROCHLORIDE",
+            "strength": "500MG"
+          }
+        ]
+      },
+      {
+        "brand_name": "SITAGLIPTIN AND METFORMIN HYDROCHLORIDE",
+        "active_ingredients": [
+          {
+            "name": "METFORMIN HYDROCHLORIDE",
+            "strength": "500MG"
+          },
+          {
+            "name": "SITAGLIPTIN PHOSPHATE",
+            "strength": "EQ 50MG BASE"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20261124",
+    "sponsor": "MANKIND PHARMA",
+    "classification": "",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-28T03:50:27.720296+00:00"
+  },
+  {
+    "id": "NDA220740-1",
+    "application_number": "NDA220740",
+    "products": [
+      {
+        "brand_name": "BACFENSSI",
+        "active_ingredients": [
+          {
+            "name": "DOXYCYCLINE HYCLATE",
+            "strength": "63MG"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20261124",
+    "sponsor": "POLYPID LTD",
+    "classification": "Type 3 - New Dosage Form",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-28T03:50:27.720296+00:00"
+  },
+  {
+    "id": "ANDA218441-1",
+    "application_number": "ANDA218441",
+    "products": [
+      {
+        "brand_name": "SITAGLIPTIN PHOSPHATE",
+        "active_ingredients": [
+          {
+            "name": "SITAGLIPTIN PHOSPHATE",
+            "strength": "EQ 100MG BASE"
+          }
+        ]
+      },
+      {
+        "brand_name": "SITAGLIPTIN PHOSPHATE",
+        "active_ingredients": [
+          {
+            "name": "SITAGLIPTIN PHOSPHATE",
+            "strength": "EQ 25MG BASE"
+          }
+        ]
+      },
+      {
+        "brand_name": "SITAGLIPTIN PHOSPHATE",
+        "active_ingredients": [
+          {
+            "name": "SITAGLIPTIN PHOSPHATE",
+            "strength": "EQ 50MG BASE"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20261124",
+    "sponsor": "BIOCON PHARMA",
+    "classification": "",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-28T03:50:27.720296+00:00"
+  },
+  {
+    "id": "ANDA214685-1",
+    "application_number": "ANDA214685",
+    "products": [
+      {
+        "brand_name": "SITAGLIPTIN AND METFORMIN HYDROCHLORIDE",
+        "active_ingredients": [
+          {
+            "name": "METFORMIN HYDROCHLORIDE",
+            "strength": "500MG"
+          },
+          {
+            "name": "SITAGLIPTIN PHOSPHATE",
+            "strength": "EQ 50MG BASE"
+          }
+        ]
+      },
+      {
+        "brand_name": "SITAGLIPTIN AND METFORMIN HYDROCHLORIDE",
+        "active_ingredients": [
+          {
+            "name": "METFORMIN HYDROCHLORIDE",
+            "strength": "1GM"
+          },
+          {
+            "name": "SITAGLIPTIN PHOSPHATE",
+            "strength": "EQ 50MG BASE"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20261124",
+    "sponsor": "DR REDDYS",
+    "classification": "",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-28T03:50:27.720296+00:00"
+  },
+  {
     "id": "ANDA217395-1",
     "application_number": "ANDA217395",
     "products": [
@@ -139,6 +423,28 @@
     "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
     "review_status": "pending",
     "discovered_at": "2026-11-26T03:53:01.180358+00:00"
+  },
+  {
+    "id": "NDA220905-1",
+    "application_number": "NDA220905",
+    "products": [
+      {
+        "brand_name": "WELGEMDA",
+        "active_ingredients": [
+          {
+            "name": "RIBITOL",
+            "strength": "9G"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20261123",
+    "sponsor": "ML BIO SOLUTIONS INC",
+    "classification": "Type 1 - New Molecular Entity",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-28T03:50:27.720296+00:00"
   },
   {
     "id": "ANDA216270-1",
@@ -3397,6 +3703,46 @@
     "discovered_at": "2026-11-14T07:31:45.699831+00:00"
   },
   {
+    "id": "BLA761338-2",
+    "application_number": "BLA761338",
+    "products": [
+      {
+        "brand_name": "STEQEYMA",
+        "active_ingredients": [
+          {
+            "name": "USTEKINUMAB-STBA",
+            "strength": "90MG/ML"
+          }
+        ]
+      },
+      {
+        "brand_name": "STEQEYMA",
+        "active_ingredients": [
+          {
+            "name": "USTEKINUMAB-STBA",
+            "strength": "130MG/26ML"
+          }
+        ]
+      },
+      {
+        "brand_name": "STEQEYMA",
+        "active_ingredients": [
+          {
+            "name": "USTEKINUMAB-STBA",
+            "strength": "45MG/0.5ML"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20250430",
+    "sponsor": "CELLTRION, INC.",
+    "classification": "Type 2 - New Active Ingredient",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-28T03:50:27.720296+00:00"
+  },
+  {
     "id": "ANDA219145-1",
     "application_number": "ANDA219145",
     "products": [
@@ -3714,6 +4060,46 @@
     "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
     "review_status": "pending",
     "discovered_at": "2026-11-17T03:48:02.311481+00:00"
+  },
+  {
+    "id": "BLA761338-1",
+    "application_number": "BLA761338",
+    "products": [
+      {
+        "brand_name": "STEQEYMA",
+        "active_ingredients": [
+          {
+            "name": "USTEKINUMAB-STBA",
+            "strength": "90MG/ML"
+          }
+        ]
+      },
+      {
+        "brand_name": "STEQEYMA",
+        "active_ingredients": [
+          {
+            "name": "USTEKINUMAB-STBA",
+            "strength": "130MG/26ML"
+          }
+        ]
+      },
+      {
+        "brand_name": "STEQEYMA",
+        "active_ingredients": [
+          {
+            "name": "USTEKINUMAB-STBA",
+            "strength": "45MG/0.5ML"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20241217",
+    "sponsor": "CELLTRION, INC.",
+    "classification": "Type 2 - New Active Ingredient",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-28T03:50:27.720296+00:00"
   },
   {
     "id": "ANDA218668-1",
@@ -4460,6 +4846,37 @@
     "discovered_at": "2026-11-14T07:31:45.699831+00:00"
   },
   {
+    "id": "BLA761309-1",
+    "application_number": "BLA761309",
+    "products": [
+      {
+        "brand_name": "COLUMVI",
+        "active_ingredients": [
+          {
+            "name": "GLOFITAMAB-GXBM",
+            "strength": "10MG/10ML(1MG/ML)"
+          }
+        ]
+      },
+      {
+        "brand_name": "COLUMVI",
+        "active_ingredients": [
+          {
+            "name": "GLOFITAMAB-GXBM",
+            "strength": "2.5MG/2.5ML(1MG/ML)"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20230615",
+    "sponsor": "GENENTECH INC",
+    "classification": "Type 1 - New Molecular Entity",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-28T03:50:27.720296+00:00"
+  },
+  {
     "id": "ANDA210252-1",
     "application_number": "ANDA210252",
     "products": [
@@ -4795,6 +5212,28 @@
     "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
     "review_status": "pending",
     "discovered_at": "2026-11-26T03:53:01.180358+00:00"
+  },
+  {
+    "id": "BLA761310-1",
+    "application_number": "BLA761310",
+    "products": [
+      {
+        "brand_name": "ELAHERE",
+        "active_ingredients": [
+          {
+            "name": "MIRVETUXIMAB SORAVTANSINE-GYNX",
+            "strength": "100mg/20mL single-dose vial"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20221114",
+    "sponsor": "IMMUNOGEN INC",
+    "classification": "Type 1 - New Molecular Entity",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-28T03:50:27.720296+00:00"
   },
   {
     "id": "ANDA209652-1",
@@ -5421,6 +5860,28 @@
     "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
     "review_status": "pending",
     "discovered_at": "2026-11-26T03:53:01.180358+00:00"
+  },
+  {
+    "id": "BLA761202-1",
+    "application_number": "BLA761202",
+    "products": [
+      {
+        "brand_name": "BYOOVIZ",
+        "active_ingredients": [
+          {
+            "name": "RANIBIZUMAB-NUNA",
+            "strength": "0.5MG(10MG/ML)"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20210917",
+    "sponsor": "SAMSUNG BIOEPIS CO LTD",
+    "classification": "Type 5 - New Formulation or New Manufacturer",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-28T03:50:27.720296+00:00"
   },
   {
     "id": "ANDA214699-1",
@@ -8002,6 +8463,28 @@
     "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
     "review_status": "pending",
     "discovered_at": "2026-11-14T07:31:45.699831+00:00"
+  },
+  {
+    "id": "ANDA206336-1",
+    "application_number": "ANDA206336",
+    "products": [
+      {
+        "brand_name": "BALSALAZIDE DISODIUM",
+        "active_ingredients": [
+          {
+            "name": "BALSALAZIDE DISODIUM",
+            "strength": "1.1GM"
+          }
+        ]
+      }
+    ],
+    "approval_date": "20150908",
+    "sponsor": "AARXION ANDA HLDING",
+    "classification": "",
+    "source": "FDA Drugs@FDA",
+    "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "review_status": "pending",
+    "discovered_at": "2026-11-28T03:50:27.720296+00:00"
   },
   {
     "id": "ANDA200068-1",
